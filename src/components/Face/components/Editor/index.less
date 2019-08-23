@@ -1,0 +1,45 @@
+.editor {
+    display: flex;
+    overflow: hidden;
+    flex-flow: column;
+    resize: vertical;
+    padding: 0 10px 10px;
+
+    :global {
+        .quill {
+            flex: 1;
+            flex-flow: column;
+            display: flex;
+            overflow: auto;
+
+            .ql-toolbar {
+                display: none;
+            }
+
+            .ql-container {
+                flex: 1;
+                white-space: pre-wrap;
+                flex-flow: column;
+                display: flex;
+                padding: 0;
+                border: 0;
+                overflow: hidden;
+
+                .ql-editor {
+                    padding: 5px 0;
+                    flex: 1;
+
+                    &.ql-blank::before {
+                        font-style: normal;
+                    }
+
+                    img {
+                        width: 18px;
+                        height: 18px;
+                        margin: 0 2px;
+                    }
+                }
+            }
+        }
+    }
+}

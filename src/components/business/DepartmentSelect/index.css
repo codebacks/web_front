@@ -1,0 +1,3 @@
+.dropDown :global .ant-select-tree li .ant-select-tree-node-content-wrapper {
+  vertical-align: middle;
+}

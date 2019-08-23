@@ -1,0 +1,23 @@
+@import "../../../style/base";
+
+.editMessageOrder {
+    .desc {
+        padding: 10px 0
+    }
+    .orderIntro {
+        line-height: 24px;
+        padding-top: 20px;
+        label {
+            position: relative;
+            display: block;
+            text-align: right;
+            padding-right: 8px;
+            &:after {
+                content: ':';
+                position: absolute;
+                right: 5px;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,61 @@
+.blackList{
+    .searchWrap{
+        padding: 22px 22px 30px;
+        background-color: #fafafa;
+        .searchBtn{
+            :global{
+                .ant-btn-primary{
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+    .addWrap{
+        margin: 20px 0;
+        :global{
+            .ant-btn{
+                margin-right: 10px;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .tableWrap{
+        .canEdit{
+            margin-top: 6px;
+            cursor: pointer;
+            color: #4391FF;
+            &.disabled{
+                color: #999;
+            }
+        }
+        .avatar{
+            width: 10%;
+            img{
+                width: 68px;
+                height: 68px;
+            }
+        }
+        .uin{
+            width: 14%;
+        }
+        .nickname, .editNickname{
+            width: 10%;
+        }
+        .source{
+            width: 12%;
+        }
+    }
+}
+
+.addModal{
+    .row{
+        display: flex;
+        align-items: center;
+        .input{
+            width: 60%;
+            margin-left: 10px;
+        }
+    }
+}

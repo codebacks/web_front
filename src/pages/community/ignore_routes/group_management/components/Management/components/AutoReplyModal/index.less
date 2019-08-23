@@ -1,0 +1,105 @@
+.autoReplyModal {
+    position: relative;
+
+    .statusWrap{
+        display: flex;
+        align-items: center;
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+        border-bottom: 1px solid #E6E9EB;
+        .statusWrapLeft{
+            padding-right: 50px;
+            font-weight: bold;
+            border-right: 1px solid #E6E9EB;
+        }
+        .statusWrapRight{
+            display: flex;
+            align-items: center;
+            margin-left: 30px;
+        }
+    }
+
+    .themeColor{
+        color: @primary-color;
+    }
+    .redColor{
+        color: #f00;
+    }
+
+    .label {
+        width: 120px;
+        text-align: right;
+        display: inline-block;
+    }
+
+    .atMember, .atReplier {
+        margin-bottom: 20px;
+        .atRadioGroup {
+            margin: 0 20px 0 10px;
+        }
+        .atDesc {
+            color: #999;
+        }
+    }
+
+    .duration {
+        margin: 20px 0;
+        .inputNumber {
+            margin: 0 10px;
+            vertical-align: middle;
+        }
+    }
+
+    .changBar {
+        margin: 20px 0;
+        .changBarRight {
+            margin: 0 10px;
+        }
+    }
+
+    .durationMark {
+        font-size: 12px;
+        color: #a9a3a3;
+        margin-left: 10px;
+    }
+
+    .content {
+        .addBtn{
+            margin-bottom: 10px;
+        }
+        .require{
+            color: #f00;
+        }
+        .tableWrap{
+            .canEdit{
+                color: @primary-color;
+                cursor: pointer;
+            }
+
+            .editColumn{
+                span{
+                    margin-right: 14px;
+                }
+            }
+            :global{
+                .ant-pagination{
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    .contentMask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 10;
+        background: rgba(255, 255, 255, 0.8);
+        cursor: no-drop;
+    }
+
+}

@@ -1,0 +1,24 @@
+@import "../../../style/base";
+
+.createForm {
+    .messageWrap {
+        position: relative;
+        .removeMessage {
+            position: absolute;
+            right: 10px;
+            top: 0;
+            cursor: pointer
+        }
+    }
+}
+
+.msg {
+    label {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .msgImg {
+        vertical-align: middle;
+    }
+}
+

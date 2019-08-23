@@ -1,0 +1,12 @@
+.friendsModal {
+    :global {
+        .ant-modal-body {
+            max-height: 500px;
+            padding-bottom: 8px;
+            overflow-y: auto;
+        }
+        .ant-table-placeholder {
+            border-bottom: none;
+        }
+    }
+}

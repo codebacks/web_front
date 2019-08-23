@@ -1,0 +1,33 @@
+@import "../../../../style/hz/init.less";
+
+.trend {
+    margin-bottom: 0;
+    color: @color-description;
+
+    dt,
+    dd {
+        display: inline-block;
+        margin: 0;
+        font-size: @font-size-base;
+    }
+
+    dt {
+        width: 60px;
+    }
+
+    &.textUp{
+        color: @color-up;
+    }
+    &.textDown{
+        color: @color-down;
+    }
+    .up {
+        color: @color-up;
+        font-size: 14px;
+    }
+    .down {
+        color: @color-down;
+        font-size: 14px;
+        top: -1px;
+    }
+}

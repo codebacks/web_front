@@ -1,0 +1,88 @@
+.active{
+    color: #F35D51;
+    background-image: url(../../asserts/tabs_bg.png); 
+    background-repeat: no-repeat;
+    background-size: 85px 17px;
+    background-position-y:7px; 
+    &::after{
+        content: ' ';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        background-color: #F35D51
+    }
+}
+.tabs{
+    width: 100%;
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        border-bottom: #E6E9EB 1px solid;
+        li{
+            position: relative;
+            display: block;
+            float: left;
+            text-align: center;
+        }
+    }
+    .tabs_label{
+        display: flex;
+        justify-content: space-around;
+        height: 33px;
+        line-height: 33px;
+        >li{
+            width: 85px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+    }
+    .tabs_content{
+        overflow: hidden;
+        li{
+            overflow: hidden;
+            width: 320px;
+            display: block;
+            float: left;
+        }
+    }
+}
+.active_bg{
+    color: #F35D51;
+    background-image: url(../../asserts/tabs_bg.png); 
+    background-repeat: no-repeat;
+    background-size: 85px 17px;
+    background-position-y:7px; 
+}
+:global{
+    .hz_theme_tabs_blue{
+        .active{
+            color: #253A4E;
+            background-image: none; 
+            &::after{
+                background-color: #253A4E;
+            }
+        }
+        .active_bg{
+            color: #253A4E !important;
+            font-weight: bold;
+            background-image: none; 
+            &::after{
+                content: ' ';
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 2px;
+                width: 100%;
+                background-color: #253A4E;
+            }
+        }
+        li{
+            color: #9EA8B1 !important;
+        }
+    }
+}

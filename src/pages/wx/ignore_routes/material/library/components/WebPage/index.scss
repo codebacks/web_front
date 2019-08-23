@@ -1,0 +1,78 @@
+@import "~wx/style/index";
+@import "../common";
+
+.webPageWrap {
+    overflow: hidden;
+
+    .boxes {
+
+        .box {
+            position: relative;
+            float: left;
+            padding: 8px;
+            margin: 0 16px 16px 0;
+            width: 268px;
+            height: 274px;
+            border: 1px solid #E3E3E3;
+
+            .checkbox {
+                position: absolute;
+                top: 5px;
+                left: 8px;
+                width: 16px;
+                height: 16px;
+            }
+
+            .wrapper {
+                margin-left: 22px;
+                .info {
+                    display: inline-block;
+                    width: 100%;
+                    padding: 8px;
+                    margin-bottom: 10px;
+                    background-color: #FAFAFA;
+                    border-radius: 2px;
+                    border: 1px solid #D9D9D9;
+                    .title {
+                        height: 44px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        /*! autoprefixer: off */
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        color: $font-size-color-dark;
+                        word-break: break-all;
+                    }
+
+                    .desc {
+                        display: flex;
+                        align-items: center;
+                        .des {
+                            flex: 1;
+                            height: 60px;
+                            padding: 4px 16px 4px 0;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            /*! autoprefixer: off */
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 3;
+                            margin: 0;
+                            color: $font-size-color-light;
+                            font-size: 12px;
+                            text-align: justify;
+                            word-break: break-all;
+                        }
+                        .icon {
+                            height: 64px;
+                            width: 64px;
+                            border-radius: 2px;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

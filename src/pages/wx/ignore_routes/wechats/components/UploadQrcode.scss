@@ -1,0 +1,21 @@
+@import "../../../style/base";
+@import "../../../style/index";
+
+.qrcodeWrap {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  img{
+    max-width:256px;
+  }
+  .btn{
+    margin-bottom: 24px;
+  }
+  .qrcode {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 24px
+  }
+}
+
+

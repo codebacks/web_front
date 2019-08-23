@@ -1,0 +1,41 @@
+.autoPullWrap{
+    .searchWrap{
+        padding: 22px 22px 30px;
+        background-color: #fafafa;
+        .searchBtn{
+            :global{
+                .ant-btn-primary{
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+    .statusWrap{
+        display: flex;
+        justify-content: flex-end;
+        margin: 15px 0;
+        .statusItem{
+            width: 80px;
+            text-align: center;
+            .num{
+                color: #4391FF;
+                font-weight: bold;
+            }
+        }
+    }
+    .tableWrap{
+        margin-top: 0;
+        .avatar{
+            width: 10%;
+            img{
+                width: 68px;
+            }
+        }
+        .nickname, .wechatId, .remark, .executor, .desGroup, .time, .way, .keywords, .status, .failReason{
+            width: 9%;
+        }
+        .wechatId{
+            word-break: break-all;
+        }
+    }
+}

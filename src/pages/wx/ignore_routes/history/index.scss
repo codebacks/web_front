@@ -1,0 +1,26 @@
+@import "~wx/style/index";
+
+.history {
+    .avatarColumn {
+        white-space: nowrap;
+    }
+
+    .avatar {
+      width: 32px;
+      height: 32px;
+    }
+
+    .record {
+      color: $primary-color;
+      cursor: pointer;
+    }
+
+    .preWrap {
+        white-space: pre-wrap;
+    }
+}
+
+.wholeDept {
+    word-break: break-all;
+    max-width: 240px;
+}

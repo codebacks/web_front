@@ -1,0 +1,283 @@
+/**
+ **@Description:
+ **@author:吴明
+ */
+
+// .hz-from-search {
+//     :global {
+//         .ant-form-item-label {
+//             text-align: right;
+//             vertical-align: middle;
+//             line-height: 39.9999px;
+//             display: inline-block;
+//             overflow: hidden;
+//             white-space: nowrap;
+//         }
+//         .ant-calendar-picker {
+//             width: 100%;
+//         }
+//     }
+// }
+
+.formSearch {
+    .searchBtn {
+        :global {
+            .ant-btn {
+                width: 80px;
+                font-size: 12px;
+                margin-top: 8px;
+                &:first-child {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+    .row {
+        padding-left: 24px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: flex-start;
+        .col {
+            margin-right: 40px;
+            display: flex;
+        }
+        .col:last-child {
+            margin-right: 0px
+        }
+    }
+    .w240 {
+        width: 240px;
+    }
+    .payName {
+        font-family: MicrosoftYaHei-Bold;
+        font-size: 14px;
+        color: #666666;
+        padding: 20px 0;
+        font-weight: bold;
+    }
+    .icon {
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        background: #4391FF;
+        color: #fff;
+        line-height: 20px;
+        font-size: 14px;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+    .open {
+        width: 80px;
+        height: 30px;
+        margin: 20px 0;
+        line-height: 30px;
+    }
+    .title {
+        line-height: 54px;
+        border-bottom: 1px solid #E3E3E3;
+        font-family: MicrosoftYaHei-Bold;
+        font-size: 14px;
+        color: #333333;
+        letter-spacing: 0.17px;
+        font-weight: bold;
+    }
+    .form {
+        background: #FAFAFA;
+        border-radius: 2px;
+        margin-bottom: 20px;
+        padding: 30px 0;
+    }
+    .formInput {
+        width: 240px;
+        height: 30px;
+        font-size: 12px;
+    }
+    :global {
+        .ant-form-item-children {
+            width: 100%;
+        }
+        .ant-form-item-label label {
+            color: #333;
+            margin-right: 8px;
+        }
+        .ant-form-item-control {
+            width: 100%;
+        }
+        .ant-calendar-picker {
+            width: 100%;
+        }
+        .ant-select-dropdown-menu-item {
+            font-size: 12px;
+        }
+        .ant-form-item-label label:after {
+            content: "：";
+            margin: 0 18px 0 2px;
+            position: relative;
+            top: -0.5px;
+        }
+        .ant-table-thead>tr>th {
+            border-bottom: 0
+        }
+        .ant-advanced-search-form {
+            padding: 24px;
+            background: #fbfbfb;
+            border: 1px solid #d9d9d9;
+            border-radius: 6px;
+        }
+        .ant-select-selection-selected-value {
+            font-size: 12px;
+        }
+        .ant-advanced-search-form .ant-form-item {
+            display: flex;
+        }
+        .ant-select-selection__placeholder,
+        .ant-select-search__field__placeholder {
+            font-size: 12px;
+        }
+        .ant-calendar-range-picker-input {
+            font-size: 12px;
+        }
+        .ant-table-thead>tr:first-child>th:first-child {
+            border-top-left-radius: 4px;
+            padding-left: 24px;
+        }
+        .ant-table-tbody>tr>td:first-child {
+            padding-left: 24px;
+        }
+        .ant-pagination-item-active {
+            color: #fff;
+            background: #4391FF;
+            border-color: #4391FF;
+        }
+        .ant-pagination-item-active a {
+            color: #fff;
+        }
+        .ant-form label {
+            font-size: 12px;
+        }
+        .ant-advanced-search-form .ant-form-item-control-wrapper {
+            flex: 1;
+        }
+    }
+}
+.red_packet{
+    .flex:first-child {
+        display: flex;
+    }
+    
+    .circleGray {
+        position: relative;
+        padding-left: 13px;
+    }
+    
+    .circleGreen {
+        position: relative;
+        padding-left: 13px;
+    }
+    
+    .circleRed {
+        position: relative;
+        padding-left: 13px;
+        color: #4391FF;
+        cursor: pointer;
+    }
+    
+    .circleOrange {
+        position: relative;
+        padding-left: 13px;
+    }
+    
+    .circleGray::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        left: 0;
+        background: #F5222D;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+    }
+    
+    .circleGreen::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        left: 0;
+        background: #52C41A;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+    }
+    
+    .circleRed::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        background: #F5222D;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        border-radius: 50%;
+    }
+    
+    .circleOrange::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        background: #FA8C16;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+    }
+}
+.carriage{
+    max-height: 600px !important;
+    overflow-y: auto !important;
+}
+.customPanelStyle{
+    background:#f7f9fb;
+    border-radius:2px;
+    margin-bottom: 16px;
+    border: 0 !important;
+    overflow: hidden;
+    :global{
+        .ant-collapse-content > .ant-collapse-content-box{
+            padding: 0;
+        }
+
+    }
+    .CollapsePartItem{
+        background: #ffffff;
+    }
+    .recordHeaderRight{
+        .statusName{
+            width: 72px;
+            text-align: left;
+            color: #556675;
+        }
+        .statusBadge{
+            width: 72px;
+            margin-right: 16px;
+        }
+    }
+    .partItemDetail{
+        padding: 8px 0;
+        border-bottom: 1px solid #E6E9EB;
+        :global{
+            .ant-row-flex{
+                padding: 6px 0;
+            }
+            .ant-col-16{
+                color: #0D1A26;
+            }
+            .ant-col-6{
+                color: #556675;
+            }
+        }
+    }
+}

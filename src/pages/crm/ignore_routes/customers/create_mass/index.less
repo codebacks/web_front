@@ -1,0 +1,87 @@
+.createMass {
+    .slider {
+        :global {
+            .ant-slider-handle {
+                border-color: #4391FF;
+            }
+
+            .ant-slider-track {
+                background-color: #4391FF;
+            }
+        }
+    }
+
+    .title {
+        font-weight: 700;
+        margin: 20px 0;
+
+        .tip {
+            font-weight: 400;
+            margin-left: 20px;
+        }
+    }
+
+    .timePicker {
+        width: 40%;
+    }
+
+    .timeMsg {
+        color: red;
+        margin-left: 100px;
+        font-size: 16px;
+    }
+
+    :global {
+        .ant-upload-list-picture-card {
+            float: none;
+        }
+
+        .ant-modal-close-x {
+            width: 32px;
+            line-height: 32px;
+            font-size: 20px;
+        }
+
+        .ant-upload-list-item-info {
+            > span {
+                height: 100%;
+
+                .ant-upload-list-item-thumbnail {
+                    > img {
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+
+    .add {
+        position: relative;
+        width: 100%;
+        text-align: right;
+    }
+
+    .operate {
+        color: @primary-color;
+        cursor: pointer;
+        z-index: 99;
+        line-height: 14px;
+        margin-right: 10px;
+    }
+
+    .footer {
+        padding: 36px 0;
+
+        .btn {
+            margin-right: 20px;
+        }
+    }
+}
+
+.renderRiskTip {
+    width: 386px;
+
+    .content {
+        margin: 10px 0;
+    }
+}

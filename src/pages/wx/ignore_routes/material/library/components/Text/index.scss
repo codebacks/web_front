@@ -1,0 +1,65 @@
+@import "../common";
+
+.textWrap {
+    .operation {
+        overflow: hidden;
+        .create {
+            float: left;
+            margin: 8px 0 16px;
+        }
+    }
+
+    .boxes {
+
+        .box {
+            position: relative;
+            float: left;
+            padding: 8px;
+            margin: 0 16px 16px 0;
+            width: 268px;
+            height: 378px;
+            border: 1px solid #E3E3E3;
+
+            .checkbox {
+                position: absolute;
+                top: 5px;
+                left: 8px;
+                width: 16px;
+                height: 16px;
+            }
+
+            .wrapper {
+                margin-left: 22px;
+                border-radius: 2px;
+                .ellipsis {
+                    height: 228px;
+                    max-width: 100%;
+                    box-sizing: border-box;
+                    margin-bottom: 12px;
+                    padding: 8px;
+                    background-color: #FAFAFA;
+                    border-radius: 2px;
+                    overflow-y: hidden;
+                    word-break: break-all;
+                }
+                .text {
+                    margin: 0;
+                    text-align: justify;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    /*! autoprefixer: off */
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 10;
+                }
+            }
+        }
+    }
+}
+
+.wholeDesc {
+    max-width: 300px;
+    max-height: 500px;
+    overflow-y: auto;
+    word-break: break-all;
+}

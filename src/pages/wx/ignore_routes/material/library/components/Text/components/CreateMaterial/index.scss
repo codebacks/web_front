@@ -1,0 +1,63 @@
+@import "~wx/style/index";
+
+.wrapper {
+    :global {
+        .ant-modal-body {
+            overflow-y: auto;
+        }
+    }
+
+    .editorWrap {
+        border: 1px solid #d9d9d9;
+        border-radius: 2px;
+        .editor {
+            min-height: 160px;
+            max-height: 480px;
+            padding: 0 5px 0;
+        }
+        :global {
+            // fix firefox
+            .ant-row:before, .ant-row:after {
+                content: '';
+                height: 0;
+                line-height: 0;
+            }
+        }
+    }
+
+    .inputItem {
+        display: flex;
+        .input {
+            flex: 1;
+        }
+        .add {
+            border-color: $primary-color;
+            color: $primary-color;
+            cursor: pointer;
+            margin-left: 18px;
+        }
+    }
+
+    .tip {
+        color: $font-size-color-light;
+        margin: 0 0 10px 0;
+    }
+
+    .errorMsg {
+        color: #f04134;
+        font-size: 12px;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    .tagsWrap {
+        line-height: 1;
+        .tags {
+            margin-bottom: -10px;
+            .tag {
+                margin: 0 16px 10px 0;
+            }
+        }
+    }
+}
+

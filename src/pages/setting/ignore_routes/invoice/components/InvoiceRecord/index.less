@@ -1,0 +1,41 @@
+/*
+ * @Author: sunlzhi 
+ * @Date: 2018-11-02 10:45:26 
+ * @Last Modified by: sunlzhi
+ * @Last Modified time: 2018-11-08 15:55:56
+ */
+
+.operationBtn {
+    .vertical {
+        padding: 0 5px;
+        color: #d8d8d8;
+    }    
+}
+
+.invoiceStatus {
+    div {
+        &::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            display: inline-block;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+    }
+    .blue {
+        &::before {
+            background: #4391FF;
+        }
+    }
+    .red {
+        &::before {
+            background: #F5222D;
+        }
+    }
+    .gray {
+        &::before {
+            background: #999;
+        }
+    }
+}

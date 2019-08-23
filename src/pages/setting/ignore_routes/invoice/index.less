@@ -1,0 +1,197 @@
+/*
+ * @Author: sunlzhi 
+ * @Date: 2018-10-17 15:14:52 
+ * @Last Modified by: sunlzhi
+ * @Last Modified time: 2018-11-13 20:05:15
+ */
+
+.goodsManagement {
+    margin-bottom: 0;
+}
+.operationButtons {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    .button {
+        margin-right: 16px;
+    }
+}
+
+.status1 {
+    &::before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        margin-right: 8px;
+        display: inline-block;
+        vertical-align: middle;
+        background: #52C41A;
+        border-radius: 50%;
+    }
+}
+.status2 {
+    &::before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        margin-right: 8px;
+        display: inline-block;
+        vertical-align: middle;
+        background: #D8D8D8;
+        border-radius: 50%;
+    }
+}
+
+.goodsInfo {
+    // width: 300px;
+    img {
+        display: inline-block;
+        vertical-align: middle;
+        width: 60px;
+        height: 60px;
+    }
+    .goodsInfoBox {
+        display: inline-block;
+        vertical-align: middle;
+        width: 260px;
+        padding-left: 10px;
+        .goodsInfoName {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+        .goodsInfoPrice {
+            color: #FA8C16;
+        }
+        .goodsInfoSign {
+            float: right;
+            border: 1px solid #4391FF;
+            color: #4391FF;
+            font-size: 12px;
+            padding: 0 5px;
+            border-bottom-left-radius: 5px;
+            border-top-right-radius: 5px;
+            margin-left: 5px;
+        }
+        .redGroup {
+            float: right;
+            border: 1px solid #F5222D;
+            color: #F5222D;
+            font-size: 12px;
+            padding: 0 5px;
+            border-bottom-left-radius: 5px;
+            border-top-right-radius: 5px;
+            margin-left: 5px;
+        }
+        .yellowSpecial {
+            float: right;
+            border: 1px solid #FA8C16;
+            color: #FA8C16;
+            font-size: 12px;
+            padding: 0 5px;
+            border-bottom-left-radius: 5px;
+            border-top-right-radius: 5px;
+            margin-left: 5px;
+        }
+    }
+}
+
+.operationBtn {
+    span {
+        padding: 0 5px;
+        color: #d8d8d8;
+    }    
+}
+
+// 开具发票模板列表弹窗
+.invoicList {
+    :global {
+        .ant-modal-body {
+            padding: 0 24px 16px;
+        }
+    }
+    .buttonList {
+        margin-right: 24px;
+        margin-bottom: 16px;
+        border-color: #ECF4FF;
+        background: #ECF4FF;
+        border-radius: 2px;
+        color: #4391FF;
+    }
+    .noTemplateTips {
+        font-size: 12px;
+        color: #666;
+        margin-bottom: 16px;
+    }
+    .addTemplate {
+        color: #4391FF;
+        cursor: pointer;
+        .icon {
+            color: '#4391FF';
+            font-size: 8px;
+            margin-right: 8px;
+        }
+    }
+}
+
+// 发票明细弹窗
+.invoicDetail {
+    .invoicDetailsInfo {
+        color: #333;
+        list-style: none;
+        margin-bottom: 24px;
+        li {
+            margin-bottom: 16px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .invoicDetailsName {
+                width: 105px;
+                &::after {
+                    content: '：';
+                }
+            }
+            .invoicDetailsValue {
+                color: #666;
+            }
+        }
+    }
+}
+
+// 物流信息弹窗
+.logisticsInfo {
+    .logisticsInfoList {
+        color: #666;
+        list-style: none;
+        margin-bottom: 24px;
+        li {
+            margin-bottom: 16px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .invoicDetailsName {
+                width: 105px;
+                &::after {
+                    content: '：';
+                }
+            }
+            .invoicDetailsValue {
+                color: #333;
+            }
+        }
+    }
+}
+
+// PDF列表弹窗
+.PDFpreview {
+    ul {
+        list-style: none;
+        li {
+            margin-bottom: 16px;
+            a {
+                color: #666;
+            }
+        }
+    }
+}

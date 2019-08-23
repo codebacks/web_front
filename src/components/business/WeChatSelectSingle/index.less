@@ -1,0 +1,107 @@
+.weChatSelectWrapper {
+  display: flex;
+  align-items: center;
+
+  :global {
+    .ant-modal-body {
+      padding: 14px;
+    }
+    .ant-modal {
+      top: auto;
+      padding-bottom: 0;
+      .ant-modal-content {
+        width: 100%;
+      }
+    }
+  }
+
+  overflow: hidden;
+
+  .content {
+    display: flex;
+    .sidebar,
+    .main {
+      float: left;
+      overflow-y: auto;
+      height: 450px;
+      &::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+      }
+    }
+
+    .sidebar {
+      overflow-x: auto;
+      width: 160px;
+    }
+    .main {
+      flex: 1;
+      width: 100%;
+      min-width: 632px; // 临时
+      :global {
+        .ant-spin-nested-loading {
+          height: 100%;
+        }
+      }
+      .count {
+        font-weight: 700;
+      }
+
+      .collapse {
+        cursor: pointer;
+        margin-left: 24px;
+      }
+
+      .user {
+        margin: 18px 0;
+
+        .list {
+          overflow: hidden;
+          &.inactive {
+            display: none;
+          }
+          .item {
+            list-style-type: none;
+            position: relative;
+            float: left;
+            width: 140px;
+            padding: 5px;
+            margin: 5px;
+            border: 1px solid #e1e3e3;
+            color: #999;
+            cursor: pointer;
+            .nickname,
+            .remark {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+            .nickname {
+
+            }
+            .remark {
+              margin-bottom: 0;
+            }
+            &.selected {
+              color: #333;
+              &:after {
+                content: '';
+                position: absolute;
+                right: -1px;
+                bottom: -1px;
+                width: 0;
+                height: 0;
+                border-width: 10px;
+                border-style: solid;
+                border-color: transparent orangered orangered transparent;
+              }
+            }
+          }
+        }
+      }
+
+
+    }
+
+  }
+}

@@ -1,0 +1,90 @@
+/*
+ * @Author: sunlzhi 
+ * @Date: 2018-10-11 09:54:21 
+ * @Last Modified by: sunlzhi
+ * @Last Modified time: 2018-11-14 11:48:09
+ */
+
+.paySetting {
+    padding-top: 60px;
+    .form {
+        width: 500px;
+        margin: 0 auto;
+    }
+    .help {
+        position: absolute;
+        right: 30px;
+        top: 20px;
+    }
+    .nextButton {
+        label::after {
+            content: ''
+        }
+    }
+    .explain {
+        margin-top: 200px;
+        border-top: 1px solid #E3E3E3;
+        padding-top: 24px;
+        h4 {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        h5 {
+            font-size: 14px;
+            color: #666;
+        }
+        p {
+            font-size: 14px;
+            color: #999;
+        }
+    }
+    .fileTips {
+        width: 380px;
+        margin-bottom: 0;
+        line-height: 30px;
+        font-size: 12px;
+        color: #999;
+    }
+}
+
+.uploadItems{
+    :global{
+        .ant-upload-list {
+            display: none;
+        }
+    }
+}
+
+.uploadOtherItems {
+    width: 250px;
+    dl {
+        display: flex;
+        margin: 0;
+        line-height: 24px;
+
+        &:hover {
+            .uploadOtherItemRemove {
+                span {
+                    visibility: visible;
+                }
+            }
+        }
+    }
+    dt {
+        flex-grow: 1; 
+        font-weight: normal;
+    } 
+
+    .uploadOtherItemRemove {
+        width: 24px;
+        font-size: 12px;
+        text-align: center;
+    
+        span {
+            visibility: hidden;
+            cursor: pointer;
+        }
+    }
+
+}

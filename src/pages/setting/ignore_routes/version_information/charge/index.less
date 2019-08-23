@@ -1,0 +1,203 @@
+.payContent{
+    width: 850px;
+    margin: 0 auto;
+    color: #0D1A26;
+    .bold{
+        color: #000 !important;
+        font-weight: bold;
+    }
+    .highlight{
+        color: #4391FF  !important;
+        font-weight: bold;
+    }
+    header{
+        padding: 18px 0;
+        border-bottom: 1px solid  #E6E9EB;
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        img{
+            height: 24px;
+            display: block;
+        }
+        span{
+            font-family: MicrosoftYaHei-Bold;
+            font-size: 16px;
+            color: #0D1A26;
+            letter-spacing: 0.2px;
+            line-height: 24px;
+            margin-left: 6px;
+            font-weight: bold;
+        }
+        .versionName{
+            color: #4391FF ;
+        }
+        :global{
+            .ant-divider, .ant-divider-vertical{
+                top: 5px;
+                height: 15px
+            }
+        }
+
+    }
+    .pay_success{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 87px 0 32px;
+        span:nth-child(2){
+            font-family: MicrosoftYaHei-Bold;
+            font-size: 24px;
+            color: #0D1A26;
+            line-height: 32px;
+            font-weight: bold;
+            margin-left: 12px;
+        }
+        span:nth-child(3){
+            font-family: MicrosoftYaHei;
+            font-size: 16px;
+            color: #9EA8B1;
+            line-height: 24px;
+            margin-left: 4px;
+        }
+    }
+    .tips{
+        padding: 24px 0;
+        font-family: MicrosoftYaHei;
+        font-size: 16px;
+        color: #0D1A26;
+        overflow: hidden;
+        span{
+            margin-left: 6px;
+            line-height: 24px;
+            display: inline-block;
+        }
+        .icon{
+            font-size: 24px;
+            margin-top: 2px;
+        }
+    }
+    .payInfo{
+        padding: 68px 0;
+        border: 1px solid  #E6E9EB;
+        p{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .wechatTitle{
+            margin-bottom: 0;
+            span{
+                font-family: MicrosoftYaHei-Bold;
+                font-size: 24px;
+                color: #0D1A26;
+                line-height: 32px;
+                margin-left: 16px;
+            }
+        }
+        .qrcode{
+            margin:  0 auto;
+            display: block;
+            width: 200px;
+        }
+    }
+    .versionInformation{
+        padding: 16px 24px;
+        border: 1px solid  #E6E9EB;
+        p:nth-child(2){
+            margin: 16px 0 ;
+        }
+    }
+    .transfer{
+        p{
+            margin-bottom: 0
+        }
+        .versionInfo{
+            padding: 16px 24px;
+            border: 1px solid  #E6E9EB;
+            p:nth-child(2){
+                margin: 16px 0 ;
+            }
+        }
+        .accountInfo{
+            p{
+                padding: 24px  0  16px  8px ;
+                font-family: MicrosoftYaHei-Bold;
+                font-size: 15px;
+                color: #0D1A26;
+                position: relative;
+                line-height: 22px;
+            }
+            p::before{
+                content: '';
+                display: block;
+                width: 2px;
+                height: 14px;
+                background:#4391FF;
+                position: absolute;
+                left: 0;
+                top: 28px;
+            }
+        }
+        .attention{
+            background: #F7F9FB;
+            padding: 24px 24px 24px 50px;
+            margin-top: 16px;
+            p{
+                line-height: 28px;
+                font-size: 14px;
+            }
+            .mustread{
+                font-family: MicrosoftYaHei-Bold;
+                font-size: 14px;
+                color: #FFAA16;
+                line-height: 22px;
+                font-weight: bold;
+                position: relative
+            }
+            .attentionIcon{
+                position: absolute;
+                width: 16px;
+                width: 20px;
+                top: 0px;
+                left: -24px;
+            }
+        }
+    }
+    .time{
+        font-family: MicrosoftYaHei-Bold;
+        font-size: 16px;
+        color: #F35D51;
+        letter-spacing: 0;
+        text-align: left;
+        line-height: 26px;
+        font-weight: bold;
+    }
+    .relative{
+        position: relative;
+    }
+    .shade{
+        width: 200px;
+        height: 200px;
+        background: rgba(255, 255, 255, 0.95);
+        position: absolute;
+        top:0;
+        left:50%;
+        transform: translateX(-50%);
+        text-align: center;
+        color: #000;
+        z-index: 100;
+        span{
+           position: absolute;
+           top:50%;
+           left:50%;
+           width: 160px;
+           font-size: 16px;
+            color: #0D1A26;
+            text-align: center;
+           transform: translate(-50%,-50%);
+           line-height: 28px;
+        }
+    }
+}

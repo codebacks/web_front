@@ -1,0 +1,110 @@
+.recharge{
+    :global{
+        .ant-form-item-children{
+            input{
+                width: 60%;
+            }
+        }
+        .ant-col-11{
+            border: 1px solid #E6E9EB;
+            border-radius: 2px;
+            padding-left: 16px;
+        }
+        .ant-form-item{
+            margin-bottom: 4px;
+
+        }
+    }
+   
+    .intoAccount{
+        font-family: 'MicrosoftYaHei';
+        font-size: 12px;
+        color: #9EA8B1;
+        line-height: 20px;
+        margin-bottom: 10px;
+        span{
+            color: #000;
+        }
+    }
+    .radic{
+        display: none;
+    }
+    .receive{
+        visibility: visible;
+        display: inline-block;
+        color: '#9EA8B1';
+        padding-left: 16.66666667%;
+    }
+    .none{
+        display: none;
+    }
+    .rechargeMoney{
+        font-family: 'MicrosoftYaHei-Bold';
+        font-size: 16px;
+        color: #0D1A26;
+        line-height: 24px;
+        margin-right: 4px;
+    }
+    .active{
+        border-color:  #4391Ff ;
+        position: relative;
+        div{
+            color: #4391Ff ;
+        }
+        span{
+            color: #4391Ff ;
+        }
+        &::before{
+            content:'';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0px;
+            height: 0px;
+            border-color: #4391Ff transparent;
+            border-width:  0px 0px 20px 18px;
+            border-style: solid;
+            color: #fff;
+        }
+        .radic{
+            display: block;
+            color: #fff;
+            position: absolute;
+            bottom: -18%;
+            right: 0%;
+        }
+    }
+}
+
+.activityModel{
+    // top: 50%;
+    // transform: translateY(-50%);
+    :global {
+        .ant-modal-content{
+            background-color: transparent;
+            box-shadow:none;
+        }
+        .ant-modal-close-x{
+            color: #fff
+        }
+    }
+    .activity{
+        position: relative;
+        .recharge{
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            width: 150px;
+            cursor: pointer;
+            transform: translate(38%, 34%);
+        }
+        .closeActivity{
+            position: absolute;
+            top: 0;
+            right: 0;
+            cursor: pointer;
+            width: 24px;
+        }
+    }
+}

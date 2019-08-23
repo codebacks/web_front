@@ -1,0 +1,40 @@
+.workload {
+    :global {
+        .ant-modal-content {
+            box-shadow: none;
+        }
+        .ant-modal-footer {
+            display: none
+        }
+    }
+    overflow-y: auto;
+    .filter {
+    }
+    .tableWrap {
+        margin-top: 30px;
+    }
+    .total {
+        height: 140px;
+        padding: 0 10px;
+        margin-left: 110px;
+        margin-bottom: 10px;
+        .item {
+            height: 135px;
+            width: 135px;
+            margin-right: 16px;
+            float: left;
+            display: inline-block;
+            text-align: center;
+            h3 {
+                padding: 20px;
+                line-height: 1.5;
+                font-size: 14px;
+            }
+            .num {
+                font-size: 28px;
+                padding-bottom: 30px;
+            }
+        }
+
+    }
+}

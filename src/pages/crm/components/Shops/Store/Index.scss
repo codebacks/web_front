@@ -1,0 +1,23 @@
+@import "../../../style/base";
+
+.userWrap {
+    overflow-y: auto;
+    .createFormWrap {
+        margin-bottom: 20px;
+    }
+    .optionWrap {
+        padding-bottom: 20px;
+    }
+}
+
+.noticeTipStrong {
+    //color:#f60;
+    span {
+        color: #00a2ae;
+    }
+}
+
+.abbr {
+    line-height: 32px;
+}
+

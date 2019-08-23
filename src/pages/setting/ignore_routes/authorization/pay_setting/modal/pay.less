@@ -1,0 +1,51 @@
+/**
+ **@time: 2018/8/9
+ **@Description:样式
+ **@author: wangchunting
+ */
+
+.formLabel{
+    padding-left: 6px;
+}
+
+.uploadItems{
+    :global{
+        .ant-upload-list {
+            display: none;
+        }
+    }
+}
+
+.uploadOtherItems {
+    width: 250px;
+    dl {
+        display: flex;
+        margin: 0;
+        line-height: 24px;
+
+        &:hover {
+            .uploadOtherItemRemove {
+                span {
+                    visibility: visible;
+                }
+            }
+        }
+    }
+    dt {
+        flex-grow: 1; 
+        font-weight: normal;
+    } 
+
+    .uploadOtherItemRemove {
+        width: 24px;
+        font-size: 12px;
+        text-align: center;
+    
+        span {
+            visibility: hidden;
+            cursor: pointer;
+        }
+    }
+
+}
+

@@ -1,0 +1,31 @@
+@import "../common.less";
+
+.forward {
+    position: relative;
+    width: 240px;
+    padding: 8px 12px 0;
+    background-color: #F7F9FB;
+    border-radius: 2px;
+    font-size: 12px;
+
+    .title {
+        color: #212121;
+    }
+    .text {
+        color: #9EA8B1;
+    }
+    .meta {
+        margin-top: 4px;
+        padding: 4px 0;
+        border-top: 1px solid #E6E9EB;
+    }
+    &:before {
+        position: absolute;
+        top: 12px;
+        left: -16px;
+        content: '';
+        border-style: solid;
+        border-width: 6px 8px;
+        border-color: transparent #F7F9FB transparent transparent;
+    }
+}

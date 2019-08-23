@@ -1,0 +1,40 @@
+@import 'base';
+
+.searchWrap {
+    padding: 22px 22px 26px;
+    background-color: #fafafa;
+
+    .operateBtn,
+    .searchBtn {
+        :global {
+            .ant-col-offset-6,
+            .ant-col-offset-8 {
+                padding: 0 !important;
+            }
+        }
+        button {
+            width: 80px;
+            font-size: @font-size;
+        }
+    }
+
+    .operateBtn {
+        button:nth-child(2) {
+            margin-left: @margin-base;
+        }
+    }
+
+    .searchBtn {
+        display: inline-block;
+        margin-left: @margin-base;
+    }
+
+    .range {
+        margin-top: 4px;
+        .item {
+            width: 70px;
+            white-space: nowrap;
+            text-align: center;
+        }
+    }
+}

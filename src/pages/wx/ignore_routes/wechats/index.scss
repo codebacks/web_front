@@ -1,0 +1,177 @@
+@import "../../style/index";
+
+.wechat {
+    overflow: hidden;
+    .qrcode {
+        width: 68px
+    }
+    .management {
+        width: 150px;
+    }
+    .msg{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: space-around;
+        .head{
+            width: 50px;
+            margin-right: 8px;
+        }
+    }
+    .addWrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+        .leftWrap{
+            display: flex;
+            align-items: center;
+            :global{
+                .ant-btn{
+                    margin-left: 20px;
+                }
+            }
+            .batchBtn{
+                margin-left: 20px;
+            }
+        }
+        .rightWrap {
+            display: flex;
+            align-items: center;
+            .status {
+                .siyuguanjia{
+                    cursor: pointer;
+                }
+                .item {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 80px;
+                    h5 {
+                        color: $font-size-color-dark;
+                        font-size: 14px;
+                        font-weight: 700;
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        color: $font-size-color-light;
+                        font-size: 12px;
+                        margin-bottom: 0;
+                    }
+                }
+                .basicVersion{
+                    cursor: pointer;
+                    h5 {
+                        color: #4391FF;
+                    }
+                    p {
+                        color: #4391FF;
+                    }
+                }
+            }
+            .export {
+                line-height: 32px;
+                padding: 0 15px;
+                margin: 0 20px;
+                text-decoration: none;
+                border: 1px solid $primary-color;
+                border-radius: 2px;
+                color: $primary-color;
+            }
+        }
+
+    }
+
+    .headImg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .bindTip {
+        color: $primary-color;
+        cursor: pointer;
+    }
+
+    .deptColumn {
+        max-width: 80px;
+        .dept {
+            cursor: pointer;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .auth{
+        text-align: left;
+        .endTime{
+            color: red;
+        }
+    }
+
+    .userColumn {
+        min-width: 50px;
+    }
+
+    .divide{
+        width: 5%;
+    }
+
+    .questionCircle {
+        color: #4391FF;
+        margin-left: 5px;
+    }
+
+    .remarkColumn {
+        width: 6%;
+    }
+
+    .remark {
+        white-space: pre-wrap;
+    }
+
+    .edit {
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        /*! autoprefixer: off */
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        .editIcon {
+            position: absolute;
+            right: 10px;
+            top: 2px;
+            font-size: 14px;
+            cursor: pointer;
+
+        }
+    }
+
+    .minWidth {
+        min-width: 45px;
+    }
+
+    .noWrap {
+        white-space: nowrap;
+    }
+
+    .switch {
+        cursor: pointer;
+        color: $primary-color;
+        margin-right: 8px
+    }
+}
+
+.wholeDept {
+    word-break: break-all;
+    max-width: 240px;
+}
+
+
+
+

@@ -1,0 +1,65 @@
+@import "../common.less";
+
+.file {
+    display: flex;
+    padding: 16px;
+    .iconWrap {
+        margin-right: 10px;
+    }
+    .info {
+        flex: 1;
+        .name {
+            flex: 1;
+            height: 38px;
+            color: #556675;
+            font-size: 14px;
+            line-height: 1.4;
+            .textOverflow(2)
+        }
+        .option {
+            .download {
+                color: #4391FF;
+                cursor: pointer;
+                font-size: 12px;
+            }
+        }
+        .size {
+            color: #9EA8B1;
+            font-size: 12px;
+        }
+
+    }
+}
+
+.icon {
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.icon_pdf {
+    background-image: url(assets/images/file/pdf.svg);
+}
+
+.icon_xls, .icon_xlsx {
+    background-image: url(assets/images/file/xls.svg);
+}
+
+.icon_doc, .icon_docx {
+    background-image: url(assets/images/file/word.svg);
+}
+
+.icon_ppt, .icon_pptx {
+    background-image: url(assets/images/file/ppt.svg);
+}
+
+.icon_zip {
+    background-image: url(assets/images/file/zip.svg);
+}
+
+.icon_unknown {
+    background-image: url(assets/images/file/default.svg);
+}

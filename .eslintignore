@@ -1,0 +1,4 @@
+dist/**
+public/**
+src/pages/crm
+src/pages/wx

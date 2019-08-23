@@ -1,0 +1,93 @@
+@import "../common";
+
+.miniAppWrap {
+    overflow: hidden;
+    .boxes {
+
+        .box {
+            position: relative;
+            float: left;
+            padding: 8px;
+            margin: 0 16px 16px 0;
+            width: 268px;
+            height: 428px;
+            border: 1px solid #E3E3E3;
+
+            .checkbox {
+                position: absolute;
+                top: 5px;
+                left: 8px;
+                width: 16px;
+                height: 16px;
+            }
+
+            .wrapper {
+                margin-left: 22px;
+
+                .info {
+                    margin-bottom: 12px;
+                    border: 1px solid #D9D9D9;
+                    border-radius: 2px;
+                    background-color: #FAFAFA;
+                    .meta {
+                        display: flex;
+                        align-items: center;
+                        margin: 8px 8px 10px;
+                        .icon {
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 8px;
+                            border-radius: 50%;
+                        }
+                        .title {
+                            flex: 1;
+                            font-size: 13px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+
+                    .desc {
+                        height: 44px;
+                        overflow: hidden;
+                        margin: 0 8px 0;
+                        color: #333;
+                        display: -webkit-box;
+                        /*! autoprefixer: off */
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        word-break: break-all;
+                    }
+
+                    .cover {
+                        margin: 8px;
+                        width: 210px;
+                        height: 153px;
+                        object-fit: cover;
+                    }
+
+                    .mark {
+                        padding: 4px;
+                        border-top: 1px solid #D9D9D9;
+                        color: #999;
+                        font-size: 12px;
+                        line-height: 1.2;
+                        .miniAppIcon {
+                            display: inline-block;
+                            vertical-align: middle;
+                            width: 16px;
+                            height: 16px;
+                            margin-right: 4px;
+                            background: url(wx/assets/images/mini_app.svg) no-repeat 50% 50%;
+                            background-size: 100% 100%;
+                        }
+                        span {
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

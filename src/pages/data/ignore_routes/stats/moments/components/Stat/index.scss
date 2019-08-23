@@ -1,0 +1,36 @@
+@import "~data/style/index";
+
+.momentsStat {
+    .summary {
+        width: 55%;
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0 0;
+        text-align: center;
+        .item {
+            flex: 1;
+            align-items: center;
+            border: 1px solid #ECECEC;
+            padding: 20px 0;
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+            p {
+                color: $font-size-color-light;
+                font-size: 24px;
+                font-weight: 700;
+                margin-bottom: 0;
+            }
+            h3 {
+                color: $font-size-color-light;
+                font-weight: 400;
+                font-size: 14px;
+            }
+        }
+    }
+    .questionCircle {
+        color: #4391FF;
+        margin-left: 5px;
+    }
+}
+

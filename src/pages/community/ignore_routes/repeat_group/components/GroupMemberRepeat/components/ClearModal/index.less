@@ -1,0 +1,43 @@
+.clearModal{
+    .clearBtnWrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .clearBtnWrapLeft{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            .groupName{
+                max-width: 80%;
+            }
+        }
+        .clearBtnWrapRight{
+            display: flex;
+            align-items: center;
+        }
+    }
+    .tableWrap{
+        margin-top: 20px;
+        padding-bottom: 34px;
+        .department, .user, .online{
+            width: 20%;
+        }
+        .staffInfo{
+            width: 24%;
+            .staffInfoItem{
+                margin-bottom: 6px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                .groupOwnerFlag{
+                    padding: 0 6px;
+                    border: 1px solid #4391FF;
+                    border-radius: 4px;
+                    font-size: 13px;
+                    color: #4391FF;
+                }
+            }
+        }
+    }
+}

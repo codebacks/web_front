@@ -1,0 +1,136 @@
+// 活动详情
+.modalContent {
+    li {
+        list-style: none;
+        margin-bottom: 16px;
+        color: #2A2A2A;
+    }
+    span {
+        width: 80px;
+        color: #333;
+    }
+}
+
+.questionCircle {
+    color: #4391FF;
+    margin-left: 5px;
+}
+
+// 活动数据
+.data {
+    border: 1px solid #E6E9EB;
+    list-style: none;
+    display: flex;
+    height: 164px;
+    padding: 45px 0;
+    margin-bottom: 0;
+    li {
+        border-right: 1px solid #E3E3E3;
+        position: relative;
+        width: 100%;
+        &:last-child {
+            border-right: none;
+        }
+        >div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            p {
+                color: #556675;
+                margin-bottom: 0;
+                i {
+                    color: #4391FF;
+                    margin-right: 12px;
+                }
+            }
+            p:nth-child(2) {
+                font-size: 32px;
+                font-weight: bold;
+                margin-top: 16px;
+                text-align: center
+            }
+        }
+    }
+}
+
+.statisticsTitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grayStatus,
+.blueStatus,
+.yellowStatus,
+.greenStatus,
+.redStatus {
+    position: relative;
+    padding-left: 13px;
+}
+
+.grayStatus::after,
+.blueStatus::after,
+.yellowStatus::after,
+.greenStatus::after,
+.redStatus::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.grayStatus::after {
+    background: #cccccc;
+}
+
+.blueStatus::after {
+    background: #1890ff;
+}
+
+.yellowStatus::after {
+    background: #ff5518;
+}
+
+.greenStatus::after {
+    background: #52c41a;
+}
+
+.redStatus::after {
+    background: #EA2534;
+}
+
+// phone
+.phoneWrap {
+    width: 264px;
+    height: 530px;
+    padding: 37px 7px 48px;
+    margin: 70px auto;
+    background: url(../../assets/images/phone.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.phoneContent {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.phoneBanner {
+    width: 100%;
+    height: 418px;
+}
+
+.phoneTitle {
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    background: #2C2D31;
+    .phoneTitleText {
+        text-align: center;
+        color: #fff;
+    }
+}

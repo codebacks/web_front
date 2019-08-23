@@ -1,0 +1,100 @@
+@import "~crm/style/index";
+
+.customer {
+    .header {
+        height: 62px;
+        line-height: 62px;
+        font-size: 16px;
+        background-color: #fff;
+        border-bottom: 1px solid $border-color;
+        padding-left: 30px;
+        .backIcon {
+            color: #aaa;
+            margin: 0 10px;
+        }
+    }
+
+    .createMass{
+        margin-left: 20px;
+    }
+
+    .tags {
+        margin-bottom: -10px;
+        .tag {
+            margin-bottom: 10px;
+        }
+    }
+
+    .column {
+        min-width: 80px;
+    }
+
+    .nameColumn {
+        width: 10%;
+        .nameWrap {
+            white-space: normal;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            /*! autoprefixer: off */
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            word-break: break-all;
+        }
+    }
+
+    .deptColumn {
+        max-width: 60px;
+    }
+
+    .timeColumn {
+        width: 10%;
+    }
+
+    .remarkColumn {
+        min-width: 80px;
+        max-width: 140px;
+    }
+
+    .operationColumn {
+        min-width: 60px;
+    }
+
+    .dept,
+    .remark {
+        cursor: pointer;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+
+    .look {
+        color: $primary-color;
+        cursor: pointer;
+    }
+
+    .createPlan {
+        padding: 10px 0;
+        strong {
+            color: $primary-color;
+        }
+        button {
+            margin-left: 10px;
+        }
+    }
+}
+
+.wholeDept,
+.wholeRemark {
+    word-break: break-all;
+    max-width: 240px;
+}
+
+.customerDetail {
+    :global {
+        .ant-tabs-nav .ant-tabs-tab {
+            padding: 10px 10px 20px;
+        }
+    }
+}

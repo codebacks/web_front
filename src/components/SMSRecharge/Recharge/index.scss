@@ -1,0 +1,29 @@
+.modal_body_ctrl{
+    :global{
+        .ant-modal-body {
+            padding-top: 16px !important
+        }
+        .ant-input-number{
+            height: 30px !important
+        }
+        .label_text_color_s{
+            font-family: MicrosoftYaHei;
+            font-size: 14px;
+            color: #999;
+            margin: 0 0 24px 0;
+        }
+        .label_text_color{
+            margin-top: 24px;
+            font-size: 14px;
+            color: #666;
+            span{
+                color: #4391FF
+            }
+        }
+        .label_text_ctrl{
+            padding-right: 8px;
+            color: #333;
+        }
+    }
+    
+}

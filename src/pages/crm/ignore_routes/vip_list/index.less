@@ -1,0 +1,45 @@
+@import '../../../../style/hz/table.less';
+.unOpen{
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #556675;
+}
+.statistic{
+    padding: 32px 0;
+    border: 1px solid #E6E9EB;
+    border-radius: 1px;
+    margin-bottom: 16px;
+    .itemList{
+        width: 20%;
+        display: inline-block;
+        &:last-child{
+            dl{
+                border-right: none; 
+            } 
+        }
+    }
+    dl{
+        text-align: center;
+        border-right: 1px solid #E6E9EB;
+        margin-bottom: 0;
+        dt{
+            margin-bottom: 2px;
+            font-size: 14px;
+            color: #9EA8B1;
+        }
+        dd{
+            margin-bottom: 0;
+            font-size: 32px;
+            color: #0D1A26;
+        }
+
+    }  
+}
+
+.modalContent{
+    :global{
+        .ant-modal-body{
+            overflow: auto;
+        }
+    }
+}

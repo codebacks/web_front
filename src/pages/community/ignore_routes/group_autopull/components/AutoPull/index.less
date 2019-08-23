@@ -1,0 +1,77 @@
+@import "~community/style/base.less";
+.autoPullWrap{
+    .searchWrap{
+        padding: 22px 22px 30px;
+        background-color: #fafafa;
+        .searchBtn{
+            :global{
+                .ant-btn-primary{
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+    .addWrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 0;
+        .addWrapLeft{
+            display: flex;
+            align-items: center;
+        }
+    }
+    .tableWrap{
+        margin-top: 0;
+        .questionCircle {
+            color: @primary-color;
+            margin-left: 5px;
+        }
+        .infoCircle {
+            color: #fda601;
+            margin-left: 10px;
+        }
+        .canEdit{
+            color: @primary-color;
+            cursor: pointer;
+        }
+        .avatar{
+            width: 12%;
+            .avatarWrap{
+                display: flex;
+                align-items: center;
+                img{
+                    width: 60px;
+                    margin-right: 6px;
+                }
+            }
+        }
+        .deptColumn, .userColumn{
+            width: 10%;
+        }
+        .newFriend{
+            width: 12%;
+            .newFriendWrap{
+                display: flex;
+                align-items: center;
+                :global{
+                    .ant-checkbox-wrapper + span, .ant-checkbox + span{
+                        padding-right: 0;
+                    }
+                }
+                .newFriendCount{
+                    padding: 0 8px;
+                }
+            }
+        }
+        .status, .operate{
+            width: 8%;
+        }
+        .enableKeyword{
+            width: 12%;
+            .keywordTag{
+                margin: 0 4px 4px 0;
+            }
+        }
+    }
+}

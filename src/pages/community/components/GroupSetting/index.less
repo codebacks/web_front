@@ -1,0 +1,43 @@
+@import "~community/style/common";
+
+.container {
+    margin: 0 30px;
+    position: relative;
+
+    :global {
+        .ant-tabs-tab {
+            font-weight: 700;
+            padding-bottom: 15px;
+            color: @font-size-color-dark;
+        }
+
+        .ant-tabs-tab-active {
+            color: @primary-color;
+        }
+    }
+
+    .titleTxt {
+        margin-right: 10px;
+    }
+}
+
+.hasSetting {
+    //min-height: 400px;
+    .groupName{
+        max-width: none;
+    }
+    .des {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .switchWarp {
+        display: inline-block;
+    }
+
+    .mark{
+        font-size: 12px;
+        margin-left: 10px;
+        color: #999999;
+    }
+}

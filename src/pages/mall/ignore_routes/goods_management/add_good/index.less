@@ -1,0 +1,62 @@
+.pageTitle{
+    font-weight: 700;
+    color: #333;
+    position: relative;
+    padding-left: 16px;
+    &:before{
+        content: '';
+        border: 1px solid #4391FF;
+        position: absolute;
+        left: 0;
+        top: 0.3em;
+        height: 1em;
+    }
+}
+.inputClass{
+    width: 240px;
+}
+.postageModule {
+    .radioStyle {
+        display: block;
+        height: 50px;
+        line-height: 30px;
+        
+    }
+    .explain {
+        display: inline-block;
+        margin-right: 16px;
+    }
+}
+
+.radioinlinelistitem {
+    padding: 7px 0;
+    display: flex !important;
+
+    :global{
+       .ant-radio{
+            margin-top: 7px;
+            width: 16px;
+            height: 16px;
+        }
+    }
+    > span:last-child {
+        display: inline-block;
+        flex-grow: 1;
+    }
+}
+
+.radioinlinelistitemcontain {
+    display: flex;
+
+    > span {
+        
+    }
+}
+
+.radioinlinelistitemcontorl{
+    margin-top: -7px;
+}
+
+.radioinlinelistitemauto{
+    flex-grow: 1
+}

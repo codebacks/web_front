@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="164px" height="164px" viewBox="0 0 164 164" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>图片加载失败@2x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="图片加载失败" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3" fill-rule="nonzero">
+            <rect id="Rectangle" fill="#E1EDFF" x="0" y="0" width="164" height="164"></rect>
+            <rect id="Rectangle" stroke="#AEBFD6" x="39.5" y="50.5" width="85" height="63" rx="2"></rect>
+            <path d="M63.8964006,76.490081 L80.8231858,92.1459217 C81.5109096,92.7820078 82.5480026,92.85551 83.3185643,92.3227773 L94.5975606,84.5249724 C95.3220581,84.0240865 96.2889503,84.0561267 96.9786988,84.603877 L125,106.856445 L125,112 C125,113.104569 124.104569,114 123,114 L41,114 C39.8954305,114 39,113.104569 39,112 L39,101.320323 C39,100.817967 39.1890493,100.334007 39.5295614,99.9646646 L61.0679451,76.6026833 C61.8166547,75.7905825 63.0819415,75.7391937 63.8940423,76.4879033 C63.894829,76.4886286 63.8956151,76.4893545 63.8964006,76.490081 Z" id="Rectangle" fill="#AEBFD6"></path>
+            <g id="Group-2" transform="translate(100.000000, 81.000000)">
+                <circle id="Oval" stroke="#E1EDFF" stroke-width="3" fill="#AEBFD6" cx="18" cy="18" r="19.5"></circle>
+                <g id="Group" transform="translate(16.000000, 7.000000)" fill="#E1EDFF">
+                    <rect id="Rectangle" x="0" y="0" width="4" height="16" rx="2"></rect>
+                    <circle id="Oval" cx="2" cy="20" r="2"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

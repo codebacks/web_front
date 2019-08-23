@@ -1,0 +1,106 @@
+.customerPool{
+    // background: #fafafa;
+    // margin-bottom: 16px !important;
+    // padding: 24px !important;
+    :global{
+        .ant-input-number{
+            width: 100%;
+        }
+        .ant-col-14 a{
+            line-height: 30px;
+        }
+        .ant-tabs-bar{
+            border-bottom:none;
+        }
+    }
+}
+.btm24{
+    margin-bottom: 16px;
+}
+.poollist{
+    margin-top: 16px;
+    .edit{
+        overflow: hidden;/*超出部分隐藏*/
+        white-space: nowrap;/*不换行*/
+        text-overflow:ellipsis;
+        margin-right: 8px;
+        margin-bottom: 0;
+        max-width: 125px;
+    }
+    .edit:hover{
+        color: #6baeff;
+        cursor: pointer;
+    }
+    .yes,.no{
+        padding-left: 16px;
+        position: relative;
+    }
+    .yes::after{
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        left: 0px;
+        top: 40%;
+        transition: translateY(-50%);
+        background: #52C41A;
+    }
+    .no::after{
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        top: 40%;
+        left: 0px;
+        transition: translateY(-50%);
+        border-radius: 50%;
+        background: #ccc;
+    }
+    :global{
+        .ant-table-thead > tr > th:first-of-type,.ant-table-tbody > tr > td:first-of-type {
+            padding-left: 24px !important;
+        }
+    }
+
+}
+.poolflex{
+    position: relative;
+    // margin-bottom: 16px;
+    border-bottom: 1px solid #E3E3E3;
+    .download{
+        margin:0 16px;
+    }
+    .import{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    :global{
+        .ant-tabs-bar{
+            border-bottom:none;
+            margin-bottom:0;
+        }
+        .ant-tabs-nav .ant-tabs-tab{
+            padding: 16px;
+        }
+        .ant-tabs-ink-bar{
+            height: 3px;
+        }
+    }
+}
+
+.userCascader{
+    :global{
+        .ant-cascader-menu{
+            height: 256px;
+            max-width: 500px;
+            overflow-x: hidden;
+        }
+    }
+}

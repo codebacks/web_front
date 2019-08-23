@@ -1,0 +1,83 @@
+@import "../common.less";
+
+.redEnvelope {
+    position: relative;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    box-sizing: content-box;
+    z-index: 2;
+    width: 258px;
+
+    //&.disabled {
+    //    .body {
+    //        .wrap {
+    //            background-color: #ffd19d;
+    //        }
+    //    }
+    //}
+
+    &.aaPay {
+        .body {
+            .wrap {
+                background-color: #00C677;
+                .icon {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+        }
+    }
+
+    .body {
+        background-color: #fff;
+        .wrap {
+            padding: 10px;
+            display: flex;
+            border-radius: 2px 2px 0 0;
+            background-color: #fa9e3b;
+            .icon {
+                width: 32px;
+                height: 40px;
+                margin-right: 4px;
+                vertical-align: top;
+            }
+            .desc {
+                display: flex;
+                align-items: center;
+                color: #fff;
+                .title,
+                .tip {
+                    margin-bottom: 0;
+                    text-indent: 5px;
+                }
+                .title {
+                    width: 100%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    word-wrap: normal;
+                    max-width: 200px;
+                }
+                .tip {
+                    padding-top: 3px;
+                    color: #fff;
+                    font-size: 12px;
+                    opacity: 0.8;
+                }
+            }
+        }
+        h3 {
+            margin-bottom: 0;
+            padding: 5px 0;
+            border-color: #E6E9EB;
+            border-style: solid;
+            border-width: 0 1px 1px;
+            border-radius: 0 0 2px 2px;
+            color: #b2b2b2;
+            font-size: 12px;
+            font-weight: 400;
+            text-indent: 12px;
+        }
+    }
+}

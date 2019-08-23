@@ -1,0 +1,77 @@
+/*
+ * @Author: sunlzhi 
+ * @Date: 2018-10-11 14:15:55 
+ * @Last Modified by: sunlzhi
+ * @Last Modified time: 2018-10-29 18:54:41
+ */
+
+.createShop {
+    .form {
+        width: 600px;
+        margin: 0 auto;
+    }
+    .modalItem{
+        width: 360px;
+    }
+    .nextButton {
+        label::after {
+            content: ''
+        }
+    }
+    
+    .font12 {
+        font-size: 12px;
+    }
+    .uploadLogo{
+        cursor: pointer;
+        width: 45px;
+        height: 45px;
+        border-radius: 100%;
+        overflow: hidden;
+        background-color: #FAFAFA;
+        position: relative;
+        div{
+            width: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    .uploadLogoShow{
+        cursor: pointer;
+        width: 45px;
+        height: 45px;
+        border-radius: 100%;
+        overflow: hidden;
+        background-color: #FAFAFA;
+        img{
+            width: 100%;
+        }  
+    }
+    
+    .uploadBannerShow{
+        cursor: pointer;
+        width: 240px;
+        overflow: hidden;
+        border-radius: 5px;
+        background-color: #FAFAFA;
+        img{
+            width: 100%;
+            display: block;
+        }    
+    }
+    .uploadBanner{
+        :global {
+            .ant-upload-list-item {
+                width: 280px;
+                height: auto;
+            }
+        }
+    }
+}
+.clickCon{
+    color: #4492FF;
+    cursor: pointer;
+    margin-left: -16px;
+}

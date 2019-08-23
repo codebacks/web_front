@@ -1,0 +1,65 @@
+.searchWrap {
+    padding: 22px 22px 26px;
+    background-color: #FAFAFA;
+
+    .operateBtn,
+    .searchBtn {
+        :global {
+            .ant-col-offset-6,
+            .ant-col-offset-8 {
+                padding: 0!important;
+            }
+        }
+        button {
+            width: 80px;
+        }
+    }
+
+    .operateBtn {
+        button:nth-child(2) {
+            margin-left: 20px;
+        }
+    }
+
+    .searchBtn {
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    .range {
+        margin-top: 4px;
+        .item {
+            text-align: center;
+            width: 70px;
+            white-space: nowrap;
+        }
+    }
+}
+
+.activityGroupStat {
+    .header{
+        padding: 16px 0;
+        display: flex;
+        .ellipsis{
+            max-width: 30%;
+        }
+    }
+    .tableWrap{
+        .date, .showTimes, .memberCount, .inCount{
+            width: 25%;
+        }
+    }
+    .questionCircle {
+        color: #4391ff;
+        margin-left: 5px;
+    }
+    .lineWrap{
+        margin: 20px 0;
+        padding: 20px;
+        border: 1px solid #e5e5e5;
+        .filterType{
+            margin-left: 40px;
+            margin-bottom: 20px;
+        }
+    }
+}

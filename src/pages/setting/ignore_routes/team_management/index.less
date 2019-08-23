@@ -1,0 +1,223 @@
+/**
+ **@Description:
+ **@author: leo
+ */
+ @import "../../../../style/hz/variable.less";
+ @import "~style/utils.less";
+
+.content {
+    //padding: 10px;
+}
+
+.export{
+    text-decoration: none;
+}
+
+.left{
+    height: 100%;
+    margin-left: -8px;
+    .loadingWarp {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -10px;
+        }
+    }
+    .loadingWarpHide {
+        display: none;
+    }
+}
+
+.activeCompany {
+    background-color: #e6f4ff;
+}
+
+.companyName {
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 2px 6px;
+}
+
+.pointForbid, .pointGreen {
+    &::before {
+        content: '';
+        display: inline-block;
+        float: left;
+        width: 6px;
+        height: 6px;
+        margin-top: 7px;
+        margin-right: 5px;
+        border-radius: 50%;
+    }
+}
+
+.pointForbid {
+    &::before {
+        background: #F03F24;
+    }
+}
+
+.pointGreen {
+    &::before {
+        background: #1FCB01;
+    }
+}
+
+.tree {
+    :global {
+        li span.ant-tree-switcher {
+            height: 40px;
+            line-height: 40px;
+        }
+        li .ant-tree-node-content-wrapper {
+            width: calc(100% - 40px);
+            height: 40px;
+            line-height: 40px !important;
+        }
+        li .ant-tree-node-content-wrapper.ant-tree-node-selected {
+            color: #4391FF;
+        }
+    }
+
+    .treeNode {
+        display: flex;
+    }
+
+    .treeNodeTitle {
+        .textOverflow();
+        flex: 1 1;
+    }
+
+    .treeNodeClick {
+        margin-left: 10px;
+    }
+    .treeNodeDot {
+        font-size: 24px;
+        line-height: 40px;
+        transform: rotate(90deg);
+    }
+}
+
+.treeTitle {
+    padding: 0 0 20px 10px;
+}
+
+.titleAdd {
+    float: right;
+    margin-right: 20px;
+}
+
+.rightTitle {
+    .textOverflow();
+    font-size: 14px;
+    color: #333333;
+    line-height: 18px;
+    margin-right: 20px;
+    display: inline-block;
+    max-width: 300px;
+    vertical-align: bottom;
+}
+
+.divider {
+    float: left;
+    height: 20em;
+}
+
+.audit {
+    float: right;
+    margin-right: 8px;
+}
+
+.tableSearch {
+    background: @color-bg-default;
+    border-radius: 2px;
+    padding: 20px 30px 20px 20px;
+    margin-top: 20px;
+    .right {
+        float: right;
+        .select {
+            display: inline-block;
+            margin-right: 20px;
+            min-width: 130px;
+        }
+        .input {
+            display: inline-block;
+            width: 200px;
+            margin-right: 20px;
+        }
+    }
+}
+
+.table {
+    margin-top: 20px;
+}
+
+.operatorBtn {
+    color: #038EEC;
+    cursor: pointer;
+}
+
+.shareLink {
+    margin: 10px;
+    text-align: center;
+    input {
+        width: 290px;
+        margin-right: 8px;
+    }
+}
+
+.qrCode {
+    text-align: center;
+    margin: 0 auto 6px auto;
+    width: 150px;
+    height: 150px;
+    padding: 4px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.qrCodeTitle {
+    text-align: center;
+    font-size: 12px;
+    color: #999999;
+    line-height: 12px;
+}
+
+.qrCompanyName {
+    margin: 40px auto 12px auto;
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+    line-height: 12px;
+}
+
+.qrCodeBottm {
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+    line-height: 12px;
+}
+
+.tableNickname {
+    min-width: 80px;
+}
+
+.tableRole {
+    min-width: 80px;
+}
+
+.tableOperator {
+    min-width: 160px;
+}
+
+.tableEnabled {
+    min-width: 72px;
+}

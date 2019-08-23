@@ -1,0 +1,65 @@
+/**
+ **@Description:
+ **@author: leo
+ */
+ @import "../../../../style/hz/variable.less";
+@import "~style/utils.less";
+
+.content {
+    //padding: 10px;
+}
+
+.menuItemClick {
+    float: right;
+}
+
+.menuItem {
+    display: flex;
+}
+
+.menuItemTitle{
+    .textOverflow();
+    flex: 1 1;
+}
+
+.privilege{
+    :global{
+        .ant-tree-checkbox{
+            color: rgba(0, 0, 0, 0.25);
+            cursor: not-allowed;
+            .ant-tree-checkbox-inner{
+                border-color: #d9d9d9 !important;
+                background-color: #f5f5f5;
+                &:after{
+                    border-color: rgba(0, 0, 0, 0.25);
+                }
+            }
+        }
+    }
+}
+
+.addRole{
+    width: 96%;
+    margin: 0 auto 10px auto;
+    display: block;
+}
+
+.menuItemDot {
+    font-size: 24px;
+    transform: rotate(90deg);
+    line-height: 38px;
+}
+
+.right {
+    padding: 0 10px;
+    .title{
+        padding: 10px;
+        background:  @color-bg-default;
+    }
+    .selectAll{
+        margin: 6px 0;
+    }
+    .tree{
+
+    }
+}

@@ -1,0 +1,472 @@
+/**
+ **@time: 2018/9/27
+ **@Description:晒图红包-css
+ **@author: wangchunting
+ */
+
+.phoneWrap {
+    width: 264px;
+    height: 530px;
+    padding: 37px 7px 48px;
+    margin: 70px auto;
+    background: url(../../assets/images/phone.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.phoneContent {
+    position: relative;
+    background: #F75D5F;
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.phoneBanner {
+    width: 100%;
+}
+
+.uploadBg {
+    img {
+        width: 50px;
+        height: 75px;
+    }
+}
+
+.phoneOrderInput {
+    margin-left: 16px;
+
+    .phoneOrder {
+        color: #fff;
+        margin-right: 8px;
+    }
+
+    .phoneInPut {
+        outline: none;
+        border: none;
+        background: rgba(255, 255, 255, .8);
+        border-radius: 4px;
+        padding: 2px 4px;
+    }
+
+    input::-webkit-input-placeholder {
+        color: #666666;
+        font-size: 12px;
+        padding-left: 4px;
+    }
+}
+
+.phoneUpload {
+    width: 100%;
+
+    >div {
+        margin: 16px;
+        border-radius: 10px;
+        background: #fff;
+        padding: 12px;
+    }
+
+    button {
+        text-align: center;
+        width: 100%;
+        background: #F75D5F;
+        color: #fff;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        margin-top: 12px;
+        padding: 4px 0;
+    }
+}
+
+.qrcodeMoal {
+    position: absolute;
+    text-align: center;
+    background: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    >div {
+        position: absolute;
+        padding: 16px;
+        background: #fff;
+        width: 220px;
+        height: 290px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .qrImg {
+        padding: 10px 0;
+
+        img {
+            width: 160px;
+            height: 160px;
+        }
+    }
+
+    .qrColse {
+        outline: none;
+        border-radius: 30px;
+        padding: 2px 15px;
+        background: #F75D5F;
+        color: #fff;
+        border: none;
+    }
+}
+
+.inputNumberWidth {
+    width: 148px !important;
+}
+
+.avatar-uploader>.ant-upload {
+    width: 128px;
+    height: 128px;
+}
+
+.activeDrainage {
+    margin-left: 80px;
+    width: 100%;
+}
+
+.textColorSecondary {
+    color: #999;
+}
+
+.modalContent {
+
+    // padding-top:0;
+    li {
+        list-style: none;
+        margin-bottom: 16px;
+        color: #2A2A2A;
+    }
+
+    span {
+        width: 80px;
+        color: #333;
+    }
+}
+
+.shortLink {
+    width: 340px;
+    vertical-align: middle;
+    // margin-right: 24px;
+}
+
+.downloadSize {
+    border: 1px solid #DEDEDE;
+
+    .downloadSizeType {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #DEDEDE;
+        padding-top: 10px;
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+}
+
+.downloadSizeBtn {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.hidden {
+    display: none;
+}
+
+.grayStatus,
+.blueStatus,
+.yellowStatus {
+    position: relative;
+    padding-left: 13px;
+}
+
+.grayStatus::after,
+.blueStatus::after,
+.yellowStatus::after,
+.redStatus::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.grayStatus::after {
+    background: #cccccc;
+}
+
+.blueStatus::after {
+    background: #4391ff;
+}
+
+.yellowStatus::after {
+    background: #FA8C16;
+}
+
+.redStatus::after {
+    background: #EA2534;
+}
+
+.blueColor {
+    color: #4391FF;
+}
+
+.yellowColor {
+    color: #FEA800;
+}
+
+.orangeColor {
+    color: #FF6E1B;
+}
+
+// 审核
+.reviewPicture {
+    .pictureList {
+        background: red;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 5px;
+    }
+}
+
+.imageViewers {
+    display: flex;
+    flex-wrap: wrap; // justify-content: space-between;
+
+    >img {
+        width: 48px;
+        height: 48px;
+        border: 1px solid #ccc;
+        padding: 2px;
+        margin-bottom: 5px;
+        cursor: pointer;
+        margin-right: 3px;
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+}
+
+.rejectBorder {
+    border: 1px solid #E9E9E9;
+
+    div {
+        padding: 16px 8px;
+        border-bottom: 1px solid #E9E9E9;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
+
+.radiolineformitem {
+    padding: 7px 0;
+
+    >span:last-child {
+        display: inline-block;
+    }
+}
+
+.radiolineformitemcontain {
+    display: flex;
+
+    >span {
+        flex: 1;
+    }
+}
+
+.radiolineformitemformitem {
+    margin-top: -7px;
+}
+
+.success {
+    width: 580px;
+    margin: 70px auto;
+
+    .successContent {
+        width: 340px;
+        margin: 0 auto;
+
+        .successTitle {
+            text-align: center;
+            margin-bottom: 20px;
+
+            span {
+                font-size: 24px;
+                vertical-align: bottom;
+                margin-left: 8px;
+                color: #0D1A26;
+            }
+        }
+
+        .successDeatil {
+            color: #9EA8B1;
+            margin-bottom: 24px;
+        }
+
+        .successIcon {
+            font-size: 34px;
+            color: #52C41A;
+        }
+
+    }
+
+    .downQrcode {
+        margin: 0 auto;
+        text-align: center;
+
+        .downQrcodeImg {
+            width: 150px !important;
+            height: 150px !important;
+        }
+
+        button {
+            display: block;
+            margin: 8px auto;
+
+        }
+    }
+
+    .linkAddresss {
+        display: flex;
+        margin-top: 30px;
+
+        .link {
+            display: flex;
+            align-items: center;
+            input {
+                border-right: none;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+
+            p {
+                width: 98px;
+                margin: 0;
+            }
+        }
+
+        button {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+
+    .successBack {
+        margin: 24px 0 0 98px;
+    }
+}
+
+.questionCircle {
+    color: #4391FF;
+    margin-left: 5px;
+}
+
+.guideQrcodeWidth {
+    width: 80px;
+}
+
+.qrcodeIcon {
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.qrUrlImg {
+    width: 150px;
+    height: 150px;
+}
+
+// 添加商品
+.textEllipsis {
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /* autoprefixer: on */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+}
+
+.ModalBody {
+    :global {
+        .ant-modal-body {
+            padding-bottom: 0
+        }
+    }
+}
+
+.modalTable {
+    :global {
+        .ant-table-header {
+            .ant-checkbox {
+                display: none
+            }
+        }
+    }
+}
+
+.ellipsis {
+    width: 100px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.unGoodsImg {
+    position: relative;
+    height: 400px;
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 280px;
+        height: 179px;
+    }
+
+    div {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 80%;
+    }
+}
+
+.boxTitle {
+    flex-grow: 1;
+    line-height: 32px;
+
+    .boxTitleIcon {
+        background: #4391FF;
+        display: inline-block;
+        height: 0.95em;
+        width: 2px;
+        vertical-align: middle;
+        position: relative;
+        top: -0.06em;
+        margin-left: 8px;
+    }
+
+    .boxText {
+        font-size: 16px;
+        color: #0D1A26;
+        margin-left: 8px;
+    }
+}

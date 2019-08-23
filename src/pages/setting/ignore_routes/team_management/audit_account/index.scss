@@ -1,0 +1,78 @@
+/**
+ **@Description:
+ **@author: leo
+ */
+
+
+.content{
+    padding: 10px;
+}
+
+.tree{
+    :global{
+        .ant-tree-node-content-wrapper {
+            width: 90%;
+        }
+    }
+
+    .treeNode{
+
+    }
+
+    .treeNodeClick{
+        float: right;
+    }
+    .treeNodeDot{
+        font-size: 24px;
+    }
+}
+
+.treeTitle{
+    padding: 0 0 10px 10px;
+}
+
+.titleAdd{
+    float: right;
+    margin-right: 20px;
+}
+
+.rightTitle{
+    font-size: 18px;
+    margin: 0 6px;
+}
+
+.audit{
+    float: right;
+    margin-right: 8px;
+}
+
+.tableSearch{
+    background: #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    .right{
+        float: right;
+        .select{
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .input{
+            display: inline-block;
+            width: 200px;
+            margin-right: 4px;
+        }
+    }
+}
+
+.table{
+    margin-top: 8px;
+}
+
+.operatorBtn {
+    color: #038EEC;
+    cursor: pointer;
+}
+
+.remark{
+    max-width: 300px;
+}

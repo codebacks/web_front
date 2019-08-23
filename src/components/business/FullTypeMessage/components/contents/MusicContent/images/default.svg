@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="324px" height="128px" viewBox="0 0 324 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4 Copy@2x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="音乐-" transform="translate(-168.000000, -248.000000)">
+            <g id="Group-4-Copy" transform="translate(168.000000, 248.000000)">
+                <rect id="Rectangle" stroke="#D9D9D9" fill="#FAFAFA" fill-rule="nonzero" x="0.5" y="0.5" width="323" height="127" rx="2"></rect>
+                <g id="默认图片" transform="translate(252.000000, 56.000000)">
+                    <rect id="Rectangle" fill="#E3E3E3" fill-rule="nonzero" x="0" y="0" width="64" height="64" rx="2"></rect>
+                    <rect id="Rectangle" stroke="#FAFAFA" x="15.18" y="19.34" width="34.1707317" height="25.5853659" rx="2"></rect>
+                    <path d="M25.0756685,29.967512 L31.6812432,36.0771083 C31.9496233,36.325337 32.3543425,36.3540208 32.6550495,36.1461251 L37.056609,33.1030793 C37.3393397,32.9076117 37.7166635,32.9201152 37.9858337,33.1338714 L48.9209756,41.8178003 L48.9209756,43.8250413 C48.9209756,44.2560926 48.5715391,44.6055291 48.1404878,44.6055291 L16.1404878,44.6055291 C15.7094363,44.6055291 15.36,44.2560926 15.36,43.8250413 L15.36,39.6573625 C15.36,39.4613211 15.4337753,39.2724587 15.5666581,39.1283251 L23.971881,30.0114543 C24.2640604,29.6945369 24.7578308,29.6744828 25.0747482,29.9666621 C25.0750552,29.9669452 25.075362,29.9672284 25.0756685,29.967512 Z" id="Rectangle" fill="#FAFAFA" fill-rule="nonzero"></path>
+                    <g id="Group-2" transform="translate(40.000000, 24.640000)" fill="#FAFAFA" fill-rule="nonzero">
+                        <g id="Group" transform="translate(0.304390, 0.312195)">
+                            <circle id="Oval" cx="1.6" cy="1.6" r="1.6"></circle>
+                        </g>
+                    </g>
+                </g>
+                <rect id="Rectangle" fill="#EFEFEF" fill-rule="nonzero" x="8" y="60" width="228" height="12" rx="2"></rect>
+                <rect id="Rectangle-Copy-2" fill="#EFEFEF" fill-rule="nonzero" x="8" y="80" width="228" height="12" rx="2"></rect>
+                <rect id="Rectangle-Copy-3" fill="#EFEFEF" fill-rule="nonzero" x="8" y="100" width="36" height="12" rx="2"></rect>
+                <rect id="Rectangle" fill="#EFEFEF" fill-rule="nonzero" x="8" y="8" width="308" height="14" rx="2"></rect>
+                <rect id="Rectangle-Copy" fill="#EFEFEF" fill-rule="nonzero" x="8" y="30" width="82" height="14" rx="2"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

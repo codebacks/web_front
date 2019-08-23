@@ -1,0 +1,79 @@
+@import '../../../../style/base';
+
+.filterWrap {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    .title {
+        color: $font-size-color-dark;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .box {
+        padding: 16px 0;
+        &:not(:first-child){
+            border-top: 1px solid #E3E3E3;
+        }
+    }
+
+    .subTitle {
+        color: $font-size-color-dark;
+        font-size: 14px;
+    }
+
+    .condition,
+    .result {
+        padding: 20px;
+        margin: 10px 0;
+        border: 1px solid #E3E3E3;
+    }
+
+    .condition {
+        flex: 5;
+        :global {
+            .ant-form-item {
+                width: 536px;
+            }
+        }
+        .not {
+            margin: 0 0 10px 156px;
+        }
+        .sp {
+            width: 10%;
+            vertical-align: middle;
+            display: inline-block;
+            text-align: center
+        }
+        .ipt {
+            width: 45%;
+            margin-right: 0;
+            input {
+                text-align: center;
+            }
+        }
+    }
+
+    .tagForm {
+        :global {
+            .ant-form-item-control {
+                margin: 5px 0 -10px;
+            }
+            .ant-select-selection--multiple {
+                height: 30px;
+                overflow-y: auto;
+            }
+        }
+    }
+
+    .errMsg {
+        color: #f04134;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .result {
+        flex: 3;
+        margin-left: 30px;
+    }
+}

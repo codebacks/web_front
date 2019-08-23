@@ -1,0 +1,60 @@
+@import "~wx/style/index";
+
+.addition {
+    margin: 16px 0;
+    overflow: hidden;
+    float: left;
+    .createMass {
+        margin-left: 10px;
+    }
+}
+
+.avatarColumn {
+    white-space: nowrap;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+}
+
+.column {
+    word-break: break-all;
+    min-width: 50px;
+}
+
+.divide{
+    width: 5%;
+}
+
+.deptColumn {
+    max-width: 60px;
+    .dept {
+        cursor: pointer;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+.createTimeColumn {
+    min-width: 70px;
+}
+
+.wholeDept {
+    word-break: break-all;
+    max-width: 240px;
+}
+
+.tags {
+    margin-bottom: -10px;
+    .tag {
+        margin-bottom: 10px;
+    }
+}
+
+.operation {
+    white-space: nowrap;
+    color: $primary-color;
+    cursor: pointer;
+}

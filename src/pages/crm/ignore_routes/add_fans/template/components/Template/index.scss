@@ -1,0 +1,146 @@
+@import "~crm/style/index";
+
+.subTitle {
+    color: $font-size-color-dark;
+    font-size: 16px;
+    .titleDesc {
+        margin-left: 10px;
+        color: $font-size-color-light;
+        font-size: 12px;
+    }
+}
+
+.errMsg {
+    color: #f04134;
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0;
+    &.periodErrMsg {
+        span:nth-child(1) {
+            float: left;
+        }
+        span:nth-child(2){
+            float: right;
+        }
+    }
+}
+
+.remarkWrap {
+    display: flex;
+    .option {
+        flex: 8;
+    }
+    .remark {
+        flex: 16;
+    }
+}
+
+.inputNumberWrap {
+    display: flex;
+    align-items: center;
+    .inputNumber {
+        flex: 11;
+    }
+    .space {
+        flex: 2;
+        text-align: center;
+    }
+}
+
+.verifyMessagesWrap {
+    padding-right: 10%;
+}
+
+.item {
+    width: 100%;
+    clear: both;
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .inputWrap,
+    .timePeriodWrap {
+        position: relative;
+        .deleteIcon {
+            position: absolute;
+            top: 50%;
+            right: -34px;
+            transform: translateY(-50%);
+            font-size: 20px;
+            cursor: pointer;
+            color: #9C9C9C;
+        }
+    }
+    .timePeriodWrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .timepicker {
+            flex: 4;
+        }
+        .input {
+            flex: 2;
+        }
+        .space {
+            margin: 0 10px;
+        }
+    }
+}
+
+.addWrap {
+    width: 100%;
+    clear: both;
+    .addBtn {
+        width: 100%;
+    }
+}
+
+.tip {
+    color: #999;
+    font-size: 12px;
+    margin: 0;
+    line-height: 1;
+    &.stress {
+        color: #f5222d;
+        white-space: nowrap;
+    }
+}
+
+.variables {
+    line-height: 1.5;
+    margin-bottom: 0;
+    .variable {
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+        color: #008000;
+        cursor: pointer;
+    }
+}
+
+.tagsWrap {
+
+    .tip {
+        color: $font-size-color-light;
+        margin: 8px 0 15px;
+    }
+    .tags {
+        margin-bottom: -10px;
+        .tag {
+            margin: 0 16px 10px 0;
+        }
+    }
+}
+
+.desc {
+    margin: 0;
+    white-space: nowrap;
+    font-weight: 700;
+}
+
+.btns {
+    button:nth-child(2) {
+        margin-left: 20px;
+    }
+}
+
+

@@ -1,0 +1,15 @@
+@import "~data/style/index";
+
+.groupReport {
+    margin: -8px 10px;
+    .searchBtn {
+        margin: 4px 0 0 10px;
+    }
+    .export {
+        float: right;
+        border-color: $primary-color;
+        a {
+            color: $primary-color;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.head {
+    display: flex;
+    margin: 0;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 16px;
+}
+
+.title {
+    font-size: 14px;
+    font-weight: 800;
+    color: #333;
+    flex-grow: 1;
+    margin: 0;
+    padding: 24px 0 16px 0;
+}
+
+.questionCircle {
+    color: #4391FF;
+    font-weight: 400;
+    padding-left: 12px;
+}
+
+.help{
+    color: #4391FF;
+    padding: 24px 0 16px 0;
+}
+
+.breadcrumb {
+    flex-grow: 1;
+    margin: 0;
+    padding: 24px 0 16px 0;
+
+    :global{
+        .ant-breadcrumb-link{
+            font-weight: 800;
+            color: #0D1A26;
+            > a {
+                color: #4391FF;
+            }
+        }
+
+        .ant-breadcrumb-separator {
+            color: #0D1A26;
+            font-weight: 800;
+        }
+    }
+}
+

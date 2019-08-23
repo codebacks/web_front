@@ -1,0 +1,71 @@
+@import "~wx/style/index";
+
+.zombieWrapper {
+    .btnWrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .left {
+            button {
+                margin-right: 20px;
+            }
+        }
+        .right {
+
+        }
+    }
+
+    .avatar {
+        width: 30px;
+        height: 30px;
+    }
+
+    .weChatColumn {
+        width: 12%;
+        word-break: break-all;
+    }
+
+    .deptColumn {
+        max-width: 80px;
+        .dept {
+            cursor: pointer;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .userColumn {
+        min-width: 60px;
+    }
+
+    .sourceColumn {
+        min-width: 50px;
+    }
+
+    .timeColumn {
+        max-width: 120px;
+        min-width: 100px;
+    }
+
+    .column {
+        min-width: 60px;
+        white-space: nowrap;
+    }
+
+    .operation {
+        .stress {
+            color: $primary-color;
+            cursor: pointer;
+        }
+    }
+
+    .alert {
+        margin-bottom: 16px;
+    }
+}
+
+.wholeDept {
+    word-break: break-all;
+    max-width: 240px;
+}

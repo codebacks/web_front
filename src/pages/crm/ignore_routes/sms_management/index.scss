@@ -1,0 +1,39 @@
+// .customerPool {
+//     background: #fafafa;
+//     margin-bottom: 16px !important;
+//     margin-top: 16px !important;
+//     padding: 24px !important;
+//     :global {
+//         .ant-input-number {
+//             width: 100%;
+//         }
+//         .ant-col-14 a {
+//             line-height: 30px;
+//         }
+//         .ant-tabs-bar {
+//             border-bottom: none;
+//         }
+//     }
+// }
+
+
+.table_margin_top {
+    margin-top: 16px;
+}
+.table_separate {
+    display: inline-block;
+    margin: 0 10px 0 6px;
+    color: #D8D8D8;
+}
+.table__content{
+    max-width: 260px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+
+.table__content__popover{
+    max-width: 240px;
+    word-wrap: break-word;
+    word-break: normal;
+}

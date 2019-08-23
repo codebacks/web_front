@@ -1,0 +1,42 @@
+@import "../../../style/common";
+
+.groupList{
+    .groupName{
+        display: flex;
+        margin: 20px 0 10px 0;
+        .ellipsisTxt{
+            max-width: 30%;
+        }
+    }
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 0;
+        .headerItem{
+            flex: 1;
+            text-align: center;
+            .num{
+                margin-bottom: 10px;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+    .addGroup{
+        margin-top: 30px;
+    }
+    .tableWrap{
+        .canEdit{
+            margin-top: 6px;
+            cursor: pointer;
+            color: @primary-color;
+            &.disabled{
+                color: #999;
+            }
+        }
+        .nickname, .uin, .groupNickname{
+            width: 14%;
+        }
+    }
+}

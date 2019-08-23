@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="referrer" content="no-referrer">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="51赞SCRM，社交电商客户管理系统，智能客服系统，智慧零售解决方案"/>
+        <meta name="description"
+              content="51赞SCRM系统充分赋能商家，帮助商家大幅度提升客户沉淀、客户管理、客户沟通、产品营销及团队协作效率，拉升复购率、利润率、成交率,增加客户好感度、信任度、忠诚度。淘宝大卖家、世界五百强企业包括服装鞋帽、食品餐饮、美妆珠宝、母婴家居、健康保健等各行业类目都选择51赞智慧零售解决方案，通过老客户深度精细化运营推送，来提升复购率，帮助商家降低运营及服务成本，提升经营管理效率。"/>
+        <!--<title>51赞</title>-->
+        <% if (!process.env.DISABLE_BROWSER_DETECTION) { %>
+            <script src="/base/js/browser_detection.js" crossorigin="anonymous"></script>
+        <% } %>
+        <!--<link rel="icon" href="/favicon.ico" type="image/x-icon">-->
+        <% if (process.env.HUZAN_ENV === 'production_test' || process.env.HUZAN_ENV === 'production_master') { %>
+            <script src="/base/js/raven/3.19.1/raven.min.js" crossorigin="anonymous"></script>
+        <% } %>
+        <!--<script src="https://im.niukefu.com/parse-message/index.js"></script>-->
+    </head>
+
+    <body>
+        <div id="root"></div>
+    </body>
+
+</html>

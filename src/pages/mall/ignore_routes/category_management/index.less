@@ -1,0 +1,101 @@
+.category{
+    float: left;
+    width: 300px;
+    border-right: 1px solid #eee;
+}
+.addCategory{
+    text-align: center;
+    margin: 16px;
+    padding: 8px 0;
+    border: 1px dashed #999;
+    color: #999;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &:hover{
+        border: 1px dashed #4391FF;
+        color: #4391FF;  
+    }
+}
+.addIcon{
+    margin-right: 16px;
+}
+.categoryActiveItem{
+    color: #4391FF;
+    background-color: #e6f4ff;
+    border-left: 3px solid#4391FF;
+}
+.categoryItem,.categoryActiveItem{
+    height: 48px;
+    padding: 8px 16px;
+    vertical-align: middle;
+    .categoryImg{
+        float: left;
+        img{
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            margin-right: 8px;
+        }
+    }
+    .categoryTitle{
+        float: left;
+        width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-all;
+        white-space: nowrap; 
+        height: 32px;
+        line-height: 32px;
+        color: #333;
+    }
+    .categoryIcon{
+        float: right;
+        .icon{
+            font-size: 24px;
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+            margin-top: 4px;
+        }
+    }
+}
+.dropDownMenu{
+    width: 80px;
+    left: 16px;
+}
+.popoverImg{
+    width: 80px;
+}
+
+.showGif{
+    float: left;
+    width: 480px;
+    height: 100vh; 
+    position: relative;
+}
+.showGifCon{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    div{
+        text-align: center;
+    }
+    .showGifTit{
+        font-size: 18px;
+        color: #333333;
+        margin-bottom: 16px;
+    }
+    .showGifDec{
+        font-size: 16px;
+        color: #999999;
+    }
+    .showGifImg{
+        width: 380px;
+        img{
+            width: 380px;  
+        }
+    } 
+}

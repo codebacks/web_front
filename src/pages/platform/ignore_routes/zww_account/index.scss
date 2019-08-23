@@ -1,0 +1,16 @@
+.zww_active_btn{
+    margin-right: 16px;
+    min-width:80px;
+    padding:5px;
+    border-color: #4391FF;
+    color: #4391FF;
+    cursor: pointer;
+}
+.inline_tabs{
+    position: relative;
+    .inline_tabs_content{
+        position: absolute;
+        top:12px;
+        right: 2px;
+    }
+}

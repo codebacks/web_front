@@ -1,0 +1,42 @@
+.repeatGroup{
+    .searchWrap{
+        padding: 22px 22px 30px;
+        background-color: #fafafa;
+        .searchBtn{
+            margin-top: 20px;
+            :global{
+                .ant-btn{
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+    .tableWrap{
+        margin-top: 30px;
+        .canEdit{
+            color: #4391FF;
+            cursor: pointer;
+            &.disabled{
+                color: #999;
+            }
+        }
+        .nickname, .uin{
+            width: 20%;
+        }
+
+        .detail{
+            width: 10%;
+        }
+        .edit{
+            width: 10%;
+            .editWrap{
+                .canEdit{
+                    margin-right: 10px;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

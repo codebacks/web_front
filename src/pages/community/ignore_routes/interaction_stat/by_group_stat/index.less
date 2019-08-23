@@ -1,0 +1,30 @@
+@import "~community/style/common";
+
+.byGroupStat{
+    .questionCircle {
+        color: @primary-color;
+        margin-left: 5px;
+    }
+    .btns{
+        margin: 20px 0;
+        .btn{
+            margin-right: 10px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+    .tableWrap{
+        margin: 0;
+        .canEdit{
+            cursor: pointer;
+            color: @primary-color;
+            &.disabled{
+                color: #999;
+            }
+        }
+        .groupName, .groupOwner{
+            width: 12%;
+        }
+    }
+}

@@ -1,0 +1,100 @@
+.overviewWrap {
+    display: flex;
+    list-style: none;
+    .overviewIcon {
+        margin-right: 8px;
+        img {
+            vertical-align: top;
+            width: 24px;
+            height: 24px;
+        }
+    }
+    .overview {
+        border: 1px solid #F0F2F5;
+        padding: 24px;
+        width: 276px;
+        height: 148px;
+        margin-right: 24px;
+        .overviewTitle {
+            font-size: 16px;
+            color: #0D1A26;
+        }
+        .overviewContent {
+            display: flex;
+            justify-content: start;
+            margin-top: 24px;
+            >div {
+                p {
+                    font-size: 12px;
+                }
+                p:first-child {
+                    color: #9EA8B1;
+                    margin-bottom: 0;
+                }
+                p:nth-child(2) {
+                    margin-top: 8px;
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+            }
+            div:nth-child(1) {
+                width: 60%;
+            }
+            div:nth-child(2) {
+                width: 40%;
+            }
+        }
+    }
+    li:last-child {
+        margin-right: 0;
+    }
+}
+
+.distributorSearch {
+    // width: 862px;
+    width: 80%;
+    p {
+        margin-bottom: 0;
+    }
+    p:nth-child(1) {
+        color: #0D1A26;
+        margin-bottom: 8px;
+    }
+    p:nth-child(2) {
+        color: #556675;
+    }
+}
+
+// 设置分销员
+.textColorSecondary {
+    color: #9EA8B1;
+}
+
+.radiolineformitem {
+    padding: 7px 0;
+    height: 38px !important;
+    >span:last-child {
+        display: inline-block;
+    }
+}
+
+.radiolineformitemcontain {
+    display: flex;
+    >span {
+        flex: 1;
+    }
+}
+
+.radiolineformitemformitem {
+    // margin-top:;
+    margin: -7px 8px 0
+}
+
+.mgTp {
+    line-height: 12px;
+    margin-top: 8px
+}
+
+.nowrap {
+    white-space: nowrap
+}

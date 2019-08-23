@@ -1,0 +1,114 @@
+@import "../../base";
+@import "~wx/style/index";
+@import "../common";
+
+.fileWrap {
+    .operation {
+        overflow: hidden;
+        .create {
+            float: left;
+            margin: 8px 0 16px;
+        }
+    }
+
+    .checkbox {
+        position: absolute;
+        top: 5px;
+        left: 8px;
+        width: 16px;
+        height: 16px;
+    }
+
+    .boxes {
+
+        .box {
+            position: relative;
+            float: left;
+            padding: 8px;
+            margin: 0 16px 16px 0;
+            width: $boxWidth4c;
+            height: 396px;
+            border: 1px solid #E3E3E3;
+            .wrapper {
+                margin-left: 22px;
+                .coverWrap {
+                    position: relative;
+                    width: 100%;
+                    height: $coverHeight;
+                    background-color: #FAFAFA;
+                    border: 1px solid #D9D9D9;
+                    border-radius: 2px;
+                    .cover {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 80px;
+                        height: 96px;
+                        border-radius: 2px;
+                        background-repeat: no-repeat;
+                        background-position: 50% 50%;
+                        background: url(wx/assets/images/filenameExtension/unknown.svg);
+                        background-size: 100% 100%;
+                        &.doc {
+                            background: url(wx/assets/images/filenameExtension/doc.svg);
+                            background-size: 100% 100%;
+                        }
+                        &.xls {
+                            background: url(wx/assets/images/filenameExtension/xls.svg);
+                            background-size: 100% 100%;
+                        }
+                        &.ppt {
+                            background: url(wx/assets/images/filenameExtension/ppt.svg);
+                            background-size: 100% 100%;
+                        }
+                        &.pdf {
+                            background: url(wx/assets/images/filenameExtension/pdf.svg);
+                            background-size: 100% 100%;
+                        }
+                        &.txt {
+                            background: url(wx/assets/images/filenameExtension/txt.svg);
+                            background-size: 100% 100%;
+                        }
+                        &.zip {
+                            background: url(wx/assets/images/filenameExtension/zip.svg);
+                            background-size: 100% 100%;
+                        }
+                    }
+                    .download {
+                        position: absolute;
+                        bottom: 8px;
+                        right: 8px;
+                        z-index: 99;
+                        width: 32px;
+                        height: 20px;
+                        background: url(wx/assets/images/material_download.png) no-repeat 50%;
+                        background-size: 100% 100%;
+                        cursor: pointer;
+                    }
+                }
+
+                .titleWrap {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 4px 0 8px 0;
+                    .title {
+                        flex: 1;
+                        height: 18px;
+                        line-height: 18px;
+                        font-size: 12px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    .edit {
+                        color: #999;
+                        cursor: pointer;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

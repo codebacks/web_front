@@ -1,0 +1,24 @@
+@import "~community/style/common";
+
+.groupMemberStat{
+    .currentGroupName{
+        display: flex;
+        font-weight: bold;
+        .groupNameEllipsis{
+            max-width: 30%;
+        }
+        margin-bottom: 16px;
+    }
+    .tableWrap{
+        .canEdit{
+            cursor: pointer;
+            color: @primary-color;
+            &.disabled{
+                color: #999;
+            }
+        }
+        .groupNickname, .nickname{
+            width: 24%;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@import "~wx/style/index";
+
+.moments {
+    .operationRow {
+        :global {
+            .ant-form-item {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .btns {
+        display: inline-block;
+        margin-left: 5%;
+
+        button {
+            width: 80px;
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+    }
+}

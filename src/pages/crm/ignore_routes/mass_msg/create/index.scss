@@ -1,0 +1,78 @@
+@import "../../../style/base";
+
+.createWrap {
+    margin: -10px 30px 0;
+
+    :global {
+        .ant-upload-list-picture-card {
+            float: none;
+        }
+        .ant-modal-close-x {
+            width: 32px;
+            line-height: 32px;
+            font-size: 20px;
+        }
+        .ant-upload-list-item-info {
+            >span {
+                height: 100%;
+                .ant-upload-list-item-thumbnail {
+                    >img {
+                        object-fit: cover;
+                    }
+
+                }
+            }
+        }
+
+    }
+
+    .create {
+        padding: 10px;
+        .title {
+            font-size: 14px;
+        }
+        .tip,
+        .smallTip {
+            clear: both;
+            line-height: 1.5;
+            margin: 8px 0 0;
+            color: #999;
+        }
+        .smallTip {
+            font-size: 12px;
+        }
+
+
+        .editors {
+            position: relative;
+            .editor {
+                border: 1px solid #D9D9D9;
+                border-radius: 2px;
+                padding: 0 8px 8px;
+            }
+        }
+
+        .operate {
+            position: absolute;
+            top: 14px;
+            left: calc(41.666667% + 40px);
+            width: 60px;
+            color: $primary-color;
+            cursor: pointer;
+            z-index: 99;
+            text-align: right;
+        }
+
+        .btnWrap {
+            :global {
+                .ant-btn {
+                    width: 80px;
+                    &:first-child {
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+
+    }
+}

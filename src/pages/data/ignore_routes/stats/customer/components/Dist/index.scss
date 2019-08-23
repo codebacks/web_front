@@ -1,0 +1,87 @@
+@import "../../../../../style/index";
+
+.customerDist {
+    .searchBtn {
+        margin-top: 4px;
+    }
+    .base {
+        margin: 20px 0;
+        display: flex;
+        .sexWrap {
+            align-self: center;
+        }
+        .sourceWrap {
+            h3 {
+                text-align: center;
+                font-size: 18px;
+            }
+            .sourceBars {
+                .bar {
+                    padding: 8px 0;
+                    display: flex;
+                    .label,
+                    .name {
+                        display: inline-block;
+                    }
+                    .label {
+                        width: 24px;
+                        margin-right: 5px;
+                    }
+                    .name {
+                        width: 180px;
+                    }
+                    .line {
+                        flex: 1;
+                        .progress {
+                            display: inline-block;
+                            height: 8px;
+                            background-color: #3EC7F5;
+                        }
+                    }
+                    .num {
+                        margin-left: 8px;
+                        width: 60px;
+                    }
+                }
+            }
+        }
+    }
+    .tabs {
+        margin-top: 20px;
+        :global {
+            .ant-radio-button-wrapper {
+                width: 80px;
+                text-align: center;
+            }
+        }
+
+    }
+    .bars {
+        padding: 10px 0 0 10px;
+        .bar {
+            padding: 16px 0;
+            white-space: nowrap;
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+            .label,
+            .name {
+                display: inline-block;
+            }
+            .label {
+                width: 24px;
+                margin-right: 5px;
+            }
+            .name {
+                width: 60px;
+            }
+            .line {
+                .progress {
+                    display: inline-block;
+                    height: 8px;
+                    background-color: #3EC7F5;
+                }
+            }
+        }
+    }
+}

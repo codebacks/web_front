@@ -1,0 +1,80 @@
+.cardStyle {
+    .cardStyleCont {
+        line-height: 22px;
+        overflow: hidden;
+        .cardHeader {
+            display: flex;
+            align-items: center;
+            color: #556675;
+            margin-bottom: 8px;
+            .cardLogo {
+                width: 32px;
+                height: 32px;
+                background: #D8D8D8;
+                border-radius: 16px;
+                flex-shrink: 0;
+                margin-right: 8px;
+            }
+        }
+        .cardUpload {
+            margin-top: 8px;
+            margin-bottom: 8px;
+            overflow: hidden;
+            :global {
+                .ant-upload.ant-upload-select-picture-card > .ant-upload {
+                    img {
+                        width: 180px;
+                        height: 144px;
+                    }
+                }
+            }
+        }
+        .cardReveal {
+            width: 232px;
+            box-sizing: border-box;
+            padding: 16px;
+            border: 1px solid #CFD3D8;
+            border-radius: 2px;
+            float: left;
+            .cardBottom {
+                border-top: 1px solid #CFD3D8;
+                padding-top: 8px;
+                img {
+                    width: 13px;
+                    height: 13px;
+                }
+            }
+        }
+        .defaultImg {
+            float: left;
+            margin-left: 40px;
+            padding-top: 56px;
+        }
+        .title {
+            color: #0D1A26;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            /* autoprefixer: off */
+            -webkit-box-orient: vertical;
+            /* autoprefixer: on */
+            word-break: break-all;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+    .cardStyleTips {
+        color: #9EA8B1;
+        font-size: 12px;
+    }
+    :global {
+        .ant-upload.ant-upload-select-picture-card {
+            width: 198px;
+            height: 160px;
+        }
+    }
+}
+.pathTips {
+    color: #9EA8B1;
+    font-size: 12px;
+    line-height: 22px;
+}

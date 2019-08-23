@@ -1,0 +1,20 @@
+@import '../../../../style/hz/init.less';
+
+
+.tab {
+    flex-grow: 1;
+    overflow: hidden;
+    margin-bottom: -1px;
+
+    > div {
+        padding: 16px @padding-base;
+        float: left;
+        cursor: pointer;
+    }
+}
+
+.tabActived {
+    padding-top: 15px;
+    color: @color-primary;
+    border-bottom: 2px solid @border-color-primary;
+}

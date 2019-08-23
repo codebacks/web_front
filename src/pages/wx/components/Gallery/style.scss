@@ -1,0 +1,129 @@
+.gallery {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    background: rgba(0, 0, 0, .75);
+    top: 0;
+    left: 0;
+    z-index: 998;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 1;
+}
+.image {
+    height: 100%;
+    background-repeat: no-repeat;
+}
+.image>img {
+    position: absolute;
+}
+.tip {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.tip:after {
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+    content: '';
+}
+.error {
+    font-size: 24px;
+    color: #fff;
+}
+.loading {
+    font-size: 36px;
+    color: #fff;
+}
+
+.toolbar {
+    position: absolute;
+    top: 0;
+    height: 32px;
+    line-height: 32px;
+    width: 220px;
+    background-color: rgba(0, 0, 0, .5);
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+}
+
+.item {
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    margin: auto 5px;
+    cursor: pointer;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.info {
+    position: relative;
+    text-align: center;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.3em;
+}
+.index {
+    display: inline-block;
+    span {
+        padding: 2px 3px;
+    }
+}
+.zoom {
+    display: inline-block;
+    color: #cfcfcf;
+    font-size: 11px;
+    margin: auto 4px;
+}
+
+.prev, .next {
+    font-size: 36px;
+    padding: 6px;
+    color: #fff;
+    position: absolute;
+    margin-top: -24px;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    top: 50%;
+}
+.prev {
+    left: 10px;
+}
+.next {
+    right: 10px;
+}
+.close {
+    position: absolute;
+    text-decoration: none;
+    font-size: 20px;
+    right: 3px;
+    top: 3px;
+    color: #fff;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    opacity: .7;
+}
+[class^="icon-"]:hover, [class*=" icon-"]:hover{
+    opacity: 1;
+}
+.disable {
+    opacity: .3 !important;
+    cursor: not-allowed !important;
+}

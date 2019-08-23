@@ -1,0 +1,63 @@
+@import "~wx/style/index";
+
+.box {
+    &:not(:first-child) {
+        padding-top: 20px;
+    }
+    &:not(:last-child) {
+        padding-bottom: 20px;
+    }
+    &:not(:last-child) {
+        border-bottom: 1px solid #E3E3E3;
+    }
+    .title {
+        color: $font-size-color-light;
+        margin: 0 0 16px;
+    }
+    .content {
+        .baseWrap {
+            display: flex;
+            justify-content: space-between;
+        }
+        color: $font-size-color-light;
+        margin: 0 0 0 $margin-base;
+        .row {
+            .label {
+                vertical-align: top;
+                color: #999;
+            }
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+            .label:not(:first-child) {
+                margin-left: 10px;
+            }
+        }
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 2px;
+        }
+        .main {
+            flex: 1;
+            margin-left: 15px;
+
+            .nickname {
+                font-size: 16px;
+            }
+
+            .left,
+            .right {
+                display: inline-block;
+                vertical-align: top;
+                width: 50%;
+            }
+            .extraImage {
+                width: 160px;
+            }
+        }
+        .tag {
+            margin-bottom: 10px;
+        }
+    }
+}

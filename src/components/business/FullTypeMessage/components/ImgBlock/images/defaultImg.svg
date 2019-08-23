@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="202px" height="202px" viewBox="0 0 202 202" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>默认图片@2x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="图片-" transform="translate(-167.000000, -247.000000)">
+            <g id="默认图片" transform="translate(168.000000, 248.000000)">
+                <rect id="Rectangle" stroke="#D9D9D9" fill="#FAFAFA" x="0" y="0" width="200" height="200" rx="2"></rect>
+                <rect id="Rectangle" stroke="#E3E3E3" fill-rule="nonzero" x="48.5" y="61.5" width="104.658537" height="77.8292683" rx="2"></rect>
+                <path d="M78.3614641,93.6484748 L99.0038851,112.740964 C99.8425727,113.516678 101.10732,113.606315 102.04703,112.956641 L115.801903,103.447123 C116.685437,102.836286 117.864574,102.87536 118.70573,103.543348 L152.878049,130.680626 L152.878049,136.953254 C152.878049,138.300289 151.78606,139.392279 150.439024,139.392279 L50.4390244,139.392279 C49.0919884,139.392279 48,138.300289 48,136.953254 L48,123.929258 C48,123.316629 48.2305479,122.726433 48.6458066,122.276016 L74.9121282,93.7857947 C75.8251887,92.7954279 77.3682213,92.7327586 78.3585882,93.6458191 C78.3595476,93.6467036 78.3605062,93.6475889 78.3614641,93.6484748 Z" id="Rectangle" fill="#E3E3E3" fill-rule="nonzero"></path>
+                <g id="Group-2" transform="translate(125.000000, 77.000000)" fill="#E3E3E3" fill-rule="nonzero">
+                    <g id="Group" transform="translate(0.951220, 0.975610)">
+                        <circle id="Oval" cx="5" cy="5" r="5"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

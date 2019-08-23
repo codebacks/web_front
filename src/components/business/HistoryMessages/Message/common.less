@@ -1,0 +1,48 @@
+
+.textOverflow (@lines) {
+    display: -webkit-box;
+    /*! autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /*! autoprefixer: on */
+    -webkit-line-clamp: @lines;
+    overflow: hidden;
+    text-align: justify;
+    word-break: break-all;
+}
+
+.box {
+    margin-top: 8px;
+    clear: both;
+    display: inline-block;
+}
+
+.text {
+    color: #333;
+}
+
+.link {
+    display: inline-block;
+    width: 100%;
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+        text-decoration: none;
+    }
+}
+
+.card,
+.packet,
+.sharing,
+.music,
+.file {
+    border: 1px solid #E6E9EB;
+}
+
+.card,
+.packet,
+.music,
+.file {
+    width: 256px;
+}
+

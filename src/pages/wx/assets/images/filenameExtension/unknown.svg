@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="48px" viewBox="0 0 40 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group@2x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="文件-从素材库选择--" transform="translate(-609.000000, -461.000000)">
+            <g id="Group-6">
+                <g id="Group-4-Copy" transform="translate(307.000000, 427.000000)">
+                    <g id="pdf文档-copy-5" transform="translate(264.000000, 0.000000)">
+                        <g id="Group" transform="translate(38.000000, 34.000000)">
+                            <path d="M4,0 L25.0016785,0 L40,15.0108643 L40,44 C40,46.209139 38.209139,48 36,48 L4,48 C1.790861,48 2.705415e-16,46.209139 0,44 L-8.8817842e-16,4 C-1.15871992e-15,1.790861 1.790861,4.05812251e-16 4,0 Z" id="Rectangle" fill="#FAE1AC" fill-rule="nonzero"></path>
+                            <polygon id="Rectangle" fill="#FFF3DA" fill-rule="nonzero" points="25 0 40 15 25 15"></polygon>
+                            <g id="云" transform="translate(4.000000, 12.500000)">
+                                <rect id="Rectangle" fill="#000000" opacity="0" x="0" y="0" width="32" height="32"></rect>
+                                <path d="M23.3768705,14.2046093 C22.6780483,10.8115498 19.6840782,8.21666909 15.9920534,8.21666909 C13.0967684,8.21666909 10.6028113,9.81446578 9.40544709,12.2098657 C6.31135287,12.6075161 4.01617303,15.1030402 4.01617303,18.1978059 C4.01617303,21.4907413 6.71120978,24.1857461 10.0041132,24.1857461 L22.9770136,24.1857461 C25.7721745,24.1857461 27.9679337,21.9892513 27.9679337,19.1940265 C27.9679657,16.6000092 25.8723306,14.4042179 23.3768705,14.2046093" id="Path" fill="#FFFFFF"></path>
+                            </g>
+                            <text id="？" font-family="MicrosoftYaHei, Microsoft YaHei" font-size="11" font-weight="normal" line-spacing="11" fill="#FAE1AC">
+                                <tspan x="14.5" y="36">？</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

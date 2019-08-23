@@ -1,0 +1,94 @@
+@import "~wx/style/index";
+@import "../common";
+
+.voiceWrap {
+    overflow: hidden;
+    .boxes {
+
+        .box {
+            position: relative;
+            float: left;
+            padding: 8px;
+            margin: 0 16px 16px 0;
+            width: 268px;
+            height: 226px;
+            border: 1px solid #E3E3E3;
+
+            .checkbox {
+                position: absolute;
+                top: 5px;
+                left: 8px;
+                width: 16px;
+                height: 16px;
+            }
+
+            .wrapper {
+                margin-left: 22px;
+                border-radius: 2px;
+                .voiceInfo {
+                    padding: 8px;
+                    background-color: #FAFAFA;
+                    border: 1px solid #D9D9D9;
+                    border-radius: 2px;
+                    .mark {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 175px;
+                        height: 34px;
+                        cursor: pointer;
+                        .pause {
+                            width: 175px;
+                            height: 34px;
+                            background: url(wx/assets/images/audio.svg) no-repeat 50% 50%;
+                            background-size: 100% 100%;
+                        }
+                    }
+                    .convert,
+                    .playing {
+                        position: relative;
+                        cursor: pointer;
+                        .bubble {
+                            width: 100%;
+                            height: 100%;
+                        }
+                        .icon {
+                            position: absolute;
+                            top: 7px;
+                            left: 12px;
+                            width: 20px;
+                            height: 20px;
+                            font-size: 18px;
+                        }
+                    }
+                    .duration {
+                        float: right;
+                        line-height: 34px;
+                        color: $font-size-color-light;
+                        font-size: 12px;
+                    }
+                }
+
+                .titleWrap {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 10px 0 8px 0;
+                    .title {
+                        flex: 1;
+                        height: 18px;
+                        line-height: 18px;
+                        font-size: 12px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    .edit {
+                        color: #999;
+                        cursor: pointer;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

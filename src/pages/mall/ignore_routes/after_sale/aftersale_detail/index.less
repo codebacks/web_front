@@ -1,0 +1,51 @@
+.steps {
+    margin-top: 40px;
+    padding:0 92px 16px 8px;
+}
+.baseInfo {
+    border-bottom: 1px solid #E3E3E3;
+    height: 300px;
+    box-sizing: border-box;
+    .infoHeader {
+        background: #FAFAFA;
+        height: 50px;
+        line-height: 50px;
+        .infoHeaderTit {
+            padding-left: 24px;
+            color: #333333;
+        }
+    }
+    .infoBody {
+        height: 100%;
+        &:not(:first-child) {
+            border-left: 1px solid #E3E3E3;
+        }
+    }
+}
+.recordBottom {
+    margin-bottom: 16px;
+}
+
+.recordingBottom {
+    margin-bottom: 24px;
+}
+.communicatingBox {
+    margin-bottom: 24px;
+    background:  #FAFAFA;
+    padding: 0 24px;
+}
+.communicatingItem {
+    padding: 24px 0 16px;
+    border-bottom: 1px dashed #E3E3E3;
+    &:last-child {
+        border-bottom: none;
+    }
+    .date {
+        margin-top: 16px;
+        color: #999999;
+        letter-spacing: 0.22px;
+    }
+}
+.communicating:last-child{
+    border-bottom: 0;
+}

@@ -1,0 +1,43 @@
+@import "../../../style/base";
+
+.member {
+  overflow-y: auto;
+  .pageOptions {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e9e9e9;
+  }
+  .btn{
+    margin-left: 14px;
+  }
+  .options{
+    padding-bottom: 20px;
+  }
+  .help {
+    margin: 0 20px;
+    cursor: pointer;
+    color: #108ee9;
+  }
+  .edit {
+    position: relative;
+    .editIcon {
+      position: absolute;
+      right: 10px;
+      top: 0;
+      font-size: 18px;
+      cursor: pointer;
+
+    }
+  }
+}
+
+.searchWrap {
+  .rangeIpt {
+    .sp {
+      display: inline-block;
+      text-align: center;
+      padding: 0 8px;
+    }
+  }
+
+}

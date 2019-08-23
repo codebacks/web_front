@@ -1,0 +1,340 @@
+/**
+ **@Description:
+ **@author: AmberYe
+ */
+.wxCodeContent{
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    background: #fff;
+}
+.modalTitle{
+    padding: 20px 10px;
+    font-weight: bold;
+    border-bottom: 1px solid #ececec;
+}
+.createWxcodeWrap{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    padding: 20px 0;
+    .noties{
+        color: #666;
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 12px;
+    }
+}
+.deputyTitle{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 12px;
+    color: #999;
+}
+.creatContent{
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
+    .createModal{
+        width: 63%;
+        padding-right: 10px;
+    }
+    .phoneModal{
+        width: 35%;
+        text-align: center;
+    }
+}
+.labels{
+    width: 100%;
+    text-align: left;
+    display: inline-block;
+}
+.mr10{
+    margin-right: 10px;
+}
+.mr16{
+    margin-right: 16px;
+}
+.mr20{
+    margin-right: 20px;
+}
+.mb10{
+    margin-bottom: 10px;
+}
+.mb20{
+    margin-bottom: 20px;
+}
+.noData{
+    text-align: left;
+    padding: 0 0 20px 50px;
+    color:#f5222d;
+}
+.phoneWrap{
+    width: 264px;
+    height: 530px;
+    padding: 37px 7px 48px;
+    background-image: url(../../assets/images/phone.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    margin: 0 auto 30px;   
+    .phoneBg{
+        width: 100%;
+        height: 100%;      
+        position: relative;   
+        border-radius: 2px;  
+    }
+    .phoneBgDefault{
+        background-image: url(../../assets/images/bg10.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    .phoneBgCustom{
+        background-image: url(../../assets/images/phoneModal.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    .phoneShareTitle{
+        width: 100%;
+        text-align: center;
+        height: 18px;
+        margin-bottom: 15px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+    }
+    .phoneEQRcodeBg{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: left top;
+    }
+    .phoneEQRcode{
+        width: 100%;
+        position: absolute;
+
+        bottom: 54px;
+        text-align: center;
+    }
+    .phoneEQRWrap{
+        // height: 30vh;
+        // background: pink;
+        text-align: center;
+    }
+    .phoneEQRWrap img{
+        width: 120px;
+        height: 120px;
+    }
+    .description{
+        width: 100%;
+        // color:#333;
+        color:rgba(255,255,255,0.8);
+        padding: 0 35px;
+        height: 20px;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .showDescription{
+        text-align: center;
+        max-height: 70px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+    
+}
+.formItemTip{
+    color: #9EA8B1;
+    font-size: 12px;
+    margin-left: 8px;
+    .fontWeight{
+        color: #4391FF;
+        font-weight: bold;
+        font-style: normal;
+        display: inline-block;
+        margin: 0 3px;
+    }
+}
+.copyBtn{
+    position: absolute;
+    width: 100%;
+    top:15px;
+    left: 0;
+    text-align: right;
+    span{
+        display: inline-block;
+        width: 100px;
+        height: 35px;
+        line-height: 35px;
+        color: #fff;
+        border-radius:8px;
+        text-align: center;
+        margin-right: 15px;
+        background:rgba(0,0,0,0.5);
+    }
+}
+// .downloadSize{
+//     border:1px solid #2C84FF;
+//     color:#2C84FF;
+// }
+.wxPagination {
+    :global{
+        .ant-select{
+            width: auto
+        }
+    }
+}
+.circleGray, .circleBlue{
+    position: relative;
+    padding-left: 13px;
+}
+.circleGray::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 0;
+    background: #cccccc;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+.circleBlue::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 0;
+    background: #4391ff;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+.alert::before{
+    display: inline-block;
+    margin-right: 4px;
+    content: "*";
+    font-family: SimSun;
+    line-height: 1;
+    font-size: 14px;
+    color: #f5222d;
+}
+.showShortUrl{
+    width: 226px;
+    vertical-align: middle;
+}
+.qrcodeIcon{
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 2px;
+    vertical-align: middle;
+}
+.qrUrlImg{
+    width: 150px;
+    height: 150px;
+}
+.downloadSize {
+    .downloadSizeType {
+        border: 1px solid #DEDEDE;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 16px;
+        padding: 16px;
+    }
+    .downloadSizeType:last-child{
+        margin-bottom: 0;
+    }
+    .size{
+        color: #556675;
+        margin-bottom: 8px;
+    }
+    .description{
+        color: #9EA8B1;
+        font-size: 12px;
+    }
+    .downloadSizeType:hover{
+        border-color: #4391FF;
+        color: #4391FF;
+        .size, .description{
+            color:#4391FF;
+        }
+    }
+}
+.itemTitle{
+    color: #0D1A26;
+    text-align: right;
+}
+.downloadSizeBtn{
+    cursor: pointer;
+}
+
+
+
+
+
+.showDownloadType {
+    border: 1px solid #ececec;
+    padding: 10px 0;
+}
+.showDownloadType p{
+    margin-bottom: 0;
+}
+.showDownloadType .mb10{
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 10px;
+}
+
+.wxCodeName{
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+}
+.downsizeText{
+    font-weight: 700;
+}
+
+.textareaWrap{
+    :global{
+        .ant-form-item-control{
+            div{
+                float: none;
+            }
+        }
+    }
+}
+.qrcode_uploadWrap{
+    width: 100%;
+    height: 100%;
+    .qrcode_Img{
+        width: 104px;
+        height: 104px;
+    }
+}
+.uploadTip{
+    font-size: 12px;
+    color: #9EA8B1;
+    line-height: 20px;
+    margin-bottom: 0;
+}
+.qrcode_uploadWrap_text{
+    .uploadIcon{
+        color: #556675;
+        font-size: 32px;
+        .uploadText{
+            font-size: 12px;
+            color: #9EA8B1;
+        }
+    }
+}

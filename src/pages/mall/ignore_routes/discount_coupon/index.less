@@ -1,0 +1,269 @@
+// 优惠券列表
+.boxTitle {
+    font-size: 16px;
+    color: #0D1A26;
+    flex-grow: 1;
+    line-height: 22px;
+    margin-bottom:16px;
+    .boxTitleIcon {
+        background: #4391FF;
+        display: inline-block;
+        height: 0.95em;
+        width: 2px;
+        vertical-align: middle;
+        position: relative;
+        top: -0.06em;
+        // margin-left: 8px;
+    }
+
+}
+.dataItem{
+    padding-left: 8px;
+    :global{
+        .ant-col-24{
+            margin-bottom: 8px;
+        }
+    }
+}
+.tagWrap{
+    margin-left: 8px;
+    .tag {
+        font-size: 12px;
+        padding: 0 5px;
+        margin-left: 8px;
+        border-bottom-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+    .isCoupon{
+        border: 1px solid #F5222D;
+        color: #F5222D; 
+    }
+    .isSpecial{
+        border: 1px solid #FA8C16;
+        color: #FA8C16;
+    }
+    .isRecommend{
+        border: 1px solid #4391FF;
+        color: #4391FF;
+    }
+    .isNomal{
+        border: 1px solid #999999;
+        color: #999999;
+    }
+}
+
+.itemTitle{
+    padding: 10px 0;
+    color: #0D1A26;
+    font-size: 16px;
+    .titleBar {
+        background: #4391FF;
+        display: inline-block;
+        height: 0.95em;
+        width: 2px;
+        vertical-align: middle;
+        position: relative;
+        top: -0.06em;
+        margin-right: 8px;
+    }
+}
+.radiolineformitem {
+    padding: 7px 0;
+    >span:last-child {
+        display: inline-block;
+    }
+}
+.radiolineformitemcontain {
+    display: flex;
+    align-content: center;
+    >span {
+        flex: 1;
+    }
+    .radiolineformitemformitem {
+        margin-top: -7px;
+    }
+    .availableTip{
+        margin-left: 16px;
+        font-size: 12px;
+        color: #9EA8B1;
+    }
+}
+.FormItemWrap{
+    padding-left: 8px;
+}
+.createPageGoods{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    .goodsImgWrap{
+        width: 60px;
+        height: 60px;
+        margin-right: 8px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.phoneWrap{
+    width: 340px;
+    padding-top: 16px;
+    margin:0  auto;
+    .phoneBgWrap{
+        width: 100%;
+        height: 620px;
+        position: relative;
+        background: url('../../assets/images/discount_phone_bg.png') no-repeat;
+        background-size: 100% 100%;
+        margin-bottom: 16px;
+    }
+    .discountBg{
+        width: 80%;
+        // height: 160px;
+        position: absolute;
+        left: 10%;
+        bottom: 200px;
+        .title{
+            font-size: 0.5rem;
+            color: #253A4E;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+        .ticketBg{
+            width: 100%;
+            height: 78px;
+            background: url('../../assets/images/discount_bg.png') no-repeat;
+            background-size: 100% 100%;
+            margin-bottom: 8px;
+            color: #F35D51;
+            font-size: 0.2rem;
+            padding: 3px 8px;
+
+            p{
+                margin-bottom: 0;
+            }
+            .shhowRmb{
+                font-size: 14px;
+            }
+            .RMB{
+                font-weight: bold;
+                font-size: 28px;
+            }
+        }
+
+    }
+    .btn{
+        position: absolute;
+        width: 80%;
+        height: 28px;
+        line-height: 28px;
+        left: 10%;
+        bottom: 80px;
+        text-align: center;
+        font-size: 12px;
+        color: #FFFFFF;
+        background-image: linear-gradient(-90deg, #FF9963 0%, #F77257 50%, #F35D51 100%);
+        border-radius: 2.84px;
+    }
+    .previewTxt{
+        font-size: 14px;
+        text-align: center;
+        color: #666666;
+    }
+}
+
+
+
+
+
+
+
+// 添加商品
+.goodsInfoWrap{
+    display: flex;
+    // flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: space-around;
+    .goodsImgWrap{
+        width: 60px;
+        height: 60px;
+        margin-right: 8px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .goodsInfo{
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: stretch;
+        justify-content: space-between;
+        .goodsName{
+            max-width: 340px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+    .specs{
+        margin-left: 12px;
+        color: #888888;
+        display: inline-block;
+        max-width: 330px;
+        text-overflow: ellipsis;
+        overflow: hidden
+    }
+    
+}
+.choseNumWrap{
+    margin-bottom: 8px;
+}
+.choseNum{
+    color: #4391FF;
+    font-weight: bold;
+    padding: 0 2px;
+}
+
+// 优惠券-数据
+.distributorData_name{
+    width: 100%;
+    height: 56px;
+    background: #F7F9FB;
+    text-align: center;
+    font-weight: 800;
+    color: #0D1A26;
+    line-height: 56px;
+    margin: 16px 0;
+}
+.distributorData_echarts{
+    width: 100%;
+    padding: 32px;
+    border: 1px solid #E3E3E3;
+    margin-bottom: 24px;
+    .showLineTypeWrap{
+        span{
+            display: inline-block;
+            margin-left: 32px;
+            position: relative;
+        }
+        span::before{
+            position: absolute;
+            content: '';
+            width: 12px;
+            height: 12px;
+            left: -16px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .send::before{
+            background: #FFAA16;
+        }
+        .draw::before{
+            background: #4391FF;
+        }
+        .use::before{
+            background: #3FCD9C;
+        }
+    }
+}

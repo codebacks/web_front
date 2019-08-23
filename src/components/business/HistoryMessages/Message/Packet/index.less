@@ -1,0 +1,53 @@
+@import "../common.less";
+
+.packet {
+    .body {
+        background-color: #fff;
+        .info {
+            position: relative;
+            height: 42px;
+            margin: 16px;
+            padding-left: 48px;
+            color: #010101;
+        }
+        .meta {
+            padding: 8px 16px;
+            line-height: 1.2;
+            border-top: 1px solid #E6E9EB;
+            color: #9EA8B1;
+            font-size: 12px;
+        }
+        .avatarWrap {
+            position: absolute;
+            left: 0;
+            top: 0;
+            .avatar {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .nameWrap {
+            display: flex;
+            align-items: center;
+            height: 42px;
+            flex-wrap: wrap;
+            .title {
+                width: 100%;
+                max-width: 200px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                word-wrap: normal;
+                color: #556675;
+            }
+            .username {
+                width: 100%;
+                color: #999;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: 12px;
+            }
+        }
+    }
+}

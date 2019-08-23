@@ -1,0 +1,70 @@
+.whitelist {
+    .alert {
+        margin-bottom: 16px;
+        button {
+            margin-left: 16px;
+        }
+    }
+    .searchWrap {
+        padding: 22px 22px 30px;
+        background-color: #fafafa;
+        .btn {
+            display: inline-block;
+            line-height: 38px;
+            margin-left: 16px;
+        }
+    }
+    .addBtn {
+        margin: 20px 0;
+    }
+    .tableWrap {
+        .canEdit {
+            margin-top: 6px;
+            cursor: pointer;
+            color: #4391FF;
+            &.disabled {
+                color: #999;
+            }
+        }
+        .avatar {
+            width: 10%;
+            img {
+                width: 68px;
+                height: 68px;
+            }
+        }
+        .uin {
+            width: 14%;
+        }
+        .nickname, .editNickname {
+            width: 10%;
+        }
+        .remark {
+            width: 12%;
+        }
+    }
+}
+
+.permissionsModal {
+    :global {
+        .ant-checkbox-group {
+            margin-left: 30px;
+            .ant-checkbox-wrapper {
+                display: block;
+                margin-top: 10px;
+            }
+        }
+        .ant-checkbox-wrapper + .ant-checkbox-wrapper {
+            margin-left: 0;
+        }
+    }
+}
+
+.permissionDesc {
+    padding: 0 10px;
+    font-size: 14px;
+    min-width: 200px;
+    li {
+        margin: 10px 0;
+    }
+}

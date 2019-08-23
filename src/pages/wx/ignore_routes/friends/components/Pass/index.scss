@@ -1,0 +1,21 @@
+@import "../../../../style/index";
+
+.avatar {
+    width: 30px;
+    height: 30px;
+}
+
+
+.weChatColumn,
+.statusColumn {
+    width: 12%;
+    word-break: break-all;
+}
+
+.contentColumn {
+    width: 15%;
+}
+
+.sexColumn {
+    min-width: 50px;
+}

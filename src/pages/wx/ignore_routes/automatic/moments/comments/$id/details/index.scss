@@ -1,0 +1,63 @@
+@import "~wx/style/index";
+
+.details {
+    .customSearchWrap {
+        margin-top: 10px;
+        padding: 22px 0 12px;
+        background-color: #FAFAFA;
+        :global {
+            .ant-btn {
+                width: 80px;
+                font-size: $font-size;
+                margin: 0 0 0 30px;
+            }
+        }
+    }
+
+    .tableHead {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        .leftWrap {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            .label {
+                display: inline-block;
+                flex-shrink: 0;
+            }
+        }
+
+        .result {
+            flex: 1;
+            text-align: right;
+            margin: 16px;
+            .item {
+                &:not(:last-child) {
+                    margin-right: $margin-base;
+                }
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                h3 {
+                    color: $font-size-color-dark;
+                    font-size: 14px;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
+                p {
+                    margin-bottom: 0;
+                    color: $font-size-color-light;
+                }
+            }
+        }
+    }
+    .messageColumn {
+        width: 10%;
+    }
+    .comment {
+        margin: 0;
+    }
+}

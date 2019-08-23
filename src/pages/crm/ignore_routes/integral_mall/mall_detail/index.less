@@ -1,0 +1,79 @@
+.leftContent{
+    margin-top: 16px;
+}
+
+.extraText{
+    font-size: 12px;
+    color: #9EA8B1;
+    line-height: 20px;
+}
+
+.phoneWrap {
+    width: 264px;
+    height: 530px;
+    padding: 37px 7px 40px;
+    margin: 70px auto ;
+    overflow: hidden;
+}
+.signBar{
+    background: url(../../../assets/images/mall_phone_sign.png) no-repeat center;
+    background-size: 100% 100%;
+}
+.noSignBar{
+    background: url(../../../assets/images/mall_phone.png) no-repeat center;
+    background-size: 100% 100%;
+}
+.phoneContent {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+    .head{
+        text-align: center;
+        margin-bottom: 12px;
+        padding: 0 8px;
+        position: relative;
+        font-size: 14px;
+        .headImg{
+            position: absolute;
+            right: 8px;  
+            width: 24px; 
+            margin-top: 3px;
+        }
+    }
+    .banerWarp{
+        position: relative;
+    }
+    .banerImg{
+        width: 100%;
+        max-height: 120px;
+        object-fit: cover;
+    }
+    .banerText{
+        position: absolute;
+        top: 37%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        min-width: 200px;
+        text-align: center;
+    }
+    .conWarp{
+        background-color: #F7F9FB;
+        padding-top: 4px; 
+        .conImg{
+            width: 100%; 
+        }
+    }
+}
+.modalCon{
+    :global{
+        .ant-modal-close-x{
+            width: 30px;
+            height: 30px;
+            line-height: 30px; 
+        }
+    }
+}

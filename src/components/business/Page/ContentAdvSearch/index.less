@@ -1,0 +1,61 @@
+@import "../../../../style/hz/variable.less";
+
+.searchBox {
+    background: @color-bg-default;
+    margin-bottom: 16px;
+    padding: 24px;
+
+    :global{
+        // .ant-form-item {
+            
+        // }
+
+        // .ant-form-item-label {
+        //     text-align: left;
+        // }
+
+        // .ant-form-item-control-wrapper{
+        //     flex-grow: 1;
+        //     padding-right: 24px;
+        // }
+
+        .ant-calendar-picker{
+            width: 100%;
+        }
+    }
+}
+
+.content {
+    // max-width: @width-tip-max;
+}
+.noGutter {
+    margin-bottom: 0;
+}
+
+.noMultiple{
+    padding-left: 24px;
+    padding-bottom: 8px;
+
+    :global {
+
+        .ant-row {
+            display: flex;
+        }
+        .ant-row > div {
+            max-width: 350px;
+        }
+
+        .ant-form-item {
+            display: flex;
+        }
+
+        // .ant-form-item-label {
+        //     text-align: left;
+        // }
+
+        .ant-form-item-control-wrapper{
+            flex-grow: 1;
+            padding-right: 16px;
+        }
+    }
+}

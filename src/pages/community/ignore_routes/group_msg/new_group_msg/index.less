@@ -1,0 +1,362 @@
+@import "~community/style/common.less";
+
+.automaticNewGroupMsg {
+    .at {
+        margin-top: 10px;
+    }
+}
+
+.content {
+
+}
+
+.steps {
+    margin: 32px 0 32px 92px;
+    width: 60%;
+}
+
+.selectGroupWeChat {
+    .remark {
+        max-width: 200px;
+    }
+
+    .wholeDept {
+        word-break: break-all;
+        max-width: 240px;
+    }
+
+    .tip {
+        margin-left: 20px;
+    }
+
+    .deptColumn {
+        max-width: 140px;
+
+        .dept {
+            cursor: pointer;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .delete {
+        color: #4391FF;
+        cursor: pointer;
+    }
+
+    .chooseWx {
+        font-size: 14px;
+        color: #333333;
+        line-height: 22px;
+        font-weight: bold;
+
+        &:before {
+            display: inline-block;
+            margin-right: 4px;
+            content: "*";
+            font-family: SimSun;
+            line-height: 1;
+            font-size: 14px;
+            color: #f5222d;
+        }
+    }
+
+    .addUin {
+        :global {
+            .ant-btn {
+                border-color: @primary-color;
+                color: @primary-color;
+                font-size: @font-size;
+            }
+        }
+    }
+
+    .tableSearch {
+    @include clearfix();
+        margin: 22px 0 8px 0;
+
+        .searchLeft {
+            float: left;
+            font-size: 14px;
+            color: #333333;
+            line-height: 22px;
+            font-weight: bold;
+        }
+
+        .right {
+            float: right;
+
+            .select {
+                display: inline-block;
+                margin-right: 20px;
+                min-width: 130px;
+            }
+
+            .input {
+                display: inline-block;
+                width: 200px;
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .left {
+        overflow-x: auto;
+        overflow-y: hidden;
+        height: 100%;
+        margin-left: -8px;
+        min-height: 100px;
+
+        .loadingWarp {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+
+            .loading {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: -10px;
+            }
+        }
+
+        .loadingWarpHide {
+            display: none;
+        }
+    }
+
+    .tree {
+        :global {
+            li span.ant-tree-checkbox {
+                margin-top: 14px;
+            }
+
+            li span.ant-tree-switcher {
+                height: 40px;
+                line-height: 40px;
+            }
+
+            li .ant-tree-node-content-wrapper {
+                //width: calc(100% - 60px);
+                height: 40px;
+                line-height: 40px !important;
+            }
+
+            li .ant-tree-node-content-wrapper.ant-tree-node-selected {
+                color: #4391FF;
+            }
+        }
+
+        .treeNode {
+            display: flex;
+        }
+
+        .treeNodeTitle {
+        @include textOverflow();
+            flex: 1 1;
+        }
+
+        .treeNodeClick {
+            margin-left: 10px;
+        }
+
+        .treeNodeDot {
+            font-size: 24px;
+            line-height: 40px;
+            transform: rotate(90deg);
+        }
+    }
+}
+
+.checkWeChatGroup {
+    .left {
+        border-right: 1px solid #e5e5e5;
+        padding-right: 16px;
+    }
+
+    .right {
+        height: 100%;
+        padding-left: 16px;
+    }
+
+    .filterBar {
+        margin: 16px 0;
+        position: relative;
+        line-height: 32px;
+    }
+
+    .total {
+        font-size: 16px;
+        color: #f60;
+    }
+
+    .option {
+        margin-top: 10px;
+    }
+
+    .formItem {
+        width: 96%;
+    }
+
+    .searchBtn{
+        text-align: right;
+    }
+
+    .deptColumn {
+        max-width: 60px;
+    }
+
+    .selectAll {
+        position: absolute !important;
+        right: 0;
+    }
+
+    .rightOption {
+        text-align: right;
+        padding: 16px 0;
+    }
+
+    .cancel {
+
+    }
+
+    .wholeDept,
+    .wholeRemark {
+        word-break: break-all;
+        max-width: 240px;
+    }
+
+    .dept {
+        cursor: pointer;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .tableSearch {
+    @include clearfix();
+
+        .note {
+            font-weight: normal;
+            font-size: 14px;
+            color: #a39d9d;
+            line-height: 22px;
+        }
+
+        .searchLeft {
+            //float: left;
+            font-size: 14px;
+            color: #333333;
+            line-height: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .line {
+            margin-bottom: 8px;
+        }
+
+        .input {
+            display: inline-block;
+            margin-right: 6px;
+        }
+
+        .right {
+            float: right;
+
+            .select {
+                display: inline-block;
+                margin-right: 20px;
+                min-width: 130px;
+            }
+
+            .input {
+                display: inline-block;
+                width: 200px;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+.sentMsg {
+    .title {
+        font-weight: 700;
+        margin: 20px 0;
+
+        .tip {
+            font-weight: 400;
+            margin-left: 20px;
+        }
+    }
+
+    .slider {
+        :global {
+            .ant-slider-handle {
+                border-color: #4391FF;
+            }
+
+            .ant-slider-track {
+                background-color: #4391FF;
+            }
+        }
+    }
+
+    .timePicker {
+        width: 40%;
+    }
+
+    .timeMsg {
+        color: red;
+        margin-left: 100px;
+        font-size: 16px;
+    }
+
+    :global {
+        .ant-upload-list-picture-card {
+            float: none;
+        }
+
+        .ant-modal-close-x {
+            width: 32px;
+            line-height: 32px;
+            font-size: 20px;
+        }
+
+        .ant-upload-list-item-info {
+            > span {
+                height: 100%;
+
+                .ant-upload-list-item-thumbnail {
+                    > img {
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+
+    .add {
+        position: relative;
+        width: 100%;
+        text-align: right;
+    }
+
+    .operate {
+        color: @primary-color;
+        cursor: pointer;
+        z-index: 99;
+        line-height: 14px;
+        margin-right: 10px;
+    }
+}
+
+.footer {
+    padding: 36px 0;
+
+    .btn {
+        margin-right: 20px;
+    }
+}

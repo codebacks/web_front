@@ -1,0 +1,19 @@
+@import "~data/style/index";
+
+.SearchForm {
+    .btns {
+        :global {
+            .ant-col-offset-8 {
+                padding: 0!important;
+            }
+            .ant-btn {
+                width: 80px;
+                font-size: $font-size;
+                margin-top: 6px;
+                &:first-child {
+                    margin-right: $margin-base;
+                }
+            }
+        }
+    }
+}

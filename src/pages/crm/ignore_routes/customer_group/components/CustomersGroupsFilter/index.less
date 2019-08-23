@@ -1,0 +1,98 @@
+.content {
+    padding: 20px;
+
+    .btn {
+        margin-right: 10px;
+    }
+
+    .filterContent {
+        margin: 16px 0;
+        position: relative;
+
+        .filterContentLeft {
+            display: inline-block;
+            border: 1px solid #E3E3E3;
+            overflow: auto;
+            height: 700px;
+            width: 100%;
+            margin-right: 20px;
+            padding: 16px;
+
+            .category{
+                margin-top: 10px;
+            }
+
+            .categoryTitle {
+                font-weight: bolder;
+                color: #333333;
+                line-height: 22px;
+                margin-bottom: 16px;
+            }
+
+            .categoryTags{
+                margin-right: -16px;
+            }
+
+            .categoryTag {
+                border: 1px solid #E3E3E3;
+                padding: 4px 0;
+                color: #666666;
+                display: inline-block;
+                text-align: center;
+                margin-bottom: 16px;
+                margin-right: 16px;
+                position: relative;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                cursor: pointer;
+                width: 120px;
+                line-height: 32px;
+            }
+
+            .categoryActiveTag {
+                border: 1px solid #4391FF;
+                color: #4391FF;
+            }
+
+            .categorySelect {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                border-left: 24px solid transparent;
+                border-bottom: 18px solid #4391FF;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 5px;
+                    border: 2px solid #fff;
+                    border-top: 0;
+                    border-right: 0;
+                    bottom: -13px;
+                    right: 1px;
+                    transform: rotateZ(-45deg);
+                }
+            }
+        }
+
+        .filterContentRight {
+            height: 700px;
+            position: relative;
+            border: 1px solid #E3E3E3;
+            overflow: auto;
+            margin-left: 20px;
+            padding: 16px;
+            .title{
+                font-weight: bolder;
+                color: #333333;
+                line-height: 22px;
+                margin-top: 10px;
+            }
+            .topFilterBar{
+                margin-top: 16px;
+            }
+        }
+    }
+}

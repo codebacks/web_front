@@ -1,0 +1,19 @@
+@import "~crm/style/index";
+
+.recordWrapper {
+    .searchBtn {
+        :global {
+            .ant-col-offset-6 {
+                padding: 0 !important;
+            }
+        }
+    }
+    .dateRange {
+        :global {
+            .ant-input {
+                font-size: 13px;
+            }
+        }
+    }
+}
+

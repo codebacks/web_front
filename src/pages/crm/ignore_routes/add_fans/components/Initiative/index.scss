@@ -1,0 +1,98 @@
+@import "~crm/style/index";
+
+.initiativeWrapper {
+    .searchBtn {
+        :global {
+            .ant-col-offset-8 {
+                padding: 0!important;
+            }
+        }
+    }
+    .addition {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .weChatColumn {
+        width: 20%;
+        .weChatInfo {
+
+            display: flex;
+            align-items: center;
+            .avatar,
+            .avatar {
+                width: 50px;
+                height: 50px;
+                margin-right: 8px;
+                border-radius: 2px;
+            }
+            .info {
+                p {
+                    white-space: pre-wrap;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .remarkColumn {
+        width: 15%;
+    }
+
+    .typeColumn {
+        min-width: 50px;
+        width: 15%;
+        .type {
+            p {
+                white-space: pre-wrap;
+                margin: 0;
+            }
+        }
+    }
+
+    .deptColumn {
+        max-width: 80px;
+        .dept {
+            cursor: pointer;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .userColumn {
+        min-width: 50px;
+    }
+
+    .operationColumn {
+        min-width: 150px;
+        .operation {
+            &.active {
+                color: $primary-color;
+                cursor: pointer;
+            }
+            &.inactive {
+                color: rgba(0,0,0,0.25);
+            }
+        }
+    }
+
+    .stress,
+    .disabled {
+        color: #f04134;
+    }
+
+    .stress {
+        margin-left: 16px;
+    }
+
+}
+
+.wholeDept {
+    word-break: break-all;
+    max-width: 240px;
+}
+
+

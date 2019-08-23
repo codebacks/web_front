@@ -1,0 +1,14 @@
+.dateRange {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    .sp {
+        display: inline-block;
+        margin: 0 8px;
+    }
+    :global {
+        .ant-calendar-picker {
+            flex: 1;
+        }
+    }
+}

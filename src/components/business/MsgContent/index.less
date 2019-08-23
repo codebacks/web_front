@@ -1,0 +1,46 @@
+.MsgContent {
+    :global {
+        .ant-modal {
+            padding-bottom: 0;
+        }
+        .ant-modal-body {
+            max-height: 545px;
+            padding-bottom: 8px;
+            overflow-y: auto;
+        }
+    }
+    .list {
+        list-style-type: none;
+        margin-bottom: 0;
+        .item {
+            padding-bottom: 24px;
+            .label {
+                float: left;
+                width: 60px;
+            }
+            .content {
+                margin-left: 60px;
+                .text {
+                    border: 1px solid #D9D9D9;
+                    border-radius: 2px;
+                    padding: 8px;
+                }
+                .image {
+                    width: 104px;
+                }
+                .video,
+                .link {
+                    display: inline-block;
+                    width: 30px;
+                    height: 21px;
+                }
+
+                .video {
+                    background: url(./img/video.png) no-repeat 50%;
+                    background-size: 100% 100%;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}

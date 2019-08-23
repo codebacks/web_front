@@ -1,0 +1,208 @@
+.behaviorManage{
+    .title{
+        margin-right: 20px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .configCont{
+        display: flex;
+        height: 560px;
+        margin: 30px;
+        border: 1px solid #999;
+        @media screen and (max-height: 768px){
+            height: 500px;
+        }
+        .switchs{
+            display: flex;
+            flex-direction: column;
+            width: 28%;
+            border-right: 1px solid #999;
+            .configItem{
+                flex: 1;
+                display: flex;
+                align-items: center;
+                padding: 14px 20px;
+                border-bottom: 1px solid #999;
+                &:last-child{
+                    border-bottom: none;
+                }
+                &.active{
+                    background: #0087ff45;
+                }
+                .left{
+                    flex: 1;
+                    text-align: center;
+                }
+                :global{
+                    .ant-switch{
+                        flex: 0 40px;
+                    }
+                }
+            }
+        }
+        .right{
+            width: 72%;
+            padding: 20px 40px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            .warningTitle{
+                margin-left: -10px;
+                margin-bottom: 20px;
+            }
+            .violationsMsgWrap{
+                .show{
+                    display: flex;
+                    margin: 20px 0;
+                    .showTxt{
+                        max-width: 80%;
+                        margin-right: 20px;
+                    }
+                    .editBtn{
+                        color: #4391FF;
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+                }
+                .edit{
+                    margin: 20px 0;
+                    :global{
+                        .ant-btn{
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+            .configSensitive{
+                .sensitiveWrap{
+                    margin-top: 20px;
+                    .inputWrap{
+                        display: flex;
+                        align-items: center;
+                        .btns{
+                            display: flex;
+                            align-items: center;
+                            :global{
+                                .ant-btn{
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                    }
+                    .sensitives{
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-top: 20px;
+                        .item{
+                            max-width: 90%;
+                            display: flex;
+                            border: 1px solid #e5e5e5;
+                            border-radius: 4px;
+                            margin: 0 10px 10px 0;
+                            .txt{
+                                flex: 1;
+                                max-width: none;
+                                line-height: 24px;
+                                padding: 6px 14px;
+                                border-right: 1px solid #e5e5e5;
+                            }
+                            .icon{
+                                width: 30px;
+                                text-align: center;
+                                :global{
+                                    .anticon{
+                                        margin-top: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .configHarassment{
+                .inputRow{
+                    margin: 20px 0;
+                }
+            }
+            .configLink{
+                .linkCont{
+                    margin-top: 20px;
+                    .inputWrap{
+                        display: flex;
+                        align-items: center;
+                        .btns{
+                            display: flex;
+                            align-items: center;
+                            :global{
+                                .ant-btn{
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                    }
+                    .websiteWrap{
+                        .websiteTitle{
+                            margin-top: 10px;
+                        }
+                        .websites{
+                            display: flex;
+                            flex-wrap: wrap;
+                            margin-top: 20px;
+                            .item{
+                                max-width: 90%;
+                                display: flex;
+                                border: 1px solid #e5e5e5;
+                                border-radius: 4px;
+                                margin: 0 10px 10px 0;
+                                .txt{
+                                    flex: 1;
+                                    max-width: none;
+                                    line-height: 24px;
+                                    padding: 6px 14px;
+                                    border-right: 1px solid #e5e5e5;
+                                }
+                                .icon{
+                                    width: 30px;
+                                    text-align: center;
+                                    :global{
+                                        .anticon{
+                                            margin-top: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .configDefault{}
+        }
+    }
+    .commandEdit{
+        margin-top: 50px;
+        .cont{
+            margin-left: 30px;
+            .kickMsgWrap{
+                .show{
+                    display: flex;
+                    margin: 20px 0;
+                    .showTxt{
+                        max-width: 80%;
+                        margin-right: 20px;
+                    }
+                    .editBtn{
+                        color: #4391FF;
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+                }
+                .edit{
+                    :global{
+                        .ant-btn{
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

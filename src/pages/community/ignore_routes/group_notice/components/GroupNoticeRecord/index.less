@@ -1,0 +1,38 @@
+.groupNoticeRecord{
+    .searchWrap{
+        padding: 22px 22px 30px;
+        background-color: #fafafa;
+        .searchBtn{
+            :global{
+                .ant-btn-primary{
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+    .tableWrap{
+        .ident, .num{
+            width: 8%;
+        }
+        .notice {
+            width: 18%;
+        }
+        .department, .user{
+            width: 10%;
+        }
+        .executeTime, .feedTime {width: 10%;}
+        .status{
+            width: 10%;
+        }
+        .edit{
+            p{
+                cursor: pointer;
+                color: #4391FF;
+                &.disabled{
+                    color: #999;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,151 @@
+@import "../../../../style/hz/init.less";
+
+.card {
+    height: 100%;
+    border: none;
+    
+    :global {
+        .ant-card-body{
+            height: 100%;
+            // padding-left: 0;
+            // padding-right: 0; 
+            padding: 0;
+        }
+    }
+}
+
+.tips {
+    span {
+        width: 80px;
+        display: inline-block;
+    }
+}
+
+.customer{
+    display: flex;
+}
+
+.body {
+    padding: @padding-small + @padding-large 0;
+    border: 1px solid #E3E3E3;
+    flex-grow: 1;
+    position: relative;
+}
+
+.sells {
+    width: 500px;
+    margin-left: @margin-large;
+    border: 1px solid #E3E3E3;
+    padding: @padding-small;
+
+    :global {
+        .ant-card-body {
+            padding:  0;
+        }
+    }
+
+    .content {
+
+        padding:  @padding-large;
+        height: 100%;
+    }
+
+    h5 {
+        font-size: 14px;
+        color: @color-description;
+    }
+
+    dl {
+        display: flex;
+        margin: 0;
+        padding-top: 4px;
+        dt {
+            padding-top: 3px;
+            img {
+                display: block;
+                width: 32px;
+                height: 32px;;
+            }
+        }
+
+        dd {
+            margin: 0;
+            flex-grow: 1;
+            flex-shrink: 1;
+            width: auto;
+            overflow: hidden;
+
+            span {
+                margin-top: @margin-small;
+
+                font-size: 16px;
+                font-weight: normal;
+                display: block;
+                color: @color-default;
+
+                &.sellsJineTopOne {
+                    color: #FFAA16;
+                }
+            }
+
+            .sellsNickName {
+                font-size: 24px;
+                color: @color-title;
+                font-weight: 800;
+            
+                display: block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                
+                white-space: nowrap;
+                height: 30px;
+                margin: 0;
+            }
+        }
+    }
+
+    p {
+        display: none;
+    }
+
+}
+
+
+
+.sellsStaticticsing {
+    dl {
+        display: none;
+    }
+    p.sellsStaticticsingText {
+        display: block;
+    }
+
+    .content{
+        background: url(../../assets/images/sell-top-staticticsing-tip.png) no-repeat 90% 30px;
+    }
+}
+
+.sellsNoData{
+    dl {
+        display: none;
+    }
+    p.sellsNoDataText {
+        display: block;
+    }
+
+    .content{
+        background: url(../../assets/images/sell-top-nodata-tip.png) no-repeat 90% 30px;
+    }
+}
+
+.customerSetting {
+    position: absolute; 
+    top: 16px;
+    right: 16px;
+    z-index: 10;
+}
+.customerSettingIcon {
+    color: @color-primary;
+    font-size: 16px;
+    cursor: pointer;
+}

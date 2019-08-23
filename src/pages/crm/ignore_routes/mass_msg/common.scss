@@ -1,0 +1,64 @@
+@import "../../style/base";
+
+.searchWrap {
+    padding: 22px 22px 26px;
+    background-color: #F7F9FB;
+    margin-top: 16px;
+    .searchBtn {
+        :global {
+            .ant-btn {
+                width: 80px;
+                font-size: $font-size;
+                margin-top: 6px;
+                &:first-child {
+                    margin-right: $margin-base;
+                }
+            }
+        }
+    }
+}
+.tableWrap {
+    margin-top: 30px;
+}
+.timeFormItem {
+    :global {
+        .ant-form-item-children {
+            white-space: nowrap;
+        }
+    }
+}
+
+.stress {
+    color: $primary-color;
+    cursor: pointer;
+}
+
+.errMsg {
+    color: #f04134;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.resultPre {
+    p {
+        margin-bottom: 0;
+        width: 80px;
+        white-space: nowrap;
+    }
+}
+
+.deptColumn {
+    max-width: 120px;
+    .dept {
+        cursor: pointer;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+.wholeDept {
+    word-break: break-all;
+    max-width: 240px;
+}
+

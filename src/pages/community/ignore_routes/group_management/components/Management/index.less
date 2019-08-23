@@ -1,0 +1,243 @@
+@import "~community/style/common";
+
+.container {
+    overflow: hidden;
+    :global {
+        .ant-table-bordered .ant-table-body > table {
+            table-layout: fixed;
+            word-wrap: break-word;
+        }
+    }
+    .alert{
+        margin-bottom: 16px;
+    }
+    .searchWrap {}
+    .totalStatus{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 16px 0;
+        .leftBtns{
+            display: flex;
+            align-items: center;
+            .selectedCount{
+                margin-right: 10px;
+            }
+            :global{
+                .ant-checkbox-wrapper{
+                    margin-right: 10px;
+                }
+                .ant-btn{
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    margin-right: 14px;
+                }
+            }
+            .export{
+                border-color: @primary-color;
+                color: @primary-color;
+            }
+        }
+        .rightStatus{
+            display: flex;
+            .statusItem{
+                margin-right: 20px;
+                text-align: center;
+                .num{
+                    font-weight: bold;
+                    &.red{
+                        color: #f00;
+                    }
+                }
+            }
+        }
+    }
+    .tableWrap{
+        margin: 0;
+        .flagTag{
+            width: fit-content;
+            margin-top: 4px;
+            padding: 2px 6px;
+            color: @primary-color;
+            border: 1px solid @primary-color;
+            border-radius: 2px;
+        }
+        .questionCircle {
+            color: @primary-color;
+            margin-left: 5px;
+        }
+        .management {
+            width: 150px;
+        }
+        .bindTip {
+            color: @primary-color;
+            cursor: pointer;
+        }
+        .number {
+            color: @primary-color;
+            cursor: pointer;
+        }
+        .nicknameColumn {
+            width: 7%;
+            word-break: break-all;
+        }
+        .countColumn {
+            width: 4%;
+        }
+        .groupOwner{
+            width: 8%;
+            .name{
+                word-break: break-word;
+            }
+        }
+        .forWx{
+            width: 4%;
+        }
+        .replierColumn{
+            width: 9%;
+            .replierColumnWrapper{
+                > div{
+                    margin-top: 4px;
+                }
+                .replierWrapper{
+                    text-decoration: underline;
+                    cursor: pointer;
+                    .replier{
+                        color: @primary-color;
+                        &.red{
+                            color: red;
+                        }
+                    }
+                }
+                .abnormal{
+                    color: #ffb507;
+                }
+            }
+        }
+        .noticeColumn{
+            width: 6%;
+            .notice {
+                word-break: break-word;
+                cursor: pointer;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                /*! autoprefixer: off */
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+            }
+        }
+        .groupDivide{
+            width: 6%;
+        }
+        .remarkColumn {
+            width: 6%;
+            .remark{
+                word-break: break-all;
+                cursor: pointer;
+            }
+        }
+        .createTime {
+            width: 7%;
+        }
+        .deptColumn {
+            width: 5%;
+            .dept {
+                cursor: pointer;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        .syncColumn{
+            width: 6%;
+        }
+        .statusColumn {
+            width: 5%;
+            .statusItem{
+                display: flex;
+            }
+        }
+        .operation {
+            width: 5%;
+            .record {
+                margin-top: 6px;
+                color: @primary-color;
+                cursor: pointer;
+                &:first-child{
+                    margin-top: 0;
+                }
+                &.disabled {
+                    color: #999;
+                    cursor: not-allowed;
+                }
+            }
+        }
+        .questionCircle {
+            color: #4391FF;
+            margin-left: 5px;
+        }
+    }
+}
+
+.wholeNotice {
+    max-width: 300px;
+    word-break: break-all;
+}
+
+.wholeDept {
+    word-break: break-all;
+    max-width: 240px;
+}
+
+.autoPullWrap{
+    .statusWrap{
+        display: flex;
+        justify-content: flex-end;
+        margin: 15px 0;
+        .statusItem{
+            width: 80px;
+            text-align: center;
+            .num{
+                color: #4391FF;
+                font-weight: bold;
+            }
+        }
+    }
+    .tableWrap{
+        margin-top: 0;
+        .avatar{
+            width: 10%;
+            img{
+                width: 68px;
+            }
+        }
+        .nickname{
+            width: 10%;
+        }
+        .wechatId{
+            width: 10%;
+        }
+        .remark{
+            width: 12%;
+        }
+        .desGroup{
+            width: 10%;
+        }
+        .time{
+            width: 10%;
+        }
+        .way{
+            width: 10%;
+        }
+        .status{
+
+        }
+        .failReason{
+            width: 12%;
+        }
+        .operate{
+            width: 10%;
+        }
+    }
+}

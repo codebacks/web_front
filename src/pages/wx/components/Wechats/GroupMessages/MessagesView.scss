@@ -1,0 +1,406 @@
+@import "../../../style/base";
+@import "../../../style/index";
+
+
+
+.chatHistory {
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    // 滚动条
+    &::-webkit-scrollbar-thumb {
+        background: #BEBEBE;
+    }
+    &::-webkit-scrollbar-thumb,
+        // 滚动条轨道
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0);
+    }
+    background-color: #f3f3f3;
+    .loadingWrap {
+        position: relative;
+        text-align: center;
+        .loading {
+            display: inline-block;
+            height: 16px;
+            width: 16px;
+            background: url(../../../assets/images/loading.png) no-repeat 50%;
+            background-size: 100% 100%;
+            animation: play 1s linear infinite;
+        }
+        @keyframes play{
+            0%  {
+                transform:rotate(0deg);
+            }
+            100% {
+                transform:rotate(360deg);
+            }
+
+        }
+    }
+    .chatItem {
+        position: relative;
+        padding: 16px 28px 16px 56px;
+        box-sizing: content-box;
+        text-align: left;
+        .note {
+            text-align: center;
+            margin: 0 auto;
+            font-size: 14px;
+            max-width: 600px;
+            overflow: hidden;
+        }
+        .noteTipTime {
+            text-align: center;
+            margin: 0 auto;
+        }
+        .picture {
+            width: 110px;
+            height: auto;
+            display: inline-block;
+            border-radius: 5px;
+            vertical-align: middle;
+            overflow: hidden;
+            text-align: center;
+            img {
+                max-width: 100%;
+                vertical-align: middle;
+            }
+        }
+        .anticon {
+            vertical-align: middle;
+            font-size: 18px;
+            margin-right: 8px;
+        }
+        .errorIcon {
+            font-size: 18px;
+            color: #f60;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        .tip {
+            color: #bbb;
+        }
+        .cover {
+            //background: url("/static/client/images/icons.png") no-repeat;
+            -webkit-background-size: 487px 462px;
+            background-size: 487px 462px;
+            display: table-cell;
+            vertical-align: middle;
+            width: 76px;
+            height: 76px;
+        }
+        .cont {
+            display: table-cell;
+            vertical-align: top;
+            padding-left: 10px;
+            .title {
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                word-wrap: normal;
+                max-width: 200px;
+            }
+            .opt {
+                margin-top: 25px;
+                .sep {
+                    margin: 0 8px;
+                }
+                a {
+                    color: #35ac2f;
+                    text-decoration: none;
+                }
+            }
+        }
+        .videoCover {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 110px;
+            line-height: 110px;
+            margin-top: -10px;
+            margin-right: -11px;
+        }
+        .card {
+            padding: 5px !important;
+            min-width: 250px;
+            max-width: 300px;
+            .cardBody {
+                background-color: #fff;
+                padding: 8px;
+                .cc {
+                    position: relative;
+                    padding-left: 56px;
+                    height: 42px;
+                }
+                h3 {
+                    font-size: 14px;
+                    font-weight: 400;
+                    border-bottom: 1px dashed $border-color;
+                    margin-bottom: 10px;
+                    position: relative;
+                    .icon {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        font-size: 18px;
+                        cursor: pointer;
+                    }
+                }
+                .cardAvatarWrap {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    .cardAvatar {
+                        width: 42px;
+                        height: 42px;
+                        border-radius: 4px;
+                        -moz-border-radius: 4px;
+                        -webkit-border-radius: 4px;
+                    }
+                }
+                .title {
+                    width: 100%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    word-wrap: normal;
+                    max-width: 200px;
+                    line-height: 42px;
+                }
+            }
+            a {
+                color: #000;
+            }
+        }
+        .attachment {
+            padding: 5px !important;
+            min-width: 250px;
+            max-width: 300px;
+            a {
+                color: #000;
+            }
+            .attach {
+                background-color: #fff;
+                padding: 10px;
+                .cover {
+                    background-position: -346px -152px;
+                }
+            }
+        }
+        .avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            vertical-align: middle;
+            position: absolute;
+            left: 16px;
+        }
+        .title {
+            color: #000;
+        }
+        .extWrap {
+            img {
+                display: inline-block;
+                vertical-align: middle;
+                width: 48px;
+                height: 48px;
+                border-radius: 5px;
+                margin-right: 10px;
+                margin-bottom: 5px;
+            }
+            .desc {
+                display: inline-block;
+                color: #888;
+                text-overflow: ellipsis;
+                max-width: 500px;
+                vertical-align: middle;
+            }
+            &.mapExtWrap {
+                height: 140px;
+                overflow: hidden;
+                position: relative;
+                margin: 8px 0;
+                img {
+                    border-radius: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: auto;
+                    height: auto;
+                    margin: -296px auto auto -296px
+                }
+
+            }
+        }
+        .bubble {
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+            -moz-hyphens: auto;
+            hyphens: auto;
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+            z-index: 2;
+            max-width: 80%;
+            display: inline-block;
+            height: auto;
+            position: relative;
+            padding: 5px 20px;
+            border: none;
+            -webkit-border-radius: 3px;
+            border-radius: 3px;
+            font: normal 14px/1.5 "Abel", Helvetica, sans-serif;
+            color: #000;
+            //text-align: center;
+            text-align: left;
+            background: #fff;
+            //text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+            &:before {
+                -webkit-box-sizing: content-box;
+                -moz-box-sizing: content-box;
+                box-sizing: content-box;
+                z-index: 1;
+                position: absolute;
+                content: "";
+                top: 9px;
+                left: -6px;
+                border: none;
+                width: 0;
+                height: 0;
+                border-top: 6px solid transparent;
+                border-bottom: 6px solid transparent;
+                border-right: 6px solid #fff;
+                border-left: 0;
+            }
+        }
+        .red_bubble {
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+            z-index: 2;
+            max-width: 400px;
+            display: inline-block;
+            height: auto;
+            position: relative;
+            border: none;
+            min-height: 22px;
+            border-radius: 3px;
+            color: #000;
+            text-align: left;
+            background: #fff;
+            min-width: 250px;
+            padding: 0!important;
+            &:before {
+                -webkit-box-sizing: content-box;
+                z-index: 1;
+                position: absolute;
+                content: "";
+                top: 9px;
+                left: -6px;
+                border: none;
+                width: 0;
+                height: 0;
+                border-top: 6px solid transparent;
+                border-bottom: 6px solid transparent;
+                border-right: 6px solid #fff;
+                border-left: 0;
+                box-sizing: border-box;
+            }
+            .red_cardBody {
+                background-color: #fa9e3b!important;
+                min-height: 60px;
+                border-radius: 3px;
+                .red_cc {
+                    position: relative;
+                    padding: 10px 10px 10px 56px;
+                    height: 52px;
+                    color: #fff!important;
+                    .red_cardAvatarWrap {
+                        position: absolute;
+                        left: 8px!important;
+                        top: 10px;
+                        .red_cardAvatar {
+                            width: 42px;
+                            height: 42px;
+                            border-radius: 4px;
+                            -moz-border-radius: 4px;
+                            -webkit-border-radius: 4px;
+                        }
+                    }
+                    .red_title {
+                        width: 100%;
+                        font-size: 14px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        word-wrap: normal;
+                        max-width: 200px;
+                        text-indent: 5px;
+                        margin-bottom: 0;
+                        line-height: 1.5!important;
+                        color: #fff!important;
+                    }
+                    .red_desc {
+                        color: #fae3ca;
+                        font-size: 12px;
+                        text-indent: 5px;
+                        padding-top: 3px;
+                    }
+                }
+                h3 {
+                    font-size: 12px;
+                    text-indent: 12px;
+                    font-weight: 400;
+                    border-top: 1px solid #e5e5e5;
+                    margin-top: 10px;
+                    margin-bottom: 0;
+                    padding: 5px 0;
+                    position: relative;
+                    color: #b2b2b2;
+                    background-color: #f8f6f6;
+                }
+            }
+        }
+        &.chatOut {
+            text-align: right;
+            padding: 16px 56px 16px 28px;
+            .avatar {
+                width: 30px;
+                height: 30px;
+                border-radius: 3px;
+                vertical-align: middle;
+                position: absolute;
+                left: auto;
+                right: 16px;
+            }
+            .bubble {
+                vertical-align: middle;
+                background: #98e766;
+                color: #000;
+                text-align: left;
+                &:before {
+                    left: auto;
+                    right: -6px;
+                    border-top: 6px solid transparent;
+                    border-bottom: 6px solid transparent;
+                    border-left: 6px solid #98e766;
+                    border-right: 0;
+                }
+            }
+        }
+    }
+    .empty {
+        text-align: center;
+        .emptyImg,
+        .emptyTip {
+            margin-top: 30px;
+        }
+    }
+}

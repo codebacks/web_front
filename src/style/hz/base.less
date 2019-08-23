@@ -1,0 +1,85 @@
+@import "variable.less";
+
+.padding-variant(@name, @space) {
+    &-padding-@{name} { 
+        padding: @space;
+
+        &-left{
+            padding-left: @space;
+        }
+
+        &-right{
+            padding-right: @space;
+        }
+
+        &-bottom{
+            padding-bottom: @space;
+        }
+
+        &-top{
+            padding-top: @space;
+        }
+
+        &-top-bottom{
+            padding-top: @space;
+            padding-bottom: @space;
+        }
+
+        &-left-right{
+            padding-left: @space;
+            padding-right: @space;
+        }
+    }
+}
+
+.margin-variant(@name, @space) {
+    &-margin-@{name} { 
+        margin: @space;
+
+        &-left{
+            margin-left: @space;
+        }
+
+        &-right{
+            margin-right: @space;
+        }
+
+        &-bottom{
+            margin-bottom: @space;
+        }
+
+        &-top{
+            margin-top: @space;
+        }
+
+        &-top-bottom{
+            margin-top: @space;
+            margin-bottom: @space;
+        }
+
+        &-left-right{
+            margin-left: @space;
+            margin-right: @space;
+        }
+    }
+}
+
+
+:global {
+    body .hz {
+        .padding-variant(base, @padding-base);
+        .padding-variant(small, @padding-small);
+        .padding-variant(large, @padding-large);
+        &-padding-none {
+            padding: 0;
+        }
+
+        .margin-variant(base, @margin-base);
+        .margin-variant(small, @margin-small);
+        .margin-variant(large, @margin-large);
+
+        &-icon-popover {
+            padding-left: 12px;
+        }
+    }
+}

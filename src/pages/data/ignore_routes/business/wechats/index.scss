@@ -1,0 +1,54 @@
+@import "~data/style/index";
+
+.wechat_baiguoyuan {
+    padding: 0 5px;
+.questionCircle {
+        color: #4391FF;
+        margin-left: 5px;
+    }
+.totalWrap {
+        margin: 30px 0;
+    .total {
+            display: flex;
+            height: 140px;
+        .item {
+                flex: 1;
+            &:not(:last-child){
+                    margin-right: 24px;
+                }
+                text-align: center;
+                h3 {
+                    padding: 20px 0;
+                    line-height: 1.5;
+                    font-size: 14px;
+                }
+            .num {
+                    font-size: 28px;
+                    padding-bottom: 30px;
+                }
+            }
+        }
+    }
+
+.lineChat {
+        margin: 30px;
+    }
+
+}
+
+.head {
+    padding: 5px;
+}
+
+.export {
+    float: right;
+    margin-top: 5px;
+    border-color: $primary-color;
+    a {
+        color: $primary-color;
+    }
+}
+.filterTab {
+    margin-top: 4px;
+    line-height: 34px;
+}

@@ -1,0 +1,63 @@
+@import '../../../../style/hz/init.less';
+
+.head {
+    display: flex;
+    margin: 0;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.title {
+    font-size: 14px;
+    font-weight: 800;
+    color: #333;
+    flex-grow: 1;
+    margin: 0;
+    padding: 16px 0;
+}
+
+.titleDescription {
+    padding: 0 10px;
+    color: #3F3F3F;
+    font-weight: normal;
+}
+
+.help{
+    padding: 16px 0;
+    color: @color-primary;
+}
+
+.subTitle {
+    font-size: 14px;
+    color: #333;
+    padding-top: 16px;
+}
+
+.description {
+    padding-top: 16px;
+    color: #999;
+}
+
+.action{
+    padding-top: 16px;
+}
+
+.row {
+    margin-bottom: 16px;
+}
+
+.breadcrumb {
+    flex-grow: 1;
+    margin: 0;
+    padding: 16px 0;   
+
+    :global{
+        .ant-breadcrumb-link > a {
+            color: @color-primary;
+        }
+
+        .ant-breadcrumb-separator {
+            color: @color-default;
+        }
+    }
+}
+

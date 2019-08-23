@@ -1,0 +1,16 @@
+@import "../../style/base";
+
+.container {
+    margin: 0 10px 20px;
+    :global {
+        .ant-tabs-tab {
+            font-weight: 700;
+            padding-top: 0;
+            padding-bottom: 15px;
+            color: $font-size-color-dark;
+        }
+        .ant-tabs-tab-active {
+            color: $primary-color;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="175px" height="34px" viewBox="0 0 175 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle@2x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="素材库-语音" transform="translate(-819.000000, -263.000000)" fill="#C3E2FF" fill-rule="nonzero">
+            <g id="Group-6" transform="translate(779.000000, 247.000000)">
+                <g id="Group-4-Copy-3" transform="translate(32.000000, 8.000000)">
+                    <g id="Group-2" transform="translate(8.000000, 8.000000)">
+                        <g id="rectangle">
+                            <g id="content">
+                                <g id="Group-5">
+                                    <g id="Group">
+                                        <path d="M6,-3.38205706e-13 L173,-3.83693077e-13 C174.104569,-3.83895983e-13 175,0.8954305 175,2 L175,32 C175,33.1045695 174.104569,34 173,34 L6,34 C4.8954305,34 4,33.1045695 4,32 C4,28.364502 4,24.7290039 4,21.0935059 C4,19.114502 0.000457763672,18.0549316 0.000457763672,17 C0.000457763672,15.9450684 4,15.114502 4,13.0529785 C4,9.36865234 4,5.68432617 4,2 L4,2 C4,0.8954305 4.8954305,-3.36416715e-13 6,-3.36619621e-13 Z" id="Rectangle"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

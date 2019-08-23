@@ -1,0 +1,176 @@
+.skipClick{
+    display: inline-block;
+    font-size: 12px;
+    color: #4391FF;
+    margin-left: 16px;
+    height: 21px;
+    line-height: 21px;
+    cursor: pointer;
+}
+.introduct{
+    background: #F1F1F1;
+    border-radius: 2px;
+    margin-bottom: 48px;
+    padding: 24px;
+    overflow: hidden;
+    .intrTitle{
+        color: #556675;
+        line-height: 22px; 
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+    .intrDec{
+        color: #556675;
+        line-height: 22px;
+    }
+    .intrPic{
+        margin-top: 16px;
+        img{
+            height: 380px;
+        }
+        img:first-child{
+            margin-left: -15px;
+        }
+    }
+}
+
+.cardWarp, .accWarp{
+    display: inline-block;
+    vertical-align: top;
+    width: 320px;
+    height: 145px;
+    border: 1px solid #CFD3D8;
+    border-radius: 2px; 
+    margin-right: 24px;
+    position: relative;
+    &:hover{
+        background: #F8FCFF;
+    }
+}
+.accWarp{
+    padding: 24px;
+}
+.cardCont{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    .cardTitle{
+        color: #9EA8B1;
+        line-height: 22px;
+    }
+    .cardNum{
+        font-size: 32px;
+        color: #0D1A26;
+        font-weight: bold;
+        line-height: 40px;
+        margin-top: 16px;
+    }
+}
+
+.accCont{
+    .cardIcon{
+        display: inline-block;
+        width: 30px;
+        padding-right: 8px;
+        vertical-align: top;
+    }
+    .cardTable{
+        text-align: left;
+        display: inline-block;
+        vertical-align: top;
+        width: calc(100% - 30px);
+        .cardTableTitle{
+            font-size: 16px;
+            color: #0D1A26;
+            line-height: 24px;
+            min-width: 50px;
+        }
+        .cardTableContent{
+            margin-top: 16px;
+            &::after{
+                content: '';
+                clear: both;
+                overflow: hidden;
+                display:block;
+                width:0;
+                height:0;
+            }
+        }
+        .cardTableLeft, .cardTableRight{
+            float: left;
+            vertical-align: top;
+            max-width: calc(50% - 4px);
+            overflow: hidden;
+        }
+        .cardTableRight{
+            float: right;
+            margin-left: 8px;
+        }
+        .tit{
+            font-size: 12px;
+            color: #9EA8B1;
+            line-height: 20px;  
+        }
+        .con{
+            font-size: 16px;
+            color: #0D1A26;
+            line-height: 32px;
+            font-weight: bold;
+            margin-top: 8px;
+            white-space: nowrap;
+            .small{
+                font-size: 14px;
+            }
+        }
+    }
+}
+.modalCon{
+    max-height: 500px;
+    overflow: auto;
+}
+.agreement{
+    padding: 0 5px;
+    .strong{
+        font-weight: bold;
+    }
+    .floatWarp{
+        margin-top: 8px;
+        &:after{
+            content:"";
+            display:block;
+            visibility:hidden;
+            clear:both;
+            height:0;
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+    }
+    .bingPart{
+        margin: 8px 0;
+    }
+    h1{
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0.5em;
+        color: #333;
+        font-weight: bolder;
+        font-size: 24px;
+    }
+    h3{
+        margin-top: 0;
+        margin-bottom: 0.5em;
+        color: #333;
+        font-weight: bolder;
+        font-size: 14px;
+    }
+    p{
+        line-height: 1.8;
+        margin-bottom: 8px;
+    }
+}

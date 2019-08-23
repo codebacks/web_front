@@ -1,0 +1,231 @@
+@import "~antd/lib/style/themes/default.less";
+
+//:global {
+//    #root,
+//    html {
+//        overflow: auto;
+//    }
+//}
+
+.qrCodeModal {
+    .qrCodeTitle {
+        text-align: center;
+        margin: 20px auto 50px auto;
+        font-size: 16px;
+        color: #666666;
+        line-height: 14px;
+    }
+    .qrCode {
+        margin: 0 auto 50px auto;
+        text-align: center;
+        img {
+            width: 158px;
+            height: 158px;
+        }
+    }
+}
+
+.mainWarp {
+    height: 100%;
+    overflow: auto;
+    .successIcon{
+        width: 80px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 54px;
+    }
+    .successDesc{
+        color: #333;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 24px;
+    }
+    .successInfo{
+        color: #666666;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 32px;
+    }
+    .btn{
+        margin: 0 auto;
+        display: block;
+        margin-top: 46px;
+    }
+    
+}
+
+.main {
+    width: 368px;
+    margin: 0 auto;
+    .logo {
+        margin: 50px auto 30px;
+        text-align: center;
+        img {
+            height: 56px;
+        }
+    }
+    .qrcode{
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .registerCode{
+        p{
+            text-align: center;
+            font-size: 14px;
+        }
+        .desc{
+            color: #000;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+    :global {
+        .ant-tabs .ant-tabs-bar {
+            border-bottom: 0;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .ant-form-item {
+            margin-bottom: 24px;
+        }
+    }
+
+    .tabs {
+        padding: 0 2px;
+        margin: 0 -2px;
+
+        :global {
+            .ant-tabs-tab {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            .ant-input-affix-wrapper .ant-input:not(:first-child) {
+                padding-left: 34px;
+            }
+        }
+    }
+
+    .form {
+        .prefixIcon {
+            font-size: 14px;
+            color: rgba(0, 0, 0, .25);
+        }
+        :global{
+            .ant-select-selection__rendered{
+                margin-left: 34px;
+            }
+        }
+        .iconAddr{
+            position: absolute;
+            width: 34px;
+            height: 19px;
+            background: url('../../../assets/icons/address.png') center no-repeat;
+            background-size: 14px 14px;
+            margin-bottom: 0  !important;
+            top: 0;
+            left: 0;
+            
+        }
+        .authCode{
+            :global {
+                .ant-btn{
+                    border-width: 0;
+                }
+
+                [ant-click-animating-without-extra-node]:after{
+                    top:0px;
+                    left:0px;
+                    right:0px;
+                    bottom:0px;
+                    animation:none;
+                }
+            }
+           
+        }
+        .campany{
+            width: 30px;
+            height: 30px;
+            background: url('../../../assets/icons/campany.png') center left no-repeat;
+            background-size: 14px 11px;
+            margin-bottom: 0  !important;
+        }
+        .closeEyes{
+            width: 30px;
+            height: 30px;
+            background: url('../../../assets/icons/closeEyes.png') center right no-repeat;
+            background-size: 14px 11px;
+            margin-bottom: 0  !important;
+        }
+        .code{
+            color: #4391FF;
+        }
+        .submit {
+            width: 100%;
+            margin-top: 24px;
+        }
+
+        .imgCode{
+            border: 1px solid #d9d9d9;
+            cursor: pointer;
+            border-radius: 2px;
+            height: 40px;
+            display: inline-block;
+            width: 100%;
+            vertical-align: bottom;
+        }
+    }
+
+    .toFindPassword {
+        text-align: right;
+    }
+
+    .footer {
+        margin: 154px auto 28px auto;
+        text-align: center;
+        font-size: 12px;
+        color: #666666;
+        line-height: 20px;
+    }
+
+    .icon {
+        font-size: 24px;
+        color: rgba(0, 0, 0, 0.2);
+        margin-left: 16px;
+        vertical-align: middle;
+        cursor: pointer;
+        transition: color .3s;
+
+        &:hover {
+            color: @primary-color;
+        }
+    }
+
+    .other {
+        text-align: left;
+        margin-top: 24px;
+        line-height: 22px;
+
+        .register {
+            float: right;
+        }
+    }
+}
+
+.captchaImg{
+    cursor: pointer;
+    display: inline-block;
+    text-align: right;
+    border: 1px solid #CFD3D8;
+    border-radius: 2px;
+    height: 40px;
+    margin-left: 26px;
+    vertical-align: top;
+    img{
+        vertical-align: top;
+        height: 38px;
+        width: 120px;
+    }
+}

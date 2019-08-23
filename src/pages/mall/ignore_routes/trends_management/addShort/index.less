@@ -1,0 +1,47 @@
+.listWarp{
+    float: left; 
+}
+.imgList{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 0 16px 16px 0;
+    img{
+        width: 100%;
+        height: 100%;   
+    }
+}
+.iconWarp{
+    float: left;
+    width: 80px;
+    height: 80px;
+    border: 1px dashed #d9d9d9;
+    background-color: #fafafa;
+    border-radius: 4px;
+    position: relative;
+}
+.addIcon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.modalCon{
+    :global{
+        .ant-modal-close-x{
+            width: 30px;
+            height: 30px;
+            line-height: 30px; 
+        }
+    }
+}
+.uploadClass{
+    :global{
+        .ant-upload-list-item{
+            margin-top: 10px;
+        }
+        .ant-upload-select-picture-card{
+            margin-top: 10px;
+        }
+    }  
+}

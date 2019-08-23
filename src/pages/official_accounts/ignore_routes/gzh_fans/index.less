@@ -1,0 +1,45 @@
+.head{
+    border: 1px solid #E6E9EB;
+    padding: 16px;
+    height: 120px;
+    margin-bottom: 16px;
+    position: relative;
+    .list{
+        width: 33.3%;
+        height: 100%;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        border-right: 1px solid #E6E9EB;
+        &:last-child{
+            border-right: none;
+        }
+    }
+    .listInner{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .dec{
+        font-size: 14px;
+        color: #9EA8B1;
+    }
+    .num{
+        font-weight: bold;
+        font-size: 32px;
+        color: #0D1A26;
+    }
+}
+
+.profile{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

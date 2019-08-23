@@ -1,0 +1,54 @@
+@import "../../../../style/hz/variable.less";
+
+.customPanelStyle{
+    background: @color-bg-default;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 0 !important;
+    overflow: 'hidden';
+}
+
+.carriage{
+    .flex{
+        display: flex;
+        justify-content: space-between ;
+        align-items: center;
+        padding-right: 20px;
+        .editTime{
+            margin-right: 20px;
+        }
+    }
+    .slightColor span{
+        font-weight: 400;
+        color: #999;
+    }
+    .weight{
+        font-weight: 400;
+        color: #666;
+    }
+    
+    .dev__Popover {
+        p{
+            font-size: 14px;
+            width: 400px
+        }
+    }
+    :global{
+        .ant-collapse-content > .ant-collapse-content-box{
+            padding: 0;
+        }
+        .ant-table-thead{
+            border-bottom: 1px dashed  #E3E3E3;
+        }
+        .ant-table-thead > tr > th{
+            background: #fff;
+            border-bottom: 1px dashed  #E3E3E3;
+        }
+        .ant-table-tbody > tr{
+            background: #fff;
+        }
+        .ant-table-thead > tr:last-of-type th{
+            border-bottom-width: 1px;
+        }
+    }
+}

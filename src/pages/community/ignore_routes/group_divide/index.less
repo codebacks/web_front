@@ -1,0 +1,27 @@
+@import "~community/style/common.less";
+
+.groupDivide{
+    .top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 24px 24px;
+    }
+    .tableWrap{
+        .canEdit{
+            margin-top: 6px;
+            cursor: pointer;
+            color: @primary-color;
+            &.disabled{
+                color: #999;
+            }
+        }
+        .title, .remark{
+            width: 25%;
+            word-break: break-all;
+            .txt{
+                max-width: 100%;
+            }
+        }
+    }
+}

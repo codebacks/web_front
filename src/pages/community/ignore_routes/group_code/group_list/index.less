@@ -1,0 +1,165 @@
+@import "~community/style/common";
+
+.groupList{
+    .activityName{
+        display: flex;
+        margin-top: 20px;
+        .ellipsis{
+            max-width: 30%;
+        }
+        .infoCircle{
+            font-size: 16px;
+            color: @primary-color;
+            margin-left: 6px;
+            cursor: pointer;
+        }
+    }
+    .alertWrap{
+        margin-top: 10px;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+    }
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 0;
+        .headerItem{
+            flex: 1;
+            text-align: center;
+            .num{
+                margin-bottom: 10px;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+    .addGroup{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 16px 0;
+        .left{
+            display: flex;
+            align-items: center;
+            :global{
+                .ant-btn{
+                    margin-right: 20px;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        .totalStatus{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-right: 20px;
+            .statusItem{
+                margin-right: 20px;
+                text-align: center;
+                .num{
+                    font-weight: 700;
+                    &.red{
+                        color: #F00;
+                    }
+                }
+            }
+        }
+    }
+    .tableWrap{
+        margin: 0;
+        .canEdit{
+            margin-top: 6px;
+            cursor: pointer;
+            color: @primary-color;
+            &.disabled{
+                color: #999;
+            }
+        }
+        .code{
+            width: 4%;
+            cursor: pointer;
+            .qrcode{
+                width: 100px;
+                height: 100px;
+            }
+        }
+        .owner{
+            width: 5%;
+        }
+        .nickname{
+            width: 5%;
+            word-break: break-all;
+        }
+        .groupStatus{
+            width: 5%;
+        }
+        .memberNum, .comeInMembers, .codeShowTimes{
+            width: 5%;
+        }
+        .codeShowTimes{
+            .num{
+                color: @primary-color;
+                cursor: pointer;
+            }
+        }
+        .deptColumn {
+            width: 5%;
+            .dept {
+                cursor: pointer;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        .userColumn{
+            width: 5%;
+            word-break: break-all;
+        }
+        .replierColumn{
+            width: 7%;
+            .replierColumnWrapper{
+                > div{
+                    margin-top: 4px;
+                }
+                .replierWrapper{
+                    text-decoration: underline;
+                    cursor: pointer;
+                    .replier{
+                        color: @primary-color;
+                        &.red{
+                            color: red;
+                        }
+                    }
+                }
+                .abnormal{
+                    color: #ffb507;
+                }
+            }
+        }
+        .inviteConfirmStatus, .activityChatroomStatus, .imOnlineStatus{
+            width: 5%;
+        }
+        .edit{
+            width: 6%;
+        }
+    }
+}
+
+.qrcodeWrap {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    img{
+        max-width:256px;
+    }
+    .btn{
+        margin-bottom: 24px;
+    }
+    .qrcode {
+        width: 140px;
+        height: 140px;
+        margin-bottom: 24px
+    }
+}

@@ -1,0 +1,112 @@
+@import "../../../style/common";
+.pageConfig{
+    padding: 40px 20px;
+    .left{
+        .row{
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            .txt{
+                width: 120px;
+                text-align: right;
+            }
+            :global{
+                .ant-input{
+                    width: 80%;
+                }
+            }
+        }
+    }
+    .right{
+        .phoneWrap{
+            width: 264px;
+            height: 530px;
+            padding: 37px 7px 48px;
+            background-image: url(../../../assets/images/phone.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+            margin: 0 auto 30px;
+            .phoneBg{
+                width: 100%;
+                height: 100%;
+                position: relative;
+                border-radius: 2px;
+            }
+            .phoneBgDefault{
+                background-image: url(../../../assets/images/phoneBg.png);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+            }
+            .phoneBgCustom{
+                background-image: url(../../../assets/images/phoneModal.png);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+            }
+            .phoneShareTitle{
+                width: 100%;
+                text-align: center;
+                margin-bottom: 30px;
+                font-size: 16px;
+                font-weight: bold;
+                color: #fff;
+            }
+            .phoneEQRcodeBg{
+                width: 100%;
+                height: 100%;
+                position: relative;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+            }
+            .phoneEQRcode{
+                width: 100%;
+                position: absolute;
+                bottom: 54px;
+                text-align: center;
+            }
+            .phoneEQRWrap{
+                text-align: center;
+            }
+            .phoneEQRWrap img{
+                width: 120px;
+                height: 120px;
+            }
+            .description{
+                width: 100%;
+                color:#333;
+                padding: 0 35px;
+                height: 20px;
+                font-size: 12px;
+                margin-top: 10px;
+            }
+            .showDescription{
+                text-align: center;
+                max-height: 70px;
+                overflow-y: auto;
+                overflow-x: hidden;
+                white-space: pre-wrap;
+                word-wrap: break-word;
+                color: #fff;
+            }
+
+        }
+        .uploadWrap{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            :global{
+                .ant-upload.ant-upload-select-picture-card, .ant-upload-list-picture-card .ant-upload-list-item{
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+
+
+
+
+    }
+}

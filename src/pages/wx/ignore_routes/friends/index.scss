@@ -1,0 +1,14 @@
+@import "~wx/style/index";
+
+.container {
+
+}
+
+.addition {
+    margin-top: 20px;
+    .export {
+        border-color: $primary-color;
+        color: $primary-color;
+        float: right;
+    }
+}

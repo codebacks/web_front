@@ -1,0 +1,35 @@
+@import "../../../../style/base";
+
+.formWrap {
+    padding: 22px 22px 30px;
+    background-color: #FAFAFA;
+    :global {
+        .ant-form-item {
+            margin-bottom: -6px;
+        }
+    }
+}
+
+.count {
+    margin: 20px 0 10px;
+    > span {
+        color: $primary-color;
+    }
+}
+
+.btnWrap {
+    margin: 60px 0 20px;
+    :global {
+        .ant-btn {
+            width: 80px;
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+    }
+    .cancel {
+        color: #999;
+        border-radius: 2px;
+    }
+}
+

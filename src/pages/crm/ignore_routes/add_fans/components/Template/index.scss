@@ -1,0 +1,24 @@
+@import "~crm/style/index";
+
+.templateWrapper {
+    .btns {
+        display: inline-block;
+        line-height: 39px;
+        margin-left: 20px;
+        button {
+            width: 80px;
+        }
+        button:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+    .create {
+        margin: 20px 0;
+    }
+
+    .stress {
+        color: $primary-color;
+        cursor: pointer;
+    }
+}

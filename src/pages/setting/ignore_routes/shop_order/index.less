@@ -1,0 +1,158 @@
+@import '../../../../style/hz/table.less';
+
+.header{
+    margin:0 0 10px 0;
+    vertical-align: middle;
+    height: 40px;
+    line-height: 40px;
+}
+.search{
+    padding: 20px 25px;
+    background-color: #fafafa;
+    margin-bottom: 10px;
+}
+.marginRight10{
+    margin-right: 10px;
+}
+.marginRight20{
+    margin-right: 20px;
+}
+.marginRight40{
+    margin-right: 40px;
+}
+.modelBottom{
+    margin-bottom: 20px;
+}
+.searchTab{
+    background: #fafafa;
+    margin-bottom: 16px;
+    padding: 24px;  
+}
+.upLoad{
+    display: inline-block;
+}
+.downLoad{
+    margin-left: 16px;
+    display: inline-block;
+    border: 1px solid #A1C4F7;
+    color: #4391FF;
+    padding: 0 15px;
+    user-select: none;
+    border-radius: 2px;
+}
+
+
+.clickBtn{
+    color: #4391FF;
+    cursor: pointer;
+    user-select: none;
+    margin-left: 16px;
+}
+
+.head{
+    background: #F7F9FB;
+    border-radius: 2px;
+    padding: 16px;
+    .headTit{
+        font-size: 14px;
+        color: #0D1A26;
+        line-height: 22px;
+        font-weight: 600;
+    }
+    .headConWarp{
+        margin-left: 0;
+    }
+    .headCon{
+        font-size: 14px;
+        color: #556675;
+        line-height: 22px;
+        margin-top: 8px;
+    }
+}
+.btnWarp{
+    margin: 16px 0;
+}
+.clickDown{
+    color: #4391FF;
+    cursor: pointer;
+    user-select: none;
+}
+
+.userSelect{
+    :global{
+        .ant-select-dropdown-menu{
+            max-height: unset;
+        }
+    }
+}
+
+.userCascader{
+    :global{
+        .ant-cascader-menu{
+            height: 224px;
+            max-width: 500px;
+            overflow-x: hidden;
+        }
+    }
+}
+
+
+.userTable{
+    margin-bottom: 16px;
+    .userHead{
+        &:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+    }
+    .tableTitle{
+        float: left;
+        color: #0d1a26;
+        font-weight: 500;
+        text-align: left;
+        background: #f7f9fb;
+        transition: background .3s ease;
+        line-height: 18px;
+        padding: 16px;
+    }
+    .tableCell{
+        padding-top: 16px;
+    }
+}
+
+.explain {
+    margin-left: 6px;
+}
+
+.contWarp{
+    overflow: hidden;
+    border: 1px solid #e6e9eb;
+    border-top: none;
+}
+.column{
+    float: left;
+    width: 200px;
+    margin-bottom: -99999px;
+    padding-bottom: 99999px; 
+    border-right: 1px solid #e6e9eb;
+}
+
+.btnLable {
+    color: #4391ff;
+    border-color: #4391ff;
+    margin-right: 8px;
+    background-color: #F3F8FF;
+}
+
+
+
+.maxText{
+    position: absolute;
+    top: 0;
+    right: 8px;
+    line-height: 1.5;
+    color: #CFD3D8;
+    user-select: none;
+    background-color: #fff;
+}

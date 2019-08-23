@@ -1,0 +1,148 @@
+@import "~wx/style/common.less";
+
+.content{
+
+}
+
+.mass_record {
+    .search {
+        //width: 380px;
+    }
+
+    .table {
+        margin-top: 30px;
+    }
+
+    .operatorBtn {
+        color: #4391FF;
+        cursor: pointer;
+    }
+
+    .cancelled{
+        color: #4391FF;
+        cursor: pointer;
+        margin-left: 8px;
+    }
+}
+
+.details {
+    overflow: hidden;
+
+    .customSearchWrap {
+        margin-top: 10px;
+        padding: 22px 0 12px;
+        background-color: #FAFAFA;
+
+        :global {
+            .ant-btn {
+                width: 80px;
+                font-size: @font-size;
+                margin: 0 0 0 30px;
+            }
+        }
+    }
+
+    .tableHead {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .tableHeadLeft{
+            display: flex;
+            align-items: center;
+            .taskNo {
+                margin: 0 10px 10px 0;
+                cursor: pointer;
+                .questionCircle {
+                    color: #4391FF;
+                    margin-left: 5px;
+                }
+            }
+        }
+        .result {
+            margin: 16px;
+            .item {
+                &:not(:last-child) {
+                    margin-right: @margin-base;
+                }
+
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                h3 {
+                    color: @font-size-color-dark;
+                    font-size: 14px;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    margin-bottom: 0;
+                    color: @font-size-color-light;
+                }
+            }
+        }
+    }
+
+    .nicknameColumn {
+        width: 12%;
+    }
+
+    .codeColumn {
+        white-space: nowrap;
+    }
+
+    .messageColumn {
+        width: 10%;
+    }
+
+    .reExecution {
+        span {
+            color: @primary-color;
+            cursor: pointer;
+        }
+    }
+
+    .status {
+        position: relative;
+        padding-left: 10px;
+        display: inline-block;
+        min-width: 40px;
+
+        &:after {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+        }
+
+        &.notPull {
+            &:after {
+                background-color: rgba(0, 0, 0, 0.25);
+            }
+        }
+
+        &.doing {
+            &:after {
+                background-color: #1890FF;
+            }
+        }
+
+        &.success {
+            &:after {
+                background-color: #52C41A;
+            }
+        }
+
+        &.error {
+            &:after {
+                background-color: #F5222D;
+            }
+        }
+    }
+}

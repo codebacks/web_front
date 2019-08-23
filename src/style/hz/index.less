@@ -1,0 +1,64 @@
+@import "overrideAnt.less";
+@import "base.less";
+@import "table.less";
+
+:global {
+    .hz {
+        &-from-search {
+            .ant-form-item-label{
+                
+            }
+
+            .ant-calendar-picker{
+                width: 100%;
+            }  
+        }
+
+        &-from {
+            &-label-left {
+                .ant-form-item-label {
+                    text-align: left;
+                }
+            }
+        }
+
+        &-text{
+            &-primary{
+                color: @color-primary;
+            }
+
+            &-require{
+                color: @color-require;
+            }
+        }
+
+        &-icon{
+            &-size{
+                &-default{
+                    font-size: 14px;
+                }
+
+                &-large{
+                    font-size: 16px;
+                }
+
+                &-small{
+                    font-size: 12px;
+                }
+            }
+        }
+
+        &-page-content-action-description {
+            margin:0 16px;
+            
+            color: @color-description;
+        }
+
+        &-btn-width{
+            &-default{
+                width: 80px;
+            }
+        }
+    }
+
+}

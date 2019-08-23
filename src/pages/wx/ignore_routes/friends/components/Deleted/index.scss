@@ -1,0 +1,36 @@
+@import "~wx/style/index";
+
+.deletedWrapper {
+    .timeItem {
+        margin-left: -12px;
+        :global {
+            .ant-input {
+                font-size: 13px;
+            }
+        }
+    }
+
+    .avatar {
+        width: 30px;
+        height: 30px;
+    }
+
+    .weChatColumn,
+    .statusColumn {
+        width: 12%;
+        word-break: break-all;
+    }
+
+    .contentColumn {
+        width: 15%;
+    }
+
+    .sexColumn {
+        min-width: 50px;
+    }
+}
+
+.wholeDesc {
+    word-break: break-all;
+    max-width: 140px;
+}

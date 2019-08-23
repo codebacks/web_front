@@ -1,0 +1,56 @@
+@import "../../../style/base";
+
+.perHistory {
+    :global {
+        .ant-modal-content {
+            box-shadow: none;
+        }
+        .ant-modal-footer {
+            display: none
+        }
+    }
+    .chatHistory {
+        max-height: 680px;
+    }
+    .pageWrap {
+        padding: 8px 0;
+    }
+    .attrs {
+        .label {
+            text-align: right;
+            color: #888;
+            padding-right: 8px;
+        }
+        :global {
+            .ant-row {
+                height: 28px;
+                line-height: 28px;
+                position: relative;
+
+            }
+            .ant-input {
+                //border: 0;
+                //padding: 0;
+            }
+            .ant-input:focus {
+                .edit {
+                    visibility: visible;
+                }
+            }
+        }
+        .edit {
+            //visibility: hidden;
+            position: absolute;
+            right: 10px;
+            font-size: 16px;
+            top: 6px;
+            cursor: pointer;
+        }
+        &:hover {
+            .edit {
+                visibility: visible;
+            }
+        }
+    }
+}
+

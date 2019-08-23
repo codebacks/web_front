@@ -1,0 +1,38 @@
+// https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less
+module.exports = {
+    '@icon-url': '"/base/font/iconfont"',
+    'primary-color': '#4391FF',
+    'gutter': '5px',
+    'gutter-xs': '10px',
+    'gutter-md': '20px',
+    'gutter-lg': '30px',
+    'gutter-xlg': '40px',
+    'gutter-xxlg': '50px',
+    'border-radius-base': '2px',
+
+    // 'input-height-base': '32px',
+
+    // 'btn-height-base': '32px',
+    // 'btn-height-lg': '40px',
+    // 'btn-height-sm': '25px',
+    'heading-color': '#0D1A26',
+    'text-color': '#556675',
+    'form-item-margin-bottom': '16px',
+    // 'font-size-base': '12px',
+    'tabs-horizontal-margin': '0 48px 0 0',
+    'tabs-horizontal-padding': '16px 0',
+    'menu-item-color': '#333',
+    'menu-item-active-bg': '#EEF5FF',
+    'menu-collapsed-width': '60px',
+    'layout-body-background': '#fff',
+    'table-padding-vertical': '16px',
+    'table-padding-horizontal': '16px',
+    'table-header-bg': '#F7F9FB',
+    'table-row-hover-bg': '#F7F9FB',
+    'border-color-base': '#CFD3D8',
+    'border-color-split': '#E6E9EB',
+    'tooltip-bg': 'rgba(0,0,0,0.45)',
+    'font-family': '"Microsoft YaHei", "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
+    'input-padding-horizontal-base': '8px',
+    'control-padding-horizontal': '8px'
+}

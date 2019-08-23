@@ -1,0 +1,106 @@
+@import "~antd/lib/style/themes/default.less";
+@import "../../../../style/hz/init.less";
+
+.textOverflow() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    white-space: nowrap;
+}
+
+.menu {
+    .menuItem {
+        padding: 0 20px;
+    }
+}
+
+.thumb {
+    max-width: 120px;
+    max-height: 120px;
+}
+
+.content {
+    .loading {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .name {
+        display: inline-block;
+        width: 160px;
+        .textOverflow()
+    }
+
+    .operatorBtn {
+        color: @primary-color;
+        cursor: pointer;
+    }
+
+    .tip {
+        color: @color-description
+    }
+
+    .option {
+        .createCategory {
+            display: inline-block;
+            width: 280px
+        }
+
+        .createReply {
+            display: inline-block;
+            padding-left: 24px;
+        }
+    }
+
+    .menuItemClick {
+        position: absolute;
+        right: 14px;
+        top: 0
+    }
+
+    .btnWrap {
+        padding: 24px 24px 24px 0;
+        border-right: 1px solid @border-color;
+    }
+
+    .addCategory {
+        display: block;
+        margin-right: 0;
+        width: 100%
+    }
+
+    .menuItemDot {
+        font-size: 24px;
+        transform: rotate(90deg);
+        line-height: 38px;
+    }
+
+    .right {
+        padding: 24px 0 0 24px;
+
+        .title {
+        }
+
+        .selectAll {
+            margin: 6px 0;
+        }
+
+        .tree {
+
+        }
+    }
+
+    .replies {
+        padding-top: 24px;
+    }
+
+    :global {
+        .ant-menu-item::after {
+            //left: 0;
+            //right: auto;
+            //border-right: 0;
+            //border-left: 3px solid @primary-color;
+        }
+    }
+
+}

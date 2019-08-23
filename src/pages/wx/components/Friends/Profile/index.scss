@@ -1,0 +1,70 @@
+@import "../../../style/index";
+
+.profile {
+    .base {
+        display: flex;
+        align-items: center;
+        padding: 0 0 30px 0;
+        border-bottom: 1px solid #E3E3E3;
+        color: #666;
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 2px;
+        }
+        .main {
+            flex: 1;
+            margin-left: 15px;
+            .nickname {
+                font-size: 14px;
+                margin-bottom: 12px;
+                line-height: 1.2;
+                .tags {
+                    display: inline-block;
+                    list-style-type: none;
+                    margin: 0 0 0 10px;
+                    .tag {
+                        color: #1890FF;
+                        background-color: #E6F7FF;
+                        border: 1px solid #91D5FF;
+                        border-radius: 4px;
+                        font-size: 12px;
+                        display: inline-block;
+                        padding: 0 8px;
+                        &:not(:last-child) {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+            .line {
+                margin: 0;
+                &:not(:last-child) {
+                    margin-bottom: 12px;
+                }
+                line-height: 1.2;
+                span {
+                    &:not(:first-child) {
+                        margin-left: 10px;
+                    }
+                }
+            }
+            .desc {
+
+            }
+        }
+    }
+    .other {
+        padding-top: 20px;
+        span {
+            display: inline-block;
+            vertical-align: top;
+        }
+        p {
+            margin-bottom: 20px;
+            .additional {
+                width: 100px;
+            }
+        }
+    }
+}

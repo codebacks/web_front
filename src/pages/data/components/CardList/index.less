@@ -1,0 +1,34 @@
+.tags{
+    border: 1px solid #E3E3E3;
+    padding: 12px 16px;
+    width: calc(50% - 8px);
+    height: 150px;
+    display: inline-block;
+    margin-bottom: 16px;
+    margin-right: 16px;
+    vertical-align: top;
+    .tagsHead{
+        overflow: hidden;
+        .name{
+            float: left;
+            font-weight: bolder;
+            color: #333333;
+            line-height: 22px;
+        }
+        .operate{
+            float: right;
+            color: #4391FF;
+            line-height: 22px;
+            cursor: pointer;
+        }
+    }
+    .tagsCon{
+        font-size: 12px;
+        color: #666666;
+        line-height: 20px;
+        padding-top: 5px;
+    }
+    &:nth-child(2n){
+        margin-right: 0;
+    }
+}

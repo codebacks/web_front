@@ -1,0 +1,149 @@
+@import "../../../style/index";
+
+.details {
+    overflow: hidden;
+    margin: -10px 30px 0;
+    .name {
+        margin: 20px 0;
+        font-weight: 700;
+        font-sizE: 16px;
+    }
+    .customSearchWrap {
+        margin-top: 10px;
+        padding: 22px 0 12px;
+        background-color: #FAFAFA;
+        :global {
+            .ant-btn {
+                width: 80px;
+                font-size: $font-size;
+                margin: 0 0 0 30px;
+            }
+        }
+    }
+    .tableHead {
+        position: relative;
+        overflow: hidden;
+        .taskNo {
+            position: absolute;
+            bottom: 16px;
+            cursor: pointer;
+            .questionCircle {
+                color: #4391FF;
+                margin-left: 5px;
+            }
+        }
+        .result {
+            float: right;
+            margin: 16px;
+            .item {
+                &:not(:last-child) {
+                    margin-right: $margin-base;
+                }
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                h3 {
+                    color: $font-size-color-dark;
+                    font-size: 14px;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
+                p {
+                    margin-bottom: 0;
+                    color: $font-size-color-light;
+                }
+            }
+        }
+    }
+
+    .nicknameColumn {
+        width: 12%;
+    }
+
+    .descColumn {
+        cursor: pointer;
+        min-width: 240px;
+        width: 20%;
+        .descCut {
+            position: relative;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            /*! autoprefixer: off */
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            word-break: break-all;
+        }
+    }
+
+    .codeColumn {
+        white-space: nowrap;
+    }
+
+
+
+    .messageColumn,
+    .errorColumn {
+        width: 10%;
+    }
+
+    .image {
+        width: 120px;
+    }
+
+    .reExecution {
+        span {
+            cursor: pointer;
+            color: $primary-color;
+        }
+    }
+
+    .status {
+        position: relative;
+        padding-left: 10px;
+        display: inline-block;
+        min-width: 40px;
+        &:after {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+        }
+        &.notPull {
+            &:after {
+                background-color: rgba(0, 0, 0, 0.25);
+            }
+        }
+        &.doing {
+            &:after {
+                background-color: #1890FF;
+            }
+        }
+        &.success {
+            &:after {
+                background-color: #52C41A;
+            }
+        }
+        &.error {
+            &:after {
+                background-color: #F5222D;
+            }
+        }
+    }
+}
+
+.wholeDesc {
+    max-width: 300px;
+    max-height: 500px;
+    overflow-y: auto;
+    word-break: break-all;
+}
+
+.questionDesc {
+    max-width: 300px;
+}

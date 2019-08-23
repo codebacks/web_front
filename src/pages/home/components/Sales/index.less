@@ -1,0 +1,22 @@
+@import "../../../../style/hz/init.less";
+
+.action {
+    padding-bottom: @padding-large;
+}
+
+.chartRow {
+    > div {
+        padding-left: @padding-large;
+        padding-right: @padding-large;
+        border-right: 1px solid @border-color;
+    }
+
+    > div:first-of-type {
+        padding-left: 0;
+    }
+
+    > div:last-of-type {
+        padding-right: 0;
+        border-right: none;
+    }
+}

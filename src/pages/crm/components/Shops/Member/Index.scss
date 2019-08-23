@@ -1,0 +1,36 @@
+@import "../../../style/base";
+
+.customer {
+    overflow-y: auto;
+    .header {
+        height: 62px;
+        line-height: 62px;
+        font-size: 16px;
+        background-color: #fff;
+        border-bottom: 1px solid $border-color;
+        padding-left: 30px;
+        .backIcon {
+            color: #aaa;
+            margin: 0 10px;
+        }
+    }
+    .card {
+        margin: 20px;
+        background-color: #fff;
+        min-height: 450px;
+        overflow: auto;
+        .createPlan {
+            margin-top: 20px;
+            padding: 10px 0;
+            border-top: 1px solid $border-color;
+            strong {
+                color: $primary-color;
+            }
+            button {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,171 @@
+@import "../../../style/base";
+
+.editMessageOrder {
+    .desc {
+        padding: 10px 0
+    }
+    .orderIntro {
+        line-height: 24px;
+        padding-top: 20px;
+        label {
+            position: relative;
+            display: block;
+            text-align: right;
+            padding-right: 8px;
+            &:after {
+                content: ':';
+                position: absolute;
+                right: 5px;
+            }
+        }
+    }
+}
+
+.history {
+
+    .chatHead {
+        height: 100px;
+        overflow: hidden;
+        background-color: #eee;
+        border-bottom: 1px solid #ddd;
+        border-top: 1px solid #ddd;
+        .nicknameWrap {
+
+        }
+        .targetWrap {
+            padding-left: 10px;
+            position: relative;
+            .userInfo {
+                border-right: 1px solid $border-color;
+                margin-right: 10px;
+                padding-top: 0;
+                margin-top: 10px;
+            }
+            .btn {
+                margin-left: 10px;
+                //    position: absolute;
+                //    left: 130px;
+                //    top:0;
+            }
+
+        }
+        .fromWrap {
+            //padding-left: 100px;
+            //padding-right: 100px;
+            position: relative;
+            .userInfo {
+                padding-top: 20px;
+                display: inline-block;
+                width: 120px;
+                margin-right: 99px;
+            }
+            ul {
+                //padding-top: 10px;
+            }
+            .avatar {
+                left: auto;
+                right: 0;
+            }
+        }
+        .userInfo {
+            text-align: left;
+            padding-top: 10px;
+            li {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                line-height: 20px;
+                overflow: hidden;
+            }
+        }
+        .avatar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            img {
+                width: 80px;
+                height: 80px;
+                border-radius: 5px;
+            }
+        }
+        .from {
+            padding-top: 6px;
+            padding-right: 12px;
+            img {
+                vertical-align: middle;
+                border-radius: 5px;
+                width: 48px;
+                height: 48px;
+            }
+        }
+    }
+    :global {
+        .chatIn {
+            .menu {
+                background-color: #eee !important;
+                &:before {
+                    border-right-color: #eee !important;
+                }
+            }
+        }
+        .noteItem {
+            padding: 16px 0 !important;
+        }
+    }
+    .searchPanel {
+        .nextPos {
+            padding-left: 10px;
+            line-height: 24px;
+            padding-right: 90px;
+            position: relative;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            .btn {
+                position: absolute;
+                right: 28px;
+            }
+            .removeBtn {
+                position: absolute;
+                right: 5px;
+                top: 6px
+            }
+        }
+        .sp {
+            text-align: center;
+            line-height: 28px;
+        }
+        .base {
+            //padding-right: 36px;
+            position: relative;
+            .toggle {
+                position: absolute;
+                right: 5px;
+                top: 5px;
+                font-size: 18px;
+                cursor: pointer;
+            }
+        }
+        .advanced {
+            padding-top: 10px;
+        }
+        .cash {
+            padding-top: 10px;
+        }
+    }
+    .pageWrap {
+        padding: 8px;
+        border-top: 1px solid #eee;
+    }
+    .listView {
+        background-color: #fff !important;
+    }
+    .messageHistory {
+        //padding-top: 10px;
+    }
+}
+

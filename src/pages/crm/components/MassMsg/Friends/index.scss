@@ -1,0 +1,14 @@
+.deptColumn {
+    max-width: 140px;
+    .dept {
+        cursor: pointer;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+.wholeDept {
+    word-break: break-all;
+    max-width: 240px;
+}

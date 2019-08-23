@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="175px" height="34px" viewBox="0 0 175 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group@2x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="素材库-语音" transform="translate(-251.000000, -263.000000)" fill-rule="nonzero">
+            <g id="Group-6" transform="translate(211.000000, 247.000000)">
+                <g id="Group-4-Copy-3" transform="translate(32.000000, 8.000000)">
+                    <g id="Group-2" transform="translate(8.000000, 8.000000)">
+                        <g id="rectangle">
+                            <g id="content">
+                                <g id="Group-5">
+                                    <g id="Group">
+                                        <path d="M6,-3.38205706e-13 L173,-3.83693077e-13 C174.104569,-3.83895983e-13 175,0.8954305 175,2 L175,32 C175,33.1045695 174.104569,34 173,34 L6,34 C4.8954305,34 4,33.1045695 4,32 C4,28.364502 4,24.7290039 4,21.0935059 C4,19.114502 0.000457763672,18.0549316 0.000457763672,17 C0.000457763672,15.9450684 4,15.114502 4,13.0529785 C4,9.36865234 4,5.68432617 4,2 L4,2 C4,0.8954305 4.8954305,-3.3543566e-13 6,-3.36619621e-13 Z" id="Rectangle" fill="#C3E2FF"></path>
+                                        <g id="Group-10" transform="translate(16.000000, 9.000000)" stroke="#7196B9" stroke-linecap="round" stroke-width="2">
+                                            <path d="M0.109633251,10.1329438 C0.659390389,9.58915756 1,8.8343556 1,8 C1,7.17840479 0.669729089,6.43394849 0.134709499,5.89215332" id="Path"></path>
+                                            <path d="M3.94043713,12.9590404 C5.21265816,11.6915623 6,9.93772791 6,8 C6,6.0740767 5.22222188,4.32981322 3.96363413,3.06417802" id="Path"></path>
+                                            <path d="M7.76973828,15.7866018 C9.76530383,13.7953311 11,11.0418549 11,8 C11,4.96924834 9.77430108,2.22477399 7.79156028,0.235234029" id="Path"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

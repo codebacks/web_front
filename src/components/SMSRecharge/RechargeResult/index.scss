@@ -1,0 +1,27 @@
+.modal_body_ctrl {
+    :global {
+        // .ant-modal-body {
+        //     padding-top: 16px !important
+        // }
+        p {
+            margin-left: 6px;
+            color: #666;
+            font-size: 14px;
+            .icon_ctrl {
+                display: inline-block;
+                width: 22px;
+                font-size: 22px;
+                color: #ffaa00;
+                margin-right: 4px;
+            }
+        }
+        .recharge_bottom {
+            margin-top: 24px;
+            margin-left: 38px;
+            .recharge_btn {
+                width: 110px;
+                margin-right: 16px;
+            }
+        }
+    }
+}

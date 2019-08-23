@@ -1,0 +1,65 @@
+.phonePermissionConfig{
+    .content{
+        display: flex;
+        .leftCont{
+            flex: 0 18%;
+            text-align: center;
+            overflow-y: scroll;
+            .leftItem{
+                padding: 10px 20px;
+                font-size: 14px;
+                cursor: pointer;
+                &.active{
+                    color: #4391FF;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .rightCont{
+            flex: 1;
+            margin-left: 10px;
+            .batchBtns{
+                margin: 20px 0;
+                .batchBtn{
+                    margin-right: 10px;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+            .table{
+                .canEdit{
+                    cursor: pointer;
+                    color: #4391FF;
+                    &.disabled{
+                        color: #999;
+                    }
+                }
+                .msgColumn{
+                    .msgWrap{
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: flex-start;
+                        align-items: center;
+                        align-content: space-around;
+                        .head{
+                            width: 50px;
+                            margin-right: 8px;
+                        }
+                    }
+                }
+                .numberColumn{
+                    width: 8%;
+                }
+                .serialnoColumn, .remarkColumn, .onlineColumn, .divideColumn, .keepUserColumn, .editColumn{
+                    width: 12%;
+                }
+                .remarkColumn{
+                    word-break: break-all;
+                }
+            }
+        }
+
+    }
+}

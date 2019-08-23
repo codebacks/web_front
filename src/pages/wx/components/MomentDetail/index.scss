@@ -1,0 +1,200 @@
+@mixin iconSize {
+    width: 12px;
+    height: 12px;
+}
+
+@mixin iconPos {
+    position: absolute;
+    top: 10px;
+    left: 4px;
+}
+
+.wrapper {
+    :global {
+        .ant-modal {
+            padding-bottom: 0;
+        }
+        .ant-modal-body {
+            padding: 0;
+
+        }
+    }
+}
+
+.detail {
+    padding: 30px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.content {
+    .desc {
+        margin: 0 0 20px;
+    }
+    .between {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px;
+        text-decoration: none;
+        word-break: break-all;
+        color: #666;
+        background-color: #F2F6F9;
+        .defaultCover {
+            width: 56px;
+            height: 56px;
+            padding: 14px;
+            margin-right: 20px;
+        }
+        .cover {
+            flex-shrink: 0;
+            width: 56px;
+            height: 56px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .title {
+            flex: 1;
+            word-break: break-all;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            /*! autoprefixer: off */
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+
+    }
+
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 180px;
+    .photo {
+        position: relative;
+        width: 56px;
+        height: 56px;
+        margin: 0 4px 4px 0;
+        object-fit: cover;
+    }
+    .photo:first-child:nth-last-child(4) ~ .photo {
+        &:nth-child(2) {
+            margin-right: 30%;
+        }
+    }
+
+}
+
+.feedback {
+    text-align: right;
+    margin: 10px 0;
+    font-size: 12px;
+
+    .icon {
+        display: inline-block;
+        @include iconSize;
+        margin-right: 4px;
+        vertical-align: middle;
+    }
+
+    .likeCount {
+        margin-right: 20px;
+        .icon {
+            background: url(wx/assets/images/moment_like.png) no-repeat 50%;
+            background-size: 100% 100%;
+        }
+    }
+
+    .commentCount {
+        .icon {
+            background: url(wx/assets/images/moment_comment.png) no-repeat 50%;
+            background-size: 100% 100%;
+        }
+    }
+}
+
+.interaction {
+    background-color: #F2F6F9;
+    .likes {
+        position: relative;
+        padding: 10px 0 10px 20px;
+        border-bottom: 1px solid #fff;
+        &:before {
+            content: '';
+            @include iconPos;
+            @include iconSize;
+            top: 16px;
+            background: url(wx/assets/images/moment_like_blue.png) no-repeat 50%;
+            background-size: 100% 100%;
+        }
+        .nickname {
+            color: #256CAE;
+            font-size: 12px;
+            word-break: break-all;
+            .comma {
+                color: #333;
+            }
+        }
+    }
+
+    .comments {
+        position: relative;
+        font-size: 12px;
+        padding: 0 10px 20px 20px;
+        &:before {
+            content: '';
+            @include iconPos;
+            @include iconSize;
+            background: url(wx/assets/images/moment_comment_blue.png) no-repeat 50%;
+            background-size: 100% 100%;
+        }
+
+        .item {
+            display: flex;
+            width: 100%;
+            padding-top: 10px;
+            justify-content: space-between;
+            .headImg {
+                flex-shrink: 0;
+                width: 30px;
+                height: 30px;
+                border-radius: 2px;
+            }
+
+            .right {
+                width: 100%;
+                margin-left: 10px;
+                .meta {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 10px;
+                }
+
+                .nickname {
+                    color: #256CAE;
+                }
+
+                .time {
+                    color: #999;
+                }
+
+                .comment {
+                    word-break: break-all;
+                    .inline {
+                        display: inline;
+                        div {
+                            display: inline;
+                        }
+                    }
+                    pre {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,243 @@
+.countList{
+    padding: 24px;
+    text-align: center;
+    border: 1px solid #E6E9EB;
+    border-radius: 1px;
+}
+.warp{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    border-right: 1px solid #eee;
+}
+.warpNoBorder{
+    position: relative;
+    width: 100%;
+    height: 80px;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100px;
+}
+.contentTitle{
+    font-size: 14px;
+    color: #9EA8B1;
+}
+.contentNum {
+    font-size: 24px;
+    font-weight: bold;
+    color: #556675;
+}
+.numColor{
+    color: #FA8910;
+}
+.iconStyle{
+    margin-right: 8px;
+    color: #FA8910;
+    width: 14px;
+    margin-bottom: 3px;
+}
+
+.boderWarp{
+    position: relative;
+    height: 24px;
+    font-size: 16px;
+    div{
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+.boderLine{
+    width: 2px;
+    background-color: #4391FF;
+    height: 60%;
+    margin-right: 8px;
+}
+.qrcodeContent{
+    display: inline-block;
+    margin: 0 24px 0 0;
+    background: #FAFAFA;
+    border-radius: 1px;
+    width: 320px;
+    height: 140px;
+    padding: 24px;
+    position: relative;
+}
+.addExper{
+    display: inline-block;
+}
+.hoverQrcode{
+    width: 150px;
+    height: 150px;
+    display: block;
+}
+.echartsContent{
+    position: relative;
+    margin: 0 0 24px 0;
+    border: 1px solid #eee;
+    padding: 32px 8px;
+}
+.echartsOperate{
+    position: absolute;
+    top: 32px;
+    left: 3%;
+    z-index: 10;
+}
+
+
+
+.shopList{
+    display: inline-block;
+    margin-right: 24px;
+    background: #F7F9FB;
+    border-radius: 1px;
+    height: 162px;
+    padding: 24px 0 24px 24px;
+    position: relative;
+    vertical-align: top;
+    border: 1px solid #eee;
+}
+.shopInfo{
+    width: calc(48% - 48px);
+    &:after{
+        clear:both;
+        content:'';
+        display:block;
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+    .shopInfoLeft{
+        float: left;
+        margin-right: 16px;
+        img{
+            width: 90px;
+            height: 90px;
+            display: block;
+            margin-bottom: 8px;
+        } 
+        .shopLogo{
+            border-radius: 50%;
+            vertical-align: middle;
+        }
+    }
+    .shopInfoRight{
+        float: left;
+        &:after{
+            clear:both;
+            content:'';
+            display:block;
+            width:0;
+            height:0;
+            visibility:hidden;
+        }
+        .shopInfoTop{
+            position: relative;
+            &:after{
+                clear:both;
+                content:'';
+                display:block;
+                width:0;
+                height:0;
+                visibility:hidden;
+            }
+            .shopInfoName{
+                display: inline-block;
+                font-size: 24px;
+                color: #0D1A26;
+                line-height: 32px; 
+            }
+            .shopInfoEdite{
+                display: inline-block;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+        }
+        .shopInfoBot{
+            border-top: 1px solid #E6E9EB;
+            margin-top: 8px;
+            padding-top: 16px;
+            position: relative;
+            .shopBotLeft{
+                display: inline-block;
+                padding-right: 8px;
+                margin-right: 8px;
+                border-right: 1px solid #E6E9EB;
+                div{
+                    display: inline-block;
+                }
+                .shopBotLeftText{
+                    margin-right: 8px;
+                }
+            }
+            .shopBotRight{
+                display: inline-block;
+                div{
+                    display: inline-block;
+                }
+                .shopBotRightText{
+                    padding-right: 8px; 
+                }
+            }
+            .shopBotStyle {
+                margin-top: 8px;
+                div {
+                    display: inline-block;
+                    padding-right: 8px;
+                }
+            }
+        }
+    }
+}
+.qrcodeFormal{
+    width: 26%;
+}
+.qrcodeExpried{
+    width: 26%; 
+    margin-right: 0;
+}
+.qrcodeLeft{
+    float: left;
+    height: 100%;
+    margin-right: 16px;
+    img{
+        width: 90px;
+        height: 90px;
+        display: block;
+        margin-bottom: 8px;
+    }
+}
+.qrcodeRight{
+    float: left;
+    .qrcodeType{
+        font-size: 16px;
+        color: #0D1A26;
+        line-height: 22px;
+    }
+    .qrcodeText{
+        margin-top: 8px;
+        font-size: 14px;
+        color: #556675;
+        line-height: 22px;
+    }
+    .qrcodeAdd{
+        margin-top: 16px;
+    }  
+}
+.iconClass{
+    width: 16px;
+    cursor: pointer;
+}
+.shopCon{
+    @media screen and (max-width: 1920px) {
+        max-width: 1096px;
+    }
+    @media screen and (min-width: 1920px) {
+        min-width: 1096px;
+        width: 60%;
+    }
+}

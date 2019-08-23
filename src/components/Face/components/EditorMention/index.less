@@ -1,0 +1,24 @@
+.editor {
+    white-space: pre-wrap;
+    :global {
+        .ql-toolbar {
+            display: none !important;
+        }
+        .ql-container {
+            padding: 0 !important;
+            border: 0 !important;
+            height: 110px;
+        }
+        .ql-editor {
+            padding: 5px 0;
+            &.ql-blank::before {
+              font-style: normal;
+            }
+            img{
+                max-width: 18px;
+                max-height: 18px;
+                margin: 0 2px;
+            }
+        }
+    }
+}

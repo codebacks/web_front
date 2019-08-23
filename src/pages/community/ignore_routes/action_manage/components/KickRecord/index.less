@@ -1,0 +1,36 @@
+.kickRecords{
+    .searchWrap{
+        padding: 22px 22px 30px;
+        background-color: #fafafa;
+        .searchBtn{
+            :global{
+                .ant-btn-primary{
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+    .tableWrap{
+        .canEdit{
+            margin-top: 6px;
+            cursor: pointer;
+            color: #4391FF;
+            &.disabled{
+                color: #999;
+            }
+        }
+        .avatar{
+            width: 10%;
+            img{
+                width: 68px;
+                height: 68px;
+            }
+        }
+        .nickname, .uin, .groupName, .editTime, .blackStatus{
+            width: 10%;
+        }
+        .failedReason, .kickReason{
+            width: 12%;
+        }
+    }
+}

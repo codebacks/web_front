@@ -1,0 +1,22 @@
+@mixin textOverflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    white-space: nowrap;
+}
+
+
+@mixin clearfix {
+    zoom: 1;
+    &:before,
+    &:after {
+        content: ' ';
+        display: table;
+    }
+    &:after {
+        clear: both;
+        visibility: hidden;
+        font-size: 0;
+        height: 0;
+    }
+}

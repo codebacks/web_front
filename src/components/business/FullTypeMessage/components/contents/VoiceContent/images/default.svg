@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="228px" height="88px" viewBox="0 0 228 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group@2x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="语音-" transform="translate(-168.000000, -248.000000)">
+            <g id="Group" transform="translate(168.000000, 248.000000)">
+                <rect id="Rectangle" stroke="#D9D9D9" fill="#FAFAFA" fill-rule="nonzero" x="0.5" y="0.5" width="227" height="87" rx="2"></rect>
+                <path d="M14,8 L173,8 C174.104569,8 175,8.8954305 175,10 L175,40 C175,41.1045695 174.104569,42 173,42 L14,42 C12.8954305,42 12,41.1045695 12,40 C12,36.364502 12,32.7290039 12,29.0935059 C12,27.114502 8.00045776,26.0549316 8.00045776,25 C8.00045776,23.9450684 12,23.114502 12,21.0529785 C12,17.3686523 12,13.6843262 12,10 L12,10 C12,8.8954305 12.8954305,8 14,8 Z" id="Rectangle" fill="#EFEFEF" fill-rule="nonzero"></path>
+                <g id="Group-10" transform="translate(24.000000, 17.000000)" fill-rule="nonzero" stroke="#FAFAFA" stroke-linecap="round" stroke-width="2">
+                    <path d="M0.109633251,10.1329438 C0.659390389,9.58915756 1,8.8343556 1,8 C1,7.17840479 0.669729089,6.43394849 0.134709499,5.89215332" id="Path"></path>
+                    <path d="M3.94043713,12.9590404 C5.21265816,11.6915623 6,9.93772791 6,8 C6,6.0740767 5.22222188,4.32981322 3.96363413,3.06417802" id="Path"></path>
+                    <path d="M7.76973828,15.7866018 C9.76530383,13.7953311 11,11.0418549 11,8 C11,4.96924834 9.77430108,2.22477399 7.79156028,0.235234029" id="Path"></path>
+                </g>
+                <text id="60”" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" fill="#999999">
+                    <tspan x="191" y="30">60”</tspan>
+                </text>
+                <text id="语音名称" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" line-spacing="14" fill="#999999">
+                    <tspan x="8" y="73">语音名称</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

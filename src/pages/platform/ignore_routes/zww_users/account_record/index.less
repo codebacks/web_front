@@ -1,0 +1,49 @@
+/*
+ * @Author: sunlizhi 
+ * @Date: 2018-11-29 14:18:31 
+ * @Last Modified by: sunlizhi
+ * @Last Modified time: 2018-11-29 16:52:43
+ */
+ 
+ .pageTitle{
+    font-weight: 700;
+    color: #333;
+    position: relative;
+    padding-left: 8px;
+    margin: 16px 0;
+    &:before{
+        content: '';
+        border: 1px solid #4391FF;
+        position: absolute;
+        left: 0;
+        top: 0.3em;
+        height: 1em;
+    }
+}
+
+.clearBoth {
+    &::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+.userInfo {
+    padding: 8px 0 24px 8px;
+    color: #0D1A26;
+    line-height: 1;
+
+    >div {
+        margin-left: 96px;
+        display: inline-block;
+        &:first-child {
+            margin-left: 0;
+        }
+        span.num {
+            color: #000;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+}

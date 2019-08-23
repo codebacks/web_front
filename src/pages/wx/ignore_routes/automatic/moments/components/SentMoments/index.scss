@@ -1,0 +1,502 @@
+@import "~wx/style/index";
+
+.sentMoments {
+    :global {
+        .ant-modal-close-x {
+            width: 32px;
+            line-height: 32px;
+            font-size: 20px;
+        }
+
+        // 去掉datepicker此刻
+        .ant-calendar-today-btn {
+            display: none;
+        }
+
+        .ant-pagination-options-size-changer.ant-select {
+            width: auto;
+        }
+
+        .ant-pagination.mini {
+            float: right;
+            margin-top: 16px;
+        }
+
+        .ant-form-item {
+            margin-bottom: 24px;
+        }
+    }
+
+    .editor {
+        border: 1px solid #d9d9d9;
+        border-radius: 2px;
+
+        :global {
+            // fix firefox
+            .ant-row:before, .ant-row:after {
+                content: '';
+                height: 0;
+                line-height: 0;
+            }
+        }
+    }
+
+    .descEditorWrap {
+        .descEditor {
+            min-height: 160px;
+            max-height: 480px;
+            padding: 0 5px 0;
+
+            .editorExtend {
+                float: right;
+                line-height: 30px;
+                margin-right: 20px;
+                cursor: pointer;
+                text-align: right;
+            }
+        }
+    }
+
+
+    .commentWrap {
+        position: relative;
+
+        .commentEditorWrap {
+            margin: 10px 40px 10px 0;
+
+            .commentEditor {
+                min-height: 120px;
+                max-height: 180px;
+                padding-right: 0;
+
+                :global {
+                    .ant-col-12 {
+                        height: 30px;
+                    }
+                }
+
+                button {
+                    height: 30px;
+                    margin-top: 0;
+
+                    & > span {
+                        vertical-align: baseline;
+                    }
+                }
+            }
+        }
+
+        .deleteComment {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            font-size: 24px;
+            cursor: pointer;
+            color: #9C9C9C;
+        }
+    }
+
+    .errorTip,
+    .errorMsg,
+    .rangeTip {
+        color: #f04134;
+    }
+
+    .errorMsg {
+        font-size: 12px;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    .rangeTip {
+        position: absolute;
+        top: 24px;
+        left: 0;
+        font-size: 12px;
+    }
+
+    .uploadItem {
+        margin-top: -6px;
+        margin-bottom: 6px;
+
+        :global {
+            .ant-form-item-control {
+                line-height: 1;
+            }
+
+            .ant-upload {
+                & > div {
+                    margin-top: 6px;
+                }
+            }
+
+            .ant-upload.ant-upload-select-picture-card {
+                display: inline-table;
+                float: left;
+            }
+        }
+
+        .uploadOperation {
+            > span {
+                display: inline-block;
+            }
+
+            line-height: 0;
+            white-space: nowrap;
+
+            .materialBtn {
+                margin: 6px 0 0 10px;
+            }
+        }
+    }
+
+    .timeItem {
+        margin-bottom: 12px;
+
+        .datePicker {
+            margin-left: 100px;
+        }
+    }
+
+    .selectItem {
+        margin-bottom: 16px;
+    }
+
+    .commentItem {
+        margin-bottom: 0;
+    }
+
+    .tip {
+        color: #999;
+        font-size: $font-size;
+    }
+
+    .photoTip {
+        margin-top: 10px;
+
+        p {
+            margin: 0 0 0 8px;
+        }
+
+        p:not(:first-child) {
+            margin-top: 8px;
+        }
+    }
+
+    .watermarkTip {
+        margin: 8px 0;
+    }
+
+    .coverTip {
+        margin: 0;
+        text-align: left;
+    }
+
+    .videoTip {
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    // 九宫格
+    .fileList {
+        display: inline-flex;
+        margin: 12px 0 0;
+        flex-wrap: wrap;
+        width: 340px;
+        vertical-align: top;
+        list-style-type: none;
+
+        .fileItem {
+            border: 1px solid #eee;
+            border-radius: 2px;
+            width: 104px;
+            height: 104px;
+            margin: 0 8px 8px 0;
+            padding: 4px;
+            float: left;
+            flex: 0 0 1;
+        }
+
+        .fileItem:first-child:nth-last-child(4) ~ .fileItem {
+            &:nth-child(2) {
+                margin-right: 30%;
+            }
+        }
+    }
+
+    .box {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .deleteIcon {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            top: -12px;
+            right: -12px;
+            background: url(wx/assets/images/close.png) no-repeat 50%;
+            background-size: 100% 100%;
+            cursor: pointer;
+        }
+    }
+
+    .card {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        &::before {
+            content: ' ';
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.5);
+            -webkit-transition: all .3s;
+            transition: all .3s;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+
+        &.watermark::after {
+            content: '水印';
+            position: absolute;
+            bottom: 2px;
+            right: 2px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .action {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 100%;
+            text-align: center;
+
+            .icon {
+                color: #fff;
+                cursor: pointer;
+                font-size: 14px;
+                margin: 4px;
+                opacity: 0;
+
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        &:hover {
+            &::before,
+            .icon {
+                opacity: 1;
+            }
+        }
+    }
+
+    .uploading {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 8px 8px 0;
+        background-color: #fafafa;
+    }
+
+    .watermarkOperation {
+        margin-top: 8px;
+    }
+
+    .commentTip {
+        margin-bottom: 5px;
+    }
+
+    .addressItem {
+        margin-bottom: 0;
+
+        .articleMaterial {
+            display: flex;
+
+            .materialBtn {
+                margin-left: 6px;
+            }
+        }
+
+        .coverWrap {
+            margin-top: 16px;
+
+            :global {
+                .ant-upload.ant-upload-select-picture-card {
+                    display: inline-table;
+                    width: 80px;
+                    height: 80px;
+                    margin-bottom: 0;
+                }
+
+                .ant-upload-list-picture-card .ant-upload-list-item {
+                    width: 80px;
+                    height: 80px;
+
+                    .ant-upload-list-item-thumbnail img {
+                        object-fit: cover;
+                    }
+
+                    .ant-upload-list-item-info:before {
+                        left: 0;
+                    }
+                }
+
+                .ant-upload-list-item-info > span {
+                    height: 100%;
+                }
+            }
+
+            .spinWrap {
+                text-align: center;
+            }
+
+            .coverContent {
+                display: flex;
+                justify-content: space-between;
+
+                .coverTitle {
+                    height: 80px;
+                }
+            }
+
+            .coverFileList {
+                .coverUpload {
+                    width: 80px;
+                    margin: 0 8px 0 0;
+                }
+
+                .fileItem {
+                    border: 1px solid #eee;
+                    border-radius: 2px;
+                    width: 80px;
+                    height: 80px;
+                    margin: 0 8px 0 0;
+                    padding: 4px;
+                }
+            }
+        }
+    }
+
+    .videoWrap {
+        padding: 20px 0 0;
+        display: flex;
+
+        .left {
+            text-align: center;
+            width: 100px;
+            margin-right: 10px;
+
+            button {
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+
+        .right {
+            flex: 1;
+        }
+
+        .videoCover {
+            width: 100px;
+            height: 120px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+    }
+
+    .stress {
+        color: $primary-color;
+        cursor: pointer;
+    }
+
+    .addComment {
+        width: 100%;
+        margin-bottom: 20px;
+        padding-right: 40px;
+
+        button {
+            width: 100%;
+        }
+    }
+
+    .addUin {
+        :global {
+            .ant-btn {
+                border-color: $primary-color;
+                color: $primary-color;
+                font-size: $font-size;
+            }
+        }
+    }
+
+    .tableItem {
+        position: relative;
+        width: 58.33333333%;
+        margin-left: 30px;
+        overflow: hidden;
+
+        &.disabled:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            cursor: not-allowed;
+        }
+    }
+
+    .rangeItem {
+        .rangeGroup {
+            white-space: nowrap;
+        }
+
+        .rangeSelect {
+            margin-right: 40px;
+        }
+    }
+
+    .warningIcon {
+        font-size: 16px;
+    }
+
+    .topTip {
+        color: #FFAA16;
+        font-weight: 700;
+    }
+
+    .restTip {
+        color: #556675;
+        font-weight: 700;
+    }
+
+    .btns {
+        margin: 16px 0 0;
+        white-space: nowrap;
+    }
+}
+
+

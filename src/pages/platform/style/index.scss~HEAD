@@ -1,0 +1,25 @@
+/**
+ **@Description:
+ **@author: leo
+ */
+
+.global {
+    :global {
+
+    }
+}
+
+.sider {
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #fff;
+}
+
+.content {
+    overflow: auto;
+}
+
+.contentSub {
+    background: #fff;
+    position: relative;
+}

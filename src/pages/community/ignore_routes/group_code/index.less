@@ -1,0 +1,201 @@
+@import "../../style/common";
+
+.groupCode{
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 0;
+        .headerItem{
+            flex: 1;
+            text-align: center;
+            .num{
+                margin-bottom: 10px;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+    .addActivity{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 16px 0;
+        .totalStatus{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-right: 20px;
+            .statusItem{
+                margin-right: 20px;
+                text-align: center;
+                .num{
+                    font-weight: 700;
+                    &.red{
+                        color: #F00;
+                    }
+                }
+            }
+        }
+    }
+    .tableWrap{
+        margin: 0;
+        :global{
+            .ant-popover{
+                z-index: 999;
+            }
+        }
+        .canEdit, .editPopover .canEdit{
+            margin-top: 6px;
+            cursor: pointer;
+            color: @primary-color;
+            &.disabled{
+                color: #999;
+            }
+        }
+        .editPopover .canEdit{
+            padding-bottom: 2px;
+            border-bottom: 1px solid #bdbdbd;
+            &:last-child{
+                border-bottom: none;
+            }
+        }
+        .title{
+            width: 8%;
+        }
+        .code{
+            width: 6%;
+            cursor: pointer;
+            .qrcode{
+                width: 100px;
+                height: 100px;
+            }
+        }
+        .groupNum, .groupMembersNum, .comeInMembers, .codeShowTimes, .status, .availableChatroomCount, .unAvailableChatroomCount{
+            width: 5%;
+            text-align: center;
+        }
+        .groupNum{
+            .groupNumWrap{
+                cursor: pointer;
+                .normal{
+                    color: @primary-color;
+                }
+                .abnormal{
+                    color: #F00;
+                }
+                .remind{
+                    margin-top: 6px;
+                    color: rgb(252, 200, 0)
+                }
+            }
+        }
+        .codeSetting{
+            width:7%;
+            text-align: center;
+        }
+        .remark, .owner{
+            width: 6%;
+        }
+        .create_time, .edit{
+            width: 7%;
+        }
+        .codeShowTimes{
+            width: 7%;
+            .num{
+                color: @primary-color;
+                cursor: pointer;
+            }
+        }
+
+    }
+}
+
+.codeModal{
+    display: flex;
+    align-items: center;
+    .modalLeft{
+        margin-right: 40px;
+        border: 1px solid #e5e5e5;
+        img{
+            width: 300px;
+            height: 300px;
+        }
+    }
+    .modalRight{
+        flex: 1;
+        .inputWrap{
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            :global{
+                .ant-input{
+                    width: 50%;
+                    margin: 0 20px;
+                }
+            }
+        }
+        .showDownloadType{
+            border: 1px solid #e5e5e5;
+            .mb10{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 16px;
+                border-bottom: 1px solid #e5e5e5;
+                &:last-child{
+                    border-bottom: none;
+                }
+                .downsizeText{
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+                .downloadIcon{
+                    font-size: 38px;
+                    color: @primary-color;
+                }
+            }
+
+        }
+    }
+}
+
+.abnormalCodeModal{
+    display: flex;
+    justify-content: space-between;
+    .abnormalCodeLeft{
+        position: relative;
+        flex: 0 160px;
+        width: 160px;
+        height: 160px;
+        margin-right: 20px;
+        box-sizing: border-box;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .imgMask{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+        }
+    }
+    .abnormalCodeRight{
+        flex: 1;
+    }
+}
+
+.codeSettingModal{
+    .setItem{
+        display: flex;
+        align-items: center;
+        margin-bottom: 14px;
+    }
+    .desc{
+        margin-bottom: 30px;
+        font-size: 12px;
+    }
+}

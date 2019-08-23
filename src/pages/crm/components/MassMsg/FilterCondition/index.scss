@@ -1,0 +1,13 @@
+@import '../../../../wx/style/base';
+
+.condition {
+    padding: 18px 0;
+    .row + .row {
+        &::before {
+            content: '且';
+            color: $primary-color;
+            margin-right: 10px;
+        }
+    }
+}
+

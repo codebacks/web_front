@@ -1,0 +1,48 @@
+.groupMemberRepeat{
+    .searchWrap{
+        padding: 22px 22px 30px;
+        background-color: #fafafa;
+        .searchBtn{
+            :global{
+                .ant-btn-primary{
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+    .statusWrap{
+        margin: 20px 0;
+        .statusWrapLeft{
+
+        }
+    }
+    .tableWrap{
+        margin-top: 0;
+        .canEdit{
+            cursor: pointer;
+            color: #4391FF;
+            &.disabled{
+                color: #999;
+            }
+        }
+        .groupName, .groupOwner{
+            width: 25%;
+
+        }
+        .groupOwner{
+            .groupOwnerItem{
+                margin-bottom: 6px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                .staffFlag{
+                    padding: 0 6px;
+                    border: 1px solid #4391FF;
+                    border-radius: 4px;
+                    font-size: 13px;
+                    color: #4391FF;
+                }
+            }
+        }
+    }
+}

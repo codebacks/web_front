@@ -1,0 +1,25 @@
+
+.remark {
+    max-width: 200px;
+}
+
+.deptColumn {
+    max-width: 140px;
+    .dept {
+        cursor: pointer;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+.delete {
+    color: #4391FF;
+    cursor: pointer;
+}
+
+.wholeDept {
+    word-break: break-all;
+    max-width: 240px;
+}
+

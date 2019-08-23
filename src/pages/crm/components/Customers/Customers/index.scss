@@ -1,0 +1,34 @@
+
+.historyWrap {
+
+    .friends {
+        list-style-type: none;
+        overflow-y: auto;
+        margin: 0;
+        .friend {
+            position: relative;
+            padding: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            cursor: pointer;
+            &.active {
+                border-right: 2px solid #4391ff;
+                color: #4391ff;
+                font-weight: 500;
+                &::after {
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+
+    .message {
+        padding: 16px 0 0 24px;
+        box-sizing: border-box;
+        border-left: 1px solid #e8e8e8;
+    }
+}

@@ -1,0 +1,62 @@
+@import "~wx/style/index";
+
+.operation {
+    margin: 24px 0;
+}
+
+.table {
+    :global {
+        th, td {
+            min-width: 80px;
+        }
+    }
+
+    .stress {
+        cursor: pointer;
+        color: $primary-color;
+    }
+
+    .weChatColumn {
+        width: 20%;
+        .weChatInfo {
+
+            display: flex;
+            align-items: center;
+            .avatar,
+            .avatar {
+                width: 50px;
+                height: 50px;
+                margin-right: 8px;
+                border-radius: 2px;
+            }
+            .info {
+                p {
+                    white-space: pre-wrap;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .remarkColumn {
+        width: 20%;
+        word-break: break-all;
+    }
+
+    .deptColumn {
+        max-width: 80px;
+        .dept {
+            cursor: pointer;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
+.wholeDept {
+    word-break: break-all;
+    max-width: 240px;
+}
+
+

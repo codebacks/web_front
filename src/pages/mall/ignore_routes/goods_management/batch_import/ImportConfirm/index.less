@@ -1,0 +1,127 @@
+.categoryBox {
+    overflow: hidden;
+    border-top: 1px solid #E6E9EB;
+    border-bottom: 1px solid #E6E9EB;
+    margin-bottom: 24px;
+}
+.category{
+    float: left;
+    width: 300px;
+    border-right: 1px solid #eee;
+    height: 720px;
+    overflow: scroll;
+}
+.tips {
+    margin-top: 24px;
+    color: #0D1A26;
+    margin-bottom: 16px;
+    span {
+        color: #4391FF;
+        font-weight: bold;
+    }
+    i {
+        font-style: normal;
+        color: #9EA8B1;
+        margin-left: 16px;
+    }
+}
+.addCategory{
+    padding: 16px 0;
+    font-weight: bold;
+    font-size: 16px;
+    color: #0D1A26;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.addCategory.padding {
+    padding: 16px;
+}
+.addIcon{
+    margin-right: 16px;
+}
+.categoryActiveItem{
+    color: #4391FF;
+    background-color: #e6f4ff;
+    border-left: 3px solid#4391FF;
+    padding-left: 13px !important;
+    .categoryTitle {
+        color: #4391FF !important;
+        font-weight: bold;
+    }
+}
+.categoryItem,.categoryActiveItem{
+    height: 48px;
+    padding: 8px 16px;
+    vertical-align: middle;
+    .categoryImg{
+        float: left;
+        img{
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            margin-right: 8px;
+        }
+    }
+    .categoryTitle{
+        float: left;
+        width: 192px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-all;
+        white-space: nowrap; 
+        height: 32px;
+        line-height: 32px;
+        color: #0D1A26;
+    }
+    .categoryIcon{
+        float: right;
+        .icon{
+            font-size: 24px;
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+            margin-top: 4px;
+        }
+    }
+}
+.dropDownMenu{
+    width: 80px;
+    left: 16px;
+}
+.popoverImg{
+    width: 80px;
+}
+
+.showGif{
+    float: left;
+    width: 480px;
+    height: 720px; 
+    position: relative;
+    .showGifDec{
+        font-size: 14px;
+        margin: 24px 0 12px 0;
+        color: #556675;
+    }
+}
+.showGifCon{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    div{
+        text-align: center;
+    }
+    .showGifImg{
+        width: 280px;
+        img{
+            width: 280px;
+            height: 560px;
+        }
+    } 
+    .showGifTips {
+        font-weight: bold;
+        font-size: 14px;
+        color: #556675;
+    }
+}

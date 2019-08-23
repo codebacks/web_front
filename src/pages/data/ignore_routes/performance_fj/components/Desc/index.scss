@@ -1,0 +1,22 @@
+
+.desc {
+    padding: 8px;
+    .title {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #E3E3E3;
+        color: #333;
+        font-size: 14px;
+    }
+
+    .row {
+        font-size: 12px;
+        margin: 16px 0;
+        .label {
+            display: inline-block;
+            width: 90px;
+            margin-right: 8px;
+            text-align: right;
+            color: #333;
+        }
+    }
+}

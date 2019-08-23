@@ -1,0 +1,104 @@
+/**
+ **@Description:
+ **@author:吴明
+ */
+.formSearch{
+    .searchBtn {
+        :global {
+            .ant-btn {
+                width: 80px;
+                font-size: 12px;
+                margin-top: 8px;
+                &:first-child {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+  .row {
+    padding-left: 24px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content:flex-start;
+    .col{
+      margin-right: 40px;
+      display: flex;
+    }
+    .col:last-child{
+      margin-right: 0px
+    }
+  }
+  .payName{
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 14px;
+    color: #666666;
+    padding: 20px 0;
+    font-weight: bold;
+  }
+  .icon{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background: #4391FF;
+    color: #fff;
+    line-height: 20px;
+    font-size:14px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+   .open{
+     width: 80px;
+     height: 30px;
+     margin: 20px 0;
+     line-height: 30px;
+   }
+  .title{
+    line-height: 54px;
+    border-bottom: 1px solid #E3E3E3;
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 14px;
+    color: #333333;
+    letter-spacing: 0.17px;
+    font-weight: bold;
+  }
+  .form{
+    background: #FAFAFA;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    padding: 30px 0;
+  }
+  .formInput{
+    width: 240px;
+    height: 30px;
+    font-size: 12px;
+  }
+}
+
+.circleGray,.circleBlue{
+  position: relative;
+  padding-left: 13px;
+}
+
+.circleGray::after{
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  left: 0;
+  background: gray;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.circleBlue::after{
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background:#4391FF;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}

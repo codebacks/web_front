@@ -1,0 +1,55 @@
+@import "~wx/style/index";
+
+.wrapper {
+    :global {
+        .ant-modal-body {
+            min-height: 232px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+    }
+
+    .title {
+        color: $font-size-color-dark;
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    .formItem {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .label {
+            display: inline-block;
+            width: 42px;
+            margin-right: 8px;
+        }
+
+        .item {
+            flex: 1;
+        }
+
+        .add {
+            border-color: $primary-color;
+            color: $primary-color;
+            cursor: pointer;
+            margin-left: 18px;
+        }
+    }
+
+    .tagsWrap {
+        margin-left: 50px;
+        .tip {
+            color: $font-size-color-light;
+            margin: 16px 0 30px;
+        }
+        .tags {
+            margin-bottom: -10px;
+            .tag {
+                margin: 0 16px 10px 0;
+            }
+        }
+    }
+}
+
+

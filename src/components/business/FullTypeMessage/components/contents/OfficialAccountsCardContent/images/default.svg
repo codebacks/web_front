@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="228px" height="89px" viewBox="0 0 228 89" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 8@2x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="公众号-" transform="translate(-168.000000, -248.000000)">
+            <g id="Group-8" transform="translate(168.000000, 248.000000)">
+                <g id="Group-2">
+                    <path d="M2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 C0.5,5.66898087 0.5,5.66898087 0.5,9.33796173 C0.5,11.1724522 0.5,11.1724522 0.5,13.0069426 C0.5,14.5158246 0.5,14.5158246 0.5,16.4261827 C0.5,17.4311409 0.5,17.4311409 0.5,18.3776525 C0.5,19.2501235 0.5,19.2501235 0.5,19.9545827 C0.5,53.4772914 0.5,53.4772914 0.5,87 C0.5,87.8284271 1.17157288,88.5 2,88.5 L226,88.5 C226.828427,88.5 227.5,87.8284271 227.5,87 L227.5,2 C227.5,1.17157288 226.828427,0.5 226,0.5 L2,0.5 Z" id="Rectangle" stroke="#D9D9D9" fill="#FAFAFA" fill-rule="nonzero" transform="translate(114.000000, 44.500000) scale(-1, 1) translate(-114.000000, -44.500000) "></path>
+                    <rect id="Rectangle" fill="#EFEFEF" fill-rule="nonzero" x="68" y="12" width="152" height="14" rx="2"></rect>
+                    <rect id="Rectangle-Copy" fill="#EFEFEF" fill-rule="nonzero" x="68" y="34" width="48" height="14" rx="2"></rect>
+                    <g id="默认图片" transform="translate(8.000000, 8.000000)">
+                        <rect id="Rectangle" fill="#E3E3E3" fill-rule="nonzero" x="0" y="0" width="44" height="44" rx="2"></rect>
+                        <rect id="Rectangle" stroke="#FAFAFA" x="10.28" y="13.14" width="23.804878" height="17.902439" rx="2"></rect>
+                        <path d="M17.2395221,20.6026645 L21.7808547,24.803012 C21.965366,24.9736692 22.2436105,24.9933893 22.4503465,24.850461 L25.4764187,22.758367 C25.6707961,22.623983 25.9302062,22.6325792 26.1152607,22.7795366 L33.6331707,28.7497377 L33.6331707,30.1297159 C33.6331707,30.4260637 33.3929331,30.6663013 33.0965854,30.6663013 L11.0965854,30.6663013 C10.8002375,30.6663013 10.56,30.4260637 10.56,30.1297159 L10.56,27.2644367 C10.56,27.1296583 10.6107205,26.9998153 10.7020774,26.9007235 L16.4806682,20.6328748 C16.6815415,20.4149941 17.0210087,20.4012069 17.2388894,20.6020802 C17.2391005,20.6022748 17.2393114,20.6024696 17.2395221,20.6026645 Z" id="Rectangle" fill="#FAFAFA" fill-rule="nonzero"></path>
+                        <g id="Group-2" transform="translate(27.500000, 16.940000)" fill="#FAFAFA" fill-rule="nonzero">
+                            <g id="Group" transform="translate(0.209268, 0.214634)">
+                                <circle id="Oval" cx="1.1" cy="1.1" r="1.1"></circle>
+                            </g>
+                        </g>
+                    </g>
+                    <rect id="Rectangle" fill="#D9D9D9" fill-rule="nonzero" x="0" y="60" width="228" height="1"></rect>
+                    <rect id="Rectangle" fill="#EFEFEF" fill-rule="nonzero" x="8" y="69" width="60" height="12" rx="2"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,30 @@
+@import "~community/style/common";
+.addReplyModal{
+    :global{
+        .ant-modal-body{
+            padding-bottom: 0;
+        }
+    }
+    .addReplyMember{
+        .tableWrap{
+            .nameColumn{
+                max-width: 100px;
+            }
+            .operation{
+                padding-right: 20px !important;
+                .activeTxt{
+                    margin-right: 20px;
+                    color: #ffb507;
+                }
+                .icon{
+                    font-size: 20px;
+                    color: #999;
+                    cursor: pointer;
+                    &.active{
+                        color: @primary-color;
+                    }
+                }
+            }
+        }
+    }
+}

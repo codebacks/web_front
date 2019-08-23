@@ -1,0 +1,86 @@
+.content{
+    width:320px;
+    height:82px;
+    background-color:rgba(247,249,251,1);
+    padding: 10px;
+    .body{
+        background-color: #fff;
+        height: 60px;
+        padding: 10px;
+        box-shadow:0px 3px 7px 0px rgba(13,37,59,0.04);
+        border-radius:4px;
+        position: relative;
+        img{
+            width: 41px;
+            height: 41px;
+            display: block;
+            float: left;
+        }
+        .contact_icon {
+          width: 18px;
+          height: 18px;
+          position: absolute;
+          left: 33px;
+          bottom: 10px;
+        }
+        p{
+            span{
+                display: block;
+                text-align: left;
+                text-indent: 12px;
+                line-height: 20px;
+            }
+          .top{
+            font-size: 13px;
+            color: #F35D51;
+          }
+          .bot{
+            font-size:12px;
+            color: #9EA8B1;
+            white-space: nowrap;
+            transform: scale(0.92);
+            display: block;
+            text-indent: 5px;
+          }
+        }
+    }
+    
+}
+
+:global{
+    .hz_theme_ImageText_blue{
+        height:84px;
+        margin-top:30px;
+        background-color:#fff;
+        padding: 0 !important;
+        .body{
+            background-color: #F7F9FB !important;
+            height:82px;
+            border-radius:0;
+            img{
+                position: absolute;
+                left: 50%;
+                top: -20px;
+                transform: translateX(-50%)
+            }
+            .contact_icon{
+                position: absolute;
+                left: 50%;
+                top: 2px;
+                transform: translateX(-50%);
+            }
+            p{
+                margin-top: 16px;
+                span{
+                    text-align: center !important;
+                    color: #253A4E !important;
+                    font-size: 14px;
+                }
+                .bot{
+                    color: #B6BDC4 !important;
+                }
+            }
+        }
+            
+    }
+}

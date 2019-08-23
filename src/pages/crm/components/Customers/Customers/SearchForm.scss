@@ -1,0 +1,87 @@
+@import "~crm/style/index";
+
+.SearchForm {
+    padding: 0 40px 0 0;
+    .timeItem {
+         :global {
+             .ant-form-item-children {
+                 white-space: nowrap;
+             }
+             .dateRange {
+                 display: inline-flex;
+                 align-items: center;
+             }
+             .ant-calendar-picker {
+                 flex: 1;
+                 .ant-input {
+                     width: 100%;
+                     min-width: 110px;
+                     font-size: $font-size;
+                     &::placeholder {
+                         font-size: 14px;
+                     }
+                 }
+             }
+         }
+    }
+
+    .tagForm {
+        :global {
+            .ant-form-item-control {
+                margin: 5px 0 -10px;
+            }
+            .ant-select-selection--multiple {
+                height: 30px;
+                overflow-y: auto;
+            }
+        }
+    }
+
+    .questionCircle {
+        color: #4391FF;
+        margin-left: 5px;
+    }
+
+    .errMsg {
+        color: #f04134;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .sp {
+        width: 10%;
+        vertical-align: middle;
+        display: inline-block;
+        text-align: center
+    }
+    .ipt {
+        width: 45%;
+        margin-right: 0;
+        input {
+            text-align: center;
+        }
+    }
+    .not {
+        margin: 2px 0 14px;
+    }
+    .advance {
+        margin-bottom: $margin-base;
+        display: inline-block;
+        color: $primary-color;
+        cursor: pointer;
+    }
+    .searchBtn {
+        :global {
+            .ant-col-offset-8 {
+                padding: 0 !important;
+            }
+        }
+    }
+}
+
+.reverseContent {
+    width: 600px;
+    img {
+        width: 100%;
+    }
+}

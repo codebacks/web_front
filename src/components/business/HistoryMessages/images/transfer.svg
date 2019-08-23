@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 11 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="聊天记录" transform="translate(-317.000000, -1060.000000)" fill-rule="nonzero">
+            <g id="Group-8" transform="translate(257.000000, 1020.000000)">
+                <g id="Group-7-Copy-6">
+                    <g id="Group-9" transform="translate(48.000000, 26.000000)">
+                        <g id="Group-11-Copy" transform="translate(12.000000, 14.000000)">
+                            <g id="Group-10" transform="translate(7.000000, 8.000000)" fill="#FFFFFF">
+                                <path d="M3,6 L22.7,6 C22.8656854,6 23,6.13431458 23,6.3 L23,7.7 C23,7.86568542 22.8656854,8 22.7,8 L3,8 L3,6 Z" id="Rectangle"></path>
+                                <path d="M8,0.724264069 L8,8 L0.724264069,8 C0.558578644,8 0.424264069,7.86568542 0.424264069,7.7 C0.424264069,7.62043505 0.455871121,7.54412888 0.512132034,7.48786797 L7.48786797,0.512132034 C7.60502525,0.394974747 7.79497475,0.394974747 7.91213203,0.512132034 C7.96839295,0.568392948 8,0.644699122 8,0.724264069 Z" id="Rectangle"></path>
+                                <path d="M0.3,12 L20,12 L20,14 L0.3,14 C0.134314575,14 7.41935579e-16,13.8656854 7.21644966e-16,13.7 L0,12.3 C-2.02906125e-17,12.1343146 0.134314575,12 0.3,12 Z" id="Rectangle"></path>
+                                <path d="M23,12.7242641 L23,20 L15.7242641,20 C15.5585786,20 15.4242641,19.8656854 15.4242641,19.7 C15.4242641,19.6204351 15.4558711,19.5441289 15.512132,19.487868 L22.487868,12.512132 C22.6050253,12.3949747 22.7949747,12.3949747 22.912132,12.512132 C22.9683929,12.5683929 23,12.6446991 23,12.7242641 Z" id="Rectangle" transform="translate(19.000000, 16.000000) scale(-1, -1) translate(-19.000000, -16.000000) "></path>
+                            </g>
+                            <rect id="Rectangle" stroke="#FFFFFF" x="0.5" y="0.5" width="35" height="35" rx="17.5"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

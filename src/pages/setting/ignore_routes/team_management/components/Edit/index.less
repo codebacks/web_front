@@ -1,0 +1,142 @@
+/**
+ **@Description:
+ **@author: leo
+ */
+@import "~style/utils.less";
+
+.treeTitle {
+    text-align: left;
+    font-weight: bold;
+}
+
+.tree {
+    :global {
+        .ant-tree-node-content-wrapper {
+            width: 90%;
+        }
+    }
+    .treeNodeClick {
+        float: right;
+        margin-left: 10px;
+    }
+    .treeNodeTitle {
+        .textOverflow();
+        flex: 1 1;
+    }
+    .check {
+        font-weight: bold;
+    }
+    .treeNode {
+        display: flex;
+    }
+}
+
+.selectedDepartmentsWarp {
+    padding: 10px;
+}
+
+.departmentListItem {
+    margin-top: 20px;
+    .minus {
+        display: inline-block;
+        border: 1px solid #E3E3E3;
+        border-radius: 2px;
+        height: 30px;
+        line-height: 30px;
+        .minusIcon {
+            width: 30px;
+            height: 28px;
+            display: inline-block;
+            border-right: 1px solid #E3E3E3;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+            .close {
+                height: 2px;
+                background: #E3E3E3;
+                width: 60%;
+                margin: 14px auto 0 auto;
+            }
+        }
+        .name {
+            line-height: 30px;
+            display: inline-block;
+            vertical-align: top;
+            padding: 0 6px;
+            .textOverflow();
+            max-width: 300px;
+        }
+    }
+    .checkBox {
+        display: inline-block;
+        line-height: 30px;
+        vertical-align: top;
+        margin-left: 20px;
+    }
+}
+
+.selectDepartmentRow{
+    line-height: 40px;
+}
+
+.departmentItem {
+    margin: 10px 0;
+    border-bottom: 1px solid #E9E9E9;
+    .title {
+        margin-bottom: 10px;
+    }
+    .close {
+        float: right;
+        cursor: pointer;
+        margin-top: 4px;
+        font-weight: bold;
+    }
+}
+
+.listTitle {
+    text-align: left;
+    font-weight: bold;
+}
+
+.accountRow {
+    margin-bottom: 20px;
+}
+
+.account {
+    text-align: right;
+}
+
+.enabled {
+    margin-left: 10px;
+    background: cornflowerblue;
+    color: #f3f5f7;
+    font-size: 12px;
+    padding: 1px 6px;
+    border-radius: 4px;
+}
+
+.required {
+    color: #333;
+    position: relative;
+    text-align: right;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    &:before {
+        display: inline-block;
+        margin-right: 4px;
+        content: "*";
+        font-family: SimSun;
+        line-height: 1;
+        font-size: 14px;
+        color: #f5222d;
+    }
+    &:after {
+        content: ":";
+        margin: 0 8px 0 2px;
+        position: relative;
+        top: -0.5px;
+
+    }
+}

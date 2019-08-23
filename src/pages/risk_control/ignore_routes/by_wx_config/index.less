@@ -1,0 +1,74 @@
+.byWxConfig{
+    .content{
+        .batchBtns{
+            margin: 20px 0;
+            .batchBtn{
+                margin-right: 10px;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+        .table{
+            .canEdit{
+                cursor: pointer;
+                color: #4391FF;
+                &.disabled{
+                    color: #999;
+                }
+            }
+            .msgColumn{
+                .msgWrap{
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: flex-start;
+                    align-items: center;
+                    align-content: space-around;
+                    .head{
+                        width: 50px;
+                        margin-right: 8px;
+                    }
+                }
+            }
+            .deptColumn {
+                max-width: 80px;
+                width: 12%;
+                .dept {
+                    cursor: pointer;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+            .divideColumn, .userColumn, .deviceColumn, .devideKeepColumn, .editColumn{
+                width: 12%;
+            }
+            .remarkColumn {
+                width: 12%;
+                .remark {
+                    white-space: pre-wrap;
+                    .edit {
+                        position: relative;
+                        cursor: pointer;
+                        display: inline-block;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        /*! autoprefixer: off */
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        .editIcon {
+                            position: absolute;
+                            right: 10px;
+                            top: 2px;
+                            font-size: 14px;
+                            cursor: pointer;
+
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

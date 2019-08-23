@@ -1,0 +1,61 @@
+.content_card{
+    width:504px;
+    height: 128px;
+    margin-top: 20px;
+    border: 1px solid #E6E9EB;
+    img{
+        display: block;
+        float: left;
+        width: 66px;
+        margin:32px 16px 32px 32px;
+    }
+    .content_card_text{
+        height: 64px;
+        width: 200px;
+        margin:32px 0 32px 0;
+        float: left;
+        padding-top:4px; 
+        p{
+            width: 100%;
+           float: left;
+           margin:0;
+           font-size: 14px;
+           color: #9EA8B1;
+        }
+        b{
+            display: block;
+            float: left;
+            color:#0D1A26;
+            font-size: 30px;
+            font-weight: 400;
+        }
+    }
+    .content_card_btn{
+        width:90px;
+        height: 64px;
+        float: right;
+        margin:32px 32px 32px 0;
+        .ant-btn{
+            width: 90px;
+        }
+    }
+}
+.smsCounts{
+    font-family: 'MicrosoftYaHei';
+    font-size: 14px;
+    color: #0D1A26;
+    .bold{
+        font-weight: bold;
+    }
+}
+.spilt_icon{
+    position: relative;
+    margin-right: 18px;
+    &::after{
+        content: "|";
+        position: absolute;
+        right: -8px;
+        width: 2px;
+        color:#E6E9EB;
+    }
+}

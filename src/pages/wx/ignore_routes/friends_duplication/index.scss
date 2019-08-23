@@ -1,0 +1,82 @@
+@import "~wx/style/index";
+
+.duplicationWrapper {
+    .searchBtn {
+        margin: 4px 0 0 36px;
+    }
+
+    .tableTip {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .right {
+            .tip {
+                margin-right: 20px;
+            }
+        }
+        .tip {
+            margin: 34px 0 8px 0;
+        }
+        .link {
+            display: inline-block;
+            width: 80px;
+            line-height: 32px;
+            height: 32px;
+            border: 1px solid $primary-color;
+            border-radius: 2px;
+            text-align: center;
+        }
+
+    }
+
+    .avatar {
+        width: 60px;
+        height: 60px;
+    }
+
+    .remarkColumn {
+        width: 25%;
+    }
+
+    .remark {
+        margin: 0;
+        line-height: 24px;
+    }
+
+    .stress {
+        color: $primary-color;
+        cursor: pointer;
+    }
+
+    .light {
+        color: #999;
+        cursor: pointer;
+    }
+
+    .deptColumn {
+        max-width: 120px;
+    }
+
+    .wholeDept {
+        word-break: break-all;
+        max-width: 240px;
+    }
+
+    .expandTable {
+        > td {
+            border-bottom: 1px dashed #E3E3E3!important;
+        }
+        .column {
+            min-width: 60px;
+            white-space: nowrap;
+        }
+    }
+
+}
+
+.desc {
+    width: 120px;
+}
+
+
+

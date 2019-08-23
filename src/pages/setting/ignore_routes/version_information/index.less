@@ -1,0 +1,238 @@
+.currentVersion{
+    box-sizing: border-box;
+    padding: 24px;
+    width: 880px;
+    display: inline-block;
+    border: 1px solid #E6E9EB;
+    border-radius: 2px;
+    :global{
+        .ant-row{
+            margin-bottom: 16px;
+        }
+        .ant-row:last-child{
+            margin-bottom: 0;
+        }
+    }
+    strong{
+        font-weight: normal;
+        color: #0D1A26;
+    }
+    .versionName{
+        font-family: 'MicrosoftYaHei-Bold';
+        font-size: 18px;
+        width: 84px;
+        color: #4391FF;
+        line-height: 26px;
+    }
+}
+.clearfix::before,.clearfix::after {
+
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+.VIP{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    div{
+        padding: 24px;
+        width: 276px;
+        border: 1px solid #CFD3D8;
+        position: relative;
+        border-radius: 2px;
+        margin-right: 24px;
+        margin-bottom: 24px;
+        p{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: none;
+            margin-bottom: 8px;
+            line-height: 22px;
+            color: #0D1A26;
+            // span:last-child{
+            //     color: #556675;
+            // }
+            // span:first-child{
+            //     color: #9EA8B1;
+            // }
+        }
+        .versionDesc{
+            font-family:' MicrosoftYaHei';
+            font-size: 12px;
+            color: #556675;
+            margin: 16px 0;
+            line-height: 20px;
+        }
+        .title{
+            text-align: center;
+            font-family:' MicrosoftYaHei-Bold';
+            font-size: 24px;
+            color: #0D1A26;
+            display: block;
+            font-weight: bold;
+            line-height: 32px;
+        }
+        .price{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'MicrosoftYaHei-Bold'; 
+            margin-top: 24px;
+            span:first-child{
+                line-height: 32px;
+                color: #556675;
+                font-size: 24px;
+                font-weight: bold;
+            }
+            span:last-child{
+                font-size: 16px;
+                line-height: 32px;
+                color:#556675;
+                // font-weight: bold;
+            }
+            .descTip{
+                background: #FFAA16 ;
+                border-radius: 2px;
+                padding: 0 8px;
+                margin-left: 6px;
+                font-size: 10px;
+                font-weight:normal;
+                text-decoration: none;
+                line-height: auto;
+                font-size: 12px;
+                color: #F7F9FB !important;
+            }
+        }
+
+        .save_price{
+            font-family: MicrosoftYaHei-Bold;
+            font-size: 12px;
+            color: #9EA8B1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0;
+            span:first-child{
+                background: #FFAA16 ;
+                border-radius: 2px;
+                padding: 0 8px;
+                margin-right: 6px;
+                font-size: 10px;
+                color: #F7F9FB !important;
+            }
+            span:last-child{
+                line-height: normal;
+                text-decoration: line-through;
+                color: #9EA8B1 !important;
+                font-weight: normal;
+            }
+        }
+        
+        .buy{
+            line-height: 32px;
+            border: 1px solid #4391FF;
+            border-radius: 2px;
+            font-family: 'MicrosoftYaHei';
+            font-size: 14px;
+            margin-top: 24px;
+            color: #4391FF;
+            display: block;
+            text-align: center;
+            cursor: pointer;
+            margin-bottom: 0;
+        }
+    }
+    >div:hover{
+        border: 1px solid #4391FF;
+        position: relative;
+        // p{
+        //     span:first-child{
+        //         color: #556675;
+        //     }
+        //     span:last-child{
+        //         color: #0D1A26;
+        //     }
+        // }
+        .title{
+            color: #4391FF ;
+        }
+        .price{
+            span:first-child,span:last-child{
+                color: #F35D51 ;
+            }
+        }
+        .buy{
+            background: #4391FF; 
+            color: #fff;
+        }
+    }
+    .recommend{  
+        border: 1px solid #4391FF;
+        position: relative;
+        cursor: pointer;
+        // p{
+        //     span:first-child{
+        //         color: #556675;
+        //     }
+        //     span:last-child{
+        //         color: #0D1A26;
+        //     }
+        // }
+        .title{
+            color: #4391FF ;
+        }
+        .price{
+            span:first-child,span:last-child{
+                color: #F35D51 ;
+            }
+        }
+        .buy{
+            background: #4391FF; 
+            color: #fff;
+        }
+       
+    }
+    .triangle{
+        content:'';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0px;
+        height: 0px;
+        border-color: #4391Ff #4391Ff transparent transparent; 
+        border-width:  25px;
+        border-style: solid;
+        color: #fff;
+    }
+    .icon{
+        display: block;
+        color: #fff;
+        position: absolute;
+        top: 6px;
+        right: 2px;
+        color: #fff;
+        font-size: 10px;
+        transform: rotate(45deg);
+    }
+    .stewardIcon{
+        display: block;
+        color: #fff;
+        position: absolute;
+        top: 12px;
+        right: -3px;
+        color: #fff;
+        font-size: 10px;
+        transform:rotate(45deg)
+    }
+    .nonContent{
+        height: 150px;
+    }
+
+}

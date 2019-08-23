@@ -1,0 +1,19 @@
+.remarkEdit {
+  :global {
+    .ant-input {
+      width: 220px;
+    }
+  }
+
+  .footer{
+    overflow: hidden;
+    margin-top: 10px;
+    .cancel,
+    .save {
+      float: right;
+    }
+    .save {
+      margin-left: 8px;
+    }
+  }
+}

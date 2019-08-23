@@ -1,0 +1,24 @@
+/*
+ * @Author: sunlzhi 
+ * @Date: 2018-09-07 10:44:39 
+ * @Last Modified by: sunlzhi
+ * @Last Modified time: 2018-09-07 10:45:31
+ */
+
+.subConPadding {
+    padding-right: 20px;
+}
+
+.uploadBox {
+    &::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .upload {
+        float: left;
+        width: 320px;
+        height: 30;
+        margin: 0 20px 0 10px;
+    }
+}

@@ -1,0 +1,277 @@
+/**
+ **@time: 2018/9/27
+ **@Description:晒图红包-css
+ **@author: wangchunting
+ */
+
+.uploadBg {
+    img {
+        width: 50px;
+        height: 75px;
+    }
+}
+
+.avatar-uploader>.ant-upload {
+    width: 128px;
+    height: 128px;
+}
+
+.textColorSecondary {
+    color: #999;
+}
+
+.modalContent {
+    // padding-top:0;
+    li {
+        list-style: none;
+        margin-bottom: 16px;
+        color: #2A2A2A;
+    }
+    span {
+        width: 80px;
+        color: #333;
+    }
+}
+
+.shortLink {
+    width: 230px;
+    vertical-align: middle;
+    margin-right: 24px;
+}
+
+.downloadSize {
+    border: 1px solid #DEDEDE;
+    .downloadSizeType {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #DEDEDE;
+        padding-top: 10px;
+    }
+}
+
+.downloadSizeBtn {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.grayStatus,
+.blueStatus,
+.yellowStatus {
+    position: relative;
+    padding-left: 13px;
+}
+
+.grayStatus::after,
+.blueStatus::after,
+.yellowStatus::after,
+.redStatus::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.grayStatus::after {
+    background: #cccccc;
+}
+
+.blueStatus::after {
+    background: #4391ff;
+}
+
+.yellowStatus::after {
+    background: #FA8C16;
+}
+
+.redStatus::after {
+    background: #EA2534;
+}
+
+.blueColor {
+    color: #4391FF;
+}
+
+.yellowColor {
+    color: #FEA800;
+}
+
+.orangeColor {
+    color: #FF6E1B;
+}
+
+// 审核
+.reviewPicture {
+    .pictureList {
+        background: red;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 5px;
+    }
+}
+
+.imageViewers {
+    display: flex;
+    flex-wrap: wrap; // justify-content: space-between;
+    >img {
+        width: 48px;
+        height: 48px;
+        border: 1px solid #ccc;
+        padding: 2px;
+        margin-bottom: 5px;
+        cursor: pointer;
+        margin-right: 3px;
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+    .imageLen1{
+        width: 88px;
+        height: 88px;
+    }
+    .imageLen2{
+        width: 64px;
+        height: 64px;
+    }
+    .imageLen3{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.rejectBorder {
+    border: 1px solid #E9E9E9;
+    div {
+        padding: 16px 8px;
+        border-bottom: 1px solid #E9E9E9;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
+
+.radiolineformitem {
+    padding: 7px 0;
+    >span:last-child {
+        display: inline-block;
+    }
+}
+
+.radiolineformitemcontain {
+    display: flex;
+    >span {
+        flex: 1;
+    }
+}
+
+.radiolineformitemformitem {
+    margin-top: -7px;
+}
+
+.successIcon {
+    font-size: 54px;
+    color: #52C41A;
+    margin-bottom: 16px;
+}
+
+.successTitle {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.successContent {
+    width: 380px;
+    margin: 70px auto
+}
+
+.linkAddresss {
+    margin-top: 16px;
+    >span:first-child {
+        color: #333;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.downQrcode {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    .downQrcodeImg {
+        width: 149px;
+        height: 149px;
+        margin-right: 30px;
+    }
+}
+
+.link {
+    display: flex;
+    >p:first-child {
+        width: 70px;
+    }
+    >p:nth-child(2) {
+        width: 300px
+    }
+}
+
+.questionCircle {
+    color: #4391FF;
+    margin-left: 5px;
+}
+
+.guideQrcodeWidth {
+    width: 80px;
+}
+
+.qrcodeIcon {
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.qrUrlImg {
+    width: 150px;
+    height: 150px;
+}
+
+.boxTitle {
+    font-size: 16px;
+    color: #0D1A26;
+    flex-grow: 1;
+    line-height: 32px;
+    .boxTitleIcon {
+        background: #4391FF;
+        display: inline-block;
+        height: 0.95em;
+        width: 2px;
+        vertical-align: middle;
+        position: relative;
+        top: -0.06em;
+        margin-left: 8px;
+    }
+}
+
+.ellipsis{
+    width: 100px;
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis
+}
+
+.textEllipsis {
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /* autoprefixer: on */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+}

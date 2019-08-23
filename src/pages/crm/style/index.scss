@@ -1,0 +1,61 @@
+@import "base";
+
+.layout {
+    background-color: #fff;
+}
+
+.content {
+    overflow: auto;
+    background: #fff;
+    position: relative;
+}
+
+.contentSub {
+    background: #fff;
+    position: relative;
+    padding: 0 24px;
+}
+
+.searchWrap {
+    padding: 22px 22px 30px;
+    background-color: #F7F9FB;
+
+    .searchBtn {
+        :global {
+            .ant-btn {
+                width: 80px;
+                font-size: $font-size;
+
+                &:first-child {
+                    margin-right: $margin-base;
+                }
+            }
+        }
+    }
+}
+
+.tableWrap {
+    margin-top: 30px;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.loadingWrap {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.tipWrap {
+    padding: 10px;
+    text-align: center;
+
+    .tip {
+        color: #888;
+    }
+}
+
+.firstColumn {
+    padding-left: 30px !important;
+}

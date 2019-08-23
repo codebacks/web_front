@@ -1,0 +1,57 @@
+@import "~wx/style/index";
+
+.info {
+    font-size: 12px;
+    .creator {
+        color: $font-size-color-light;
+    }
+
+    .tags {
+        height: 60px;
+        margin: 16px -8px 8px 0;
+        overflow: hidden;
+        .tag {
+            margin: 0 8px 8px 0;
+            cursor: auto;
+            border-radius: 2px;
+            vertical-align: middle;
+            &.control {
+                display: inline-block;
+                border: 1px dashed #D9D9D9;
+                cursor: pointer;
+                color: $font-size-color-light;
+                line-height: 22px;
+                height: 24px;
+                padding: 0 16px;
+            }
+            &.placeholder {
+                background-color: #FAFAFA;
+                border-color: #FAFAFA;
+                width: 44px;
+            }
+        }
+
+    }
+
+    .meta {
+        color: #999;
+        display: flex;
+        align-items: center;
+        .source {
+            flex: 4;
+        }
+        .timeWrap {
+            flex: 5;
+            text-align: right;
+            white-space: nowrap;
+            .time {
+                margin-right: 8px;
+            }
+            .delete {
+                cursor: pointer;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
