@@ -85,7 +85,7 @@
         "hash-sum": "^1.0.2",
         "hoist-non-react-statics": "^3.3.0",
         "js-base64": "^2.5.1",
-        "lodash": "^4.17.11",
+        "lodash": "^4.17.21",
         "lodash-decorators": "^6.0.1",
         "memoize-one": "^5.0.4",
         "moment": "^2.24.0",
